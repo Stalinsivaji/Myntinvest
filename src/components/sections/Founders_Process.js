@@ -50,7 +50,7 @@ const propTypes = {
     const innerClasses = classNames(
       'features-split-inner section-inner',
       topDivider && 'has-top-divider',
-      bottomDivider && 'has-bottom-divider'
+      bottomDivider && 'has-bottom-divider' 
     );
   
     const sectionHeader = {

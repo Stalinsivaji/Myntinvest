@@ -16,7 +16,7 @@ const FooterSocial = ({
       {...props}
       className={classes}
     >
-      <ul className="list-reset" style={{paddingRight:50}}>
+      <ul className="list-reset" style={{paddingRight:20}}>
         <li>
           <a href="https://facebook.com/">
             <svg
@@ -61,7 +61,9 @@ const FooterSocial = ({
             </svg>
           </a>
         </li>
-      
+      <li>
+        <a href="#" class="fa fa-linkedin" style={{fontSize: 16,width: 16,color:"#23b347"}}></a> 
+      </li>
       </ul>
     </div>
   );

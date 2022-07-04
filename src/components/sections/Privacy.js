@@ -1,7 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-
-
+import '../Css/styles.css';
 
 const Privacy= () => {
     return(
@@ -15,23 +13,16 @@ const Privacy= () => {
                <div className="row">
               
                <div className="col-md-12">
-               <nav className="navbar navbar-expand-sm bg-Secondary navbar-white ">
-                                <ul className="navbar-nav" style={{fontSize:20}}>
-                                <li className="nav-item" >
-                                    <NavLink to="/"  className="nav-link" style={{color:"Grey"}}>Company</NavLink>
-                                  </li>
-                                  <li className="nav-item">
-                                    <NavLink to="/Privacy_Policy" className="nav-link" style={{color:'#23b347'}} >Privacy Policy</NavLink>
-                                  </li>
-                                  <li className="nav-item">
-                                    <NavLink to="/" className="nav-link" >Terms Of Service</NavLink>
-                                  </li>
-                                  <li className="nav-item">
-                                    <NavLink to="/" className="nav-link" >Code Of Conduct</NavLink>
-                                  </li>
-                                </ul>
-                            </nav>
+               <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb arr-right">
+                    <li class="breadcrumb-item text-sm" aria-current="page" style={{color:"Grey"}}>Company</li>
+                    <li class="breadcrumb-item text-sm active" aria-current="page" style={{color:'#23b347'}}>Privacy Policy</li>
+                    <li class="breadcrumb-item text-sm text-dark active"><a class="opacity-5 text-dark" href="/">Terms Of Service</a></li>
+                    <li class="breadcrumb-item text-sm text-dark active"><a class="opacity-5 text-dark" href="/">Code Of Conduct</a></li>
+                  </ol>
+                </nav>
               </div>
+                
              
                <h2 className="alert-alert" id="Highlights" align="Left">MynInvest Privacy Policy</h2>
                <p style={{color:"grey"}} align="left">This Privacy Policy was last updated on January 11,2021</p>

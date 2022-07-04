@@ -55,7 +55,7 @@ const Welcome = ({
     return(
             <body className='bg-white'>
           
-            <div className='row' style={{paddingLeft:50}}> 
+            <div className='row' > 
             <div className='col-md-1'></div>
             <div className='col-md-5'style={{backgroundColor: "#2ECC71",height:850}}>
             <div className='row' align="Left" style={{paddingLeft:70}} >
@@ -124,23 +124,25 @@ const Welcome = ({
             </div>
         
 
-            <div className='col-md-6'>
+            <div className='col-md-6'style={{paddingLeft:50}}>
             <form className="form-inline"> 
           
-            <div className='row' style={{paddingLeft:70}}>
+            <div className='row' align="center">
             <div className='row'>&nbsp;
             <p style={{color:"grey"}} align="right">Not a member?<span style={{color:"#2ECC71",fontSize:15}}>&nbsp;Sign up now</span></p>
-            <div className="col-md-11">
+            <div className='col-md-1'></div>
+            <div className="col-md-10">
             <h3 align="Center">Welcome Back!</h3>     
             <label for="exampleInputEmail1"></label>
             <h5 align="left">E-mail</h5>
-            <input type="email" className="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your Email" /><br/>
+            <input type="email" className="form-control " id="LodinEmail" aria-describedby="emailHelp" placeholder="Enter your Email" /><br/>
             </div></div>
 
             <div className='row' >
-            <div className="col-md-11">
+                <div className='col-md-1'></div>
+            <div className="col-md-10">
             <h5 align="left" >Password</h5>   
-            <div className="input-group"><input type="password" className="form-control" placeholder="Enter Your Password" /></div><br/>
+            <div className="input-group"><input type="password"id="Loginpassword" className="form-control" placeholder="Enter Your Password" /></div><br/>
             </div></div>
             </div>
 
@@ -154,7 +156,7 @@ const Welcome = ({
           
             </label> 
             </div>
-            <ButtonGroup style={{paddingLeft:70}}>
+            <ButtonGroup style={{paddingLeft:80}} align="Center">
                   <Button tag="a"  color="primary" style={{borderRadius:8,color:"white",width:500}} wideMobile href="/Investor_Signup">
                     Login
                     </Button>
@@ -162,18 +164,21 @@ const Welcome = ({
 
                 
             <div className='row'>
-            <div className='col-md-12' align="Center">
-            <p>--------- OR ---------</p>
+            <div className='col-md-12'style={{paddingLeft:40}}>
+            <p>------- OR --------</p>
             </div>
             </div>
 
-                <ButtonGroup style={{paddingLeft:70}}>
+                <ButtonGroup style={{paddingLeft:80}}>
                   <Button tag="a" color="secondary" style={{backgroundColor:"#ECF0F1",borderRadius:8,color:"black",width:500}} wideMobile href="">
                     Sign in With Google
                     </Button>
-                </ButtonGroup><br/>&nbsp;
-                <span style={{color:"#2ECC71",fontSize:15,paddingRight:30}}>Log In as Startup</span>
-            </div>        
+                    
+                  <Button tag="a" color="secondary" style={{backgroundColor:"#f9faf9",borderRadius:8,color:"#2ECC71",width:500}} wideMobile href="/Startup_Dashboard">
+                  Log In as Startup
+                    </Button>
+                </ButtonGroup>
+            </div>  &nbsp;      
             </form>
             </div>
            </div>

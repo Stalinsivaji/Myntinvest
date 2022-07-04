@@ -56,7 +56,7 @@ const Registration = ({
 
     return(
             <body className='bg-white'>
-            <div className='row' style={{paddingLeft:50}}> 
+            <div className='row'> 
             <div className='col-md-1'></div>
             <div className='col-md-5'style={{backgroundColor: "#2ECC71",height:850}}>
             <div className='row' align="Left" style={{paddingLeft:70}} >
@@ -124,23 +124,23 @@ const Registration = ({
             </div>
             </div>
         
-            <div className='col-md-6' >
-            <form className="form-inline " style={{paddingLeft:70,marginTop:50}}> 
+            <div className='col-md-6' align="center" >
+            <form className="form-inline "align="center" style={{paddingLeft:0,marginTop:50}}> 
              
-            <div className='row'>
-            <div className="row">
+            <div className='row' align="center">
+            <div className="row"style={{paddingLeft:50}} >
             <p style={{color:"grey"}} align="right">Already a member?<span style={{color:"#2ECC71",fontSize:15}}>&nbsp;Sign in</span></p> &nbsp; 
-            <div className="col-md-4">
+            <div className="col-md-5" align="left">
             <b>First Name</b><div><input type="text" className="form-control" id="Fname" name="Fname" style={{fontSize:12}} placeholder="Enter your First name"  /> </div>
             </div>
 
-            <div className="col-md-4">          
+            <div className="col-md-5" align="left">          
              <b>Last Name</b><div><input type="text" className="form-control" id="Lname" name="Lname" style={{fontSize:12}} placeholder="Enter your Last name" /> </div><br/>
             </div>   
             </div>
 
             <div className="row">
-            <div className="col-md-8" >
+            <div className="col-md-10" align="left"style={{paddingLeft:50}}>
             <b>Email</b>  
             <label for="exampleInputEmail1"></label>
             <input type="email" className="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" style={{fontSize:12}}  placeholder="Enter your Email" /><br/>
@@ -148,49 +148,53 @@ const Registration = ({
             </div>
 
             <div className="row">
-            <div className="col-md-8">
+            <div className="col-md-10" align="left"style={{paddingLeft:50}}>
             <b>School</b><div className="input-group"><input type="text" className="form-control" style={{fontSize:12}}  placeholder="Start typing your School name and select from the list" /></div><br/>
             </div>
             </div>
 
-            <div className="row">
-            <div className="col-md-4">
+            <div className="row"style={{paddingLeft:50}}>
+            <div className="col-md-5"align="left">
             <b>Password</b><div><input type="password" className="form-control" id="pwd" name="pwd" style={{fontSize:12}} placeholder="Enter Password"  /> </div>
             </div>
 
-            <div className="col-md-4">          
+            <div className="col-md-5"align="left">          
              <b>ConfirmPassword</b><div><input type="password" className="form-control" id="pwd" name="pwd" style={{fontSize:12}} placeholder="Confirm Password" /> </div><br/>
             </div>   
             </div>
 
-            <div className="row justify-content-start"  >    
+            <div className="row justify-content-start" align="left" style={{paddingLeft:80}}>    
             <div className="form-check" >  
             <label className="form-check-label">  
             <input type="checkbox" className="form-check-input" /> 
             <div className='row'>
-            <p style={{fontSize:10}}>Creating an account means you're okay with our Terms of Service, Privacy<br/>Policy and our default Notification Settings.</p>
+            <p style={{fontSize:12}}>Creating an account means you're okay with our Terms of Service, Privacy Policy <br/>
+            and our default Notification Settings.</p>
                 </div> 
           
             </label> 
             </div>
-            <ButtonGroup >
-                  <Button tag="a"  class="fa fa-google"  color="primary" style={{borderRadius:8,color:"white",width:380}} wideMobile href="/Startup_Login">
+            <div className='row'>
+                <div className='col-md-10'align="Center">
+            <ButtonGroup align="Center" style={{paddingLeft:20}}>
+                  <Button tag="a"  color="primary" style={{borderRadius:8,color:"white",width:500}} wideMobile href="/Investor_Signup">
                     Sign Up
                     </Button>
                 </ButtonGroup>
 
-                <div className='row'  >
-            <div className='col-md-8' style={{paddingLeft:100}}>
-            <p>--------- OR ---------</p>
+                
+            <div className='row' align="center">
+            <div className='col-md-12'>
+            <p>------- OR --------</p>
             </div>
             </div>
 
-                <ButtonGroup >
-                  <Button tag="a" color="secondary" style={{backgroundColor:"#ECF0F1",borderRadius:8,color:"black",width:380}} wideMobile href="">
-                    Sign in With Google
+                <ButtonGroup style={{paddingLeft:20}}>
+                  <Button tag="a" color="secondary" style={{backgroundColor:"#ECF0F1",borderRadius:8,color:"black",width:500}} wideMobile href="">
+                    Sign up With Google
                     </Button>
-                </ButtonGroup>&nbsp;
-             </div>
+                </ButtonGroup></div></div>
+            </div>  &nbsp;  
                     
               
 

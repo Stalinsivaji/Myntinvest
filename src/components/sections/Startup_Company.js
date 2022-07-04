@@ -1,5 +1,4 @@
 import React from "react";
-import classNames from 'classnames';
 import { NavLink } from "react-router-dom";
 import '../Css/styles.css';
 
@@ -16,10 +15,7 @@ const Startup_Company = ({
     ...props
   }) => {
  
-const tilesClasses = classNames(
-'tiles-wrap',
-pushLeft && 'push-left'
-);return (
+return (
     
              
         <div className="row text-center">

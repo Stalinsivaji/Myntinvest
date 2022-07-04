@@ -1,7 +1,6 @@
-import React, {useState,setState} from 'react';
+import React from 'react';
 import '../Css/styles.css';
 import ButtonGroup from '../elements/ButtonGroup';
-import {NavLink,Link} from "react-router-dom";
 import Button from '../elements/Button';
 import classNames from 'classnames';
 

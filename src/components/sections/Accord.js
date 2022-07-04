@@ -13,7 +13,6 @@ import 'react-accessible-accordion/dist/fancy-example.css';
 import classNames from 'classnames';
 import { SectionSplitProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
-import Image from '../elements/Image';
 
 const propTypes = {
     ...SectionSplitProps.types

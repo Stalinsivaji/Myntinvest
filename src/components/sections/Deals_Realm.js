@@ -7,16 +7,11 @@ import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
-    Box,
     Card,
-   
     CardHeader,
   
   } from "@material-ui/core";
-  import { Theme, createStyles, makeStyles } from "@material-ui/core/styles";
-import { NavigateBeforeSharp } from '@material-ui/icons';
 
-  
 
 const propTypes = {
   ...SectionTilesProps.types

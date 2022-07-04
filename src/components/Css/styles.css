@@ -126,3 +126,17 @@ body{
     font-family: sans-serif;
     text-align: center;
   }
+
+  .arr-right .breadcrumb-item+.breadcrumb-item::before {
+ 
+    content: "›";
+   
+    vertical-align:top;
+   
+    color: #7f8383;
+   
+    font-size:35px;
+   
+    line-height:22px;
+   
+  }

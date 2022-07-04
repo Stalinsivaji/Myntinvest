@@ -2,7 +2,6 @@ import React, {useState,setState} from 'react';
 import Image from '../elements/Image';
 import {NavLink,Link} from "react-router-dom";
 import Button from '../elements/Button';
-import ButtonGroup from '../elements/ButtonGroup';
 import '../Css/styles.css';
 import {
     Box,
@@ -19,7 +18,7 @@ function Investors_Dashboards() {
         <body className='bg-white' >
             <div className='container'>
             
-                <div className='row' style={{padding:50,height:1100}}>
+                <div className='row' style={{padding:50,height:1600}}>
                     <div className='row'>
                     <div className="hero-content">
                         <nav className="navbar navbar-expand-sm bg-Secondary navbar-white " >
@@ -49,8 +48,8 @@ function Investors_Dashboards() {
                     </div>
                 
                         
-                    <div className='row' style={{hight:80,marginTop:-60}}>
-                      <div className='col-md-5'>
+                    <div className='row' style={{marginTop:-60}}>
+                      <div className='col-md-5' style={{marginTop:10}}>
                                                 
                         <Box>
                           <Card  style={{backgroundColor:"#E9F7EF ",width:360,height:120}}>
@@ -62,7 +61,7 @@ function Investors_Dashboards() {
                          </Box>
                        </div>
 
-                        <div className='col-md-5'>
+                        <div className='col-md-5' style={{marginTop:10}}>
                                       
 
                          <Box>
@@ -75,7 +74,7 @@ function Investors_Dashboards() {
                          </Box>
                         </div>
 
-                        <div className='col-md-2'>
+                        <div className='col-md-2' style={{marginTop:10}}>
                         <Card   style={{backgroundColor:"#F2F3F4 ",width:200,height:120,alignItems:''}}>
                             <p style={{fontSize:12,alignItems:'center',marginTop:40}} className='text-center' >View All <br/>Investment<br/></p>
                             
@@ -96,11 +95,11 @@ function Investors_Dashboards() {
                         </div><br/>
 
                         <div className='row' style={{height:20,marginTop:-30}}>
-                            <div className='col-md-6'>
-                            <Card   style={{backgroundColor:"#F2F3F4",width:480,height:120,alignItems:''}}>
-                              <strong style={{fontSize:25,padding:25}}>KYC</strong>
+                            <div className='col-md-6' style={{marginTop:10}}>
+                            <Card   style={{backgroundColor:"#F2F3F4",width:380,height:120,alignItems:''}}>
+                              <strong style={{fontSize:25,padding:20}}>KYC</strong>
                               
-                              <div style={{marginLeft:350}}>
+                              <div style={{marginLeft:250}}>
                                 <button style={{backgroundColor: "red",border:0,fontSize:20}} className='text-white'>
                                      PENDING
                                 </button>
@@ -110,11 +109,11 @@ function Investors_Dashboards() {
                             </Card>
                             </div>
 
-                            <div className='col-md-6'>
-                             <Card   style={{backgroundColor:"#F2F3F4",width:480,height:120,alignItems:''}}>
-                              <strong style={{fontSize:25,padding:25}}>Payment Details</strong>
+                            <div className='col-md-6' style={{marginTop:10}}>
+                             <Card   style={{backgroundColor:"#F2F3F4",width:380,height:120,alignItems:''}}>
+                              <strong style={{fontSize:25,padding:15}}>Payment Details</strong>
                               
-                               <div style={{marginLeft:350}}>
+                               <div style={{marginLeft:250}}>
                                   <button style={{backgroundColor: "red",border:0,fontSize:20}} className='text-white'>
                                      PENDING
                                     </button>
@@ -127,8 +126,8 @@ function Investors_Dashboards() {
 
                         </div>
 
-                        <div className='row' style={{marginTop:50}}>
-                            <div className='col-md-12'>
+                        <div className='row' style={{marginTop:250 ,paddingLeft:30}}>
+                            <div className='row' style={{marginTop:10}}>
                                 <h3>Our Community</h3>
                                 <Card  style={{backgroundColor:"white",width:1000}}>
                                   <CardHeader
@@ -137,11 +136,11 @@ function Investors_Dashboards() {
                                         alt="Features tile icon 01"
                                         width={80}
                                         height={80} />}
-                                      title="Gerald Becker"
-                                      subheader="2 months ago"
+                                        title="Gerald Becker"
+                                        subheader="2 months ago"
         
                                      />&nbsp;
-                                  <span style={{color:"grey",fontSize:13}}>Recommendation oj jeff Brown in Day One newsletter. The concept is so good that it's obvious to me that<br/>&nbsp;&nbsp;this is a very good investment.Go Team!!</span>
+                                  <span style={{color:"grey",fontSize:13}}>Recommendation oj jeff Brown in Day One newsletter. The concept is so good that it's obvious to me that this is a very good investment.Go Team!!</span>
                                  </Card>
  
                             </div>
@@ -151,8 +150,8 @@ function Investors_Dashboards() {
                         
 
 
-                        <div className='row' style={{marginTop:-20}}>
-                            <div className='col-md-12'>
+                        <div className='row'>
+                            <div className='row' style={{marginTop:10,paddingLeft:30}}>
                                 
                                 <Card  style={{backgroundColor:"white",width:1000}}>
                                   <CardHeader
@@ -165,14 +164,14 @@ function Investors_Dashboards() {
                                       subheader="2 months ago"
         
                                      />&nbsp;
-                                  <span style={{color:"grey",fontSize:13}}>Recommendation oj jeff Brown in Day One newsletter. The concept is so good that it's obvious to me that<br/>&nbsp;&nbsp;this is a very good investment.Go Team!!</span>
+                                  <span style={{color:"grey",fontSize:13}}>Recommendation oj jeff Brown in Day One newsletter. The concept is so good that it's obvious to me that this is a very good investment.Go Team!!</span>
                                  </Card>
  
                             </div>
 
                         </div>
 
-                  <div className="reveal-from-bottom" data-reveal-delay="600" align="Center">
+                  <div className="reveal-from-bottom" data-reveal-delay="600" align="Center" style={{marginTop:10}}>
                   <Button tag="a" color="primary" style={{borderRadius:8,color:"white",width:300}} wideMobile href="/Investors_Kyc">
                   View More
                   </Button>

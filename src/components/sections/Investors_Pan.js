@@ -54,13 +54,13 @@ const Investors_Pan = () => {
                                             <h5 style={{fontSize:20}}>Verify PAN CARD</h5><br/>
                                             <h6>Permanent Account Number (PAN)</h6>
                                             <div class="input-group mb-3" style={{width:400}}>
-                                            <input type="text" class="form-control" style={{backgroundColor:"#E5E8E8",color:"grey"}} placeholder="Enter PAN NO." />
+                                            <input type="text" class="form-control" style={{backgroundColor:"#E5E8E8",color:"grey"}} maxlength="10"  placeholder="Enter PAN NO." />
                                             </div>
                                             <h6>Date of Birth</h6>
                                             <div class="input-group mb-3" style={{width:400}}>
-                                            <input type="text" class="form-control" style={{backgroundColor:"#E5E8E8",color:"grey"}} placeholder="DD"/>
-                                            <input type="text" class="form-control" style={{backgroundColor:"#E5E8E8",color:"grey"}} placeholder="MM"/>
-                                            <input type="text" class="form-control" style={{backgroundColor:"#E5E8E8",color:"grey"}} placeholder="YYYY"/>
+                                            <input type="text" class="form-control" style={{backgroundColor:"#E5E8E8",color:"grey"}}maxlength="2"  placeholder="DD"/>
+                                            <input type="text" class="form-control" style={{backgroundColor:"#E5E8E8",color:"grey"}} maxlength="2" placeholder="MM"/>
+                                            <input type="text" class="form-control" style={{backgroundColor:"#E5E8E8",color:"grey"}}maxlength="4"  placeholder="YYYY"/>
                                             </div>
                                             <br/>
                                         

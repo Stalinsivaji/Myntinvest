@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
 import Image from '../elements/Image';
-import { NavLink } from 'react-router-dom';
+import '../Css/styles.css';
 
 const propTypes = {
   ...SectionProps.types,
@@ -51,22 +51,14 @@ const Ourblog= ({
       <div className="container">&nbsp;
       
               <div className="col-md-12">
-               <nav className="navbar navbar-expand-sm bg-Secondary navbar-white ">
-                                <ul className="navbar-nav" style={{fontSize:20}}>
-                                <li className="nav-item" >
-                                    <NavLink to="/"  className="nav-link" style={{color:"Grey"}}>Resources</NavLink>
-                                  </li>
-                                  <li className="nav-item">
-                                    <NavLink to="/Blog" className="nav-link" style={{color:'#23b347'}} >Blog</NavLink>
-                                  </li>
-                                  <li className="nav-item">
-                                    <NavLink to="/" className="nav-link" >Support</NavLink>
-                                  </li>
-                                  <li className="nav-item">
-                                    <NavLink to="/FAQ" className="nav-link" >FAQ</NavLink>
-                                  </li>
-                                </ul>
-                            </nav>
+               <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb arr-right">
+                    <li class="breadcrumb-item text-sm" aria-current="page" style={{color:"Grey"}}>Resources</li>
+                    <li class="breadcrumb-item text-sm active" aria-current="page" style={{color:'#23b347'}}>Blog</li>
+                    <li class="breadcrumb-item text-sm text-dark active"><a class="opacity-5 text-dark" href="/">Support</a></li>
+                    <li class="breadcrumb-item text-sm text-dark active"><a class="opacity-5 text-dark" href="/FAQ">FAQ</a></li>
+                  </ol>
+                </nav>
               </div>
         <div
           className={innerClasses} style={{backgroundColor:"#f9faf9"}}>

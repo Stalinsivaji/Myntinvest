@@ -68,7 +68,7 @@ const InvestorskycOTP = () => {
                                             {otp.map((data, index) => {
                                               return (
                                                  <input
-                                                     style={{width: 100,height: 40,backgroundColor:"#E5E8E8",color:"grey"}}
+                                                     style={{width: 100,height: 40,color:"grey"}}
                                                      type="text"
                                                      name="otp"
                                                      maxLength="1"

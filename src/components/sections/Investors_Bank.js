@@ -54,11 +54,11 @@ const Investors_Bank = () => {
                                             <h5 style={{fontSize:20}}>Verify Bank Details</h5><br/>
                                             <h6>Bank Account Number (PAN)</h6>
                                             <div class="input-group mb-3" style={{width:500}}>
-                                            <input type="text" class="form-control" style={{backgroundColor:"#E5E8E8",color:"grey"}} placeholder="Enter Bank Account No." />
+                                            <input type="text" class="form-control" style={{backgroundColor:"#E5E8E8",color:"grey"}}maxlength="18"  placeholder="Enter Bank Account No." />
                                             </div>
                                             <h6>IFSC Code</h6>
                                             <div class="input-group mb-3" style={{width:500}}>
-                                            <input type="text" class="form-control" style={{backgroundColor:"#E5E8E8",color:"grey"}} placeholder="Enter IFSC Code"/>
+                                            <input type="text" class="form-control" style={{backgroundColor:"#E5E8E8",color:"grey"}}maxlength="11"  placeholder="Enter IFSC Code"/>
                                             </div>
                                             <br/>
                                         
