@@ -3,7 +3,7 @@ import React from 'react';
 import Hero from '../components/sections/Hero';
 import Home_Cta from '../components/sections/Home_Cta';
 import Home_Ctaa from '../components/sections/Home_Ctaa';
-import Livedeals from '../components/sections/Livedeals';
+import Livedeal from '../components/sections/Livedeal';
 import Invest_Now from '../components/sections/Invest_Now';
 import Home_Sta from '../components/sections/Home_Sta' 
 import Home_FeaturesTiles from '../components/sections/Home_FeaturesTiles';
@@ -26,7 +26,7 @@ const Home = () => {
       <Hero className="illustration-section-01" />
       <Home_Cta split />
       <Home_Ctaa split />
-      <Livedeals />
+      <Livedeal />
       <Invest_Now />
       <Home_Sta split />
       <Home_FeaturesTiles />

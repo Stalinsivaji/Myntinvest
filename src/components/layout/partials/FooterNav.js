@@ -24,13 +24,13 @@ const FooterNav = ({
         <div style={{paddingLeft:80}} align="left"><li>
           <p to="#0" style={{paddingLeft:10}}><b>RESOURCES</b></p>
           <Link to="/Blog">Blog</Link>&nbsp;
-          <Link to="#0">Support</Link>&nbsp;
+          <Link to="#">Support</Link>&nbsp;
           <Link to="#0">Newsletter</Link>
         </li></div>
 
         <div style={{paddingLeft:80,paddingTop:40}} align="left"><li>
         <p to="#0" style={{paddingLeft:10}}><b>INVESTORS</b></p>
-          <Link to="#0">How it Works</Link>&nbsp;
+          <Link to="/How_It_Works">How it Works</Link>&nbsp;
           <Link to="#0">Invest</Link>&nbsp;
           <Link to="#0">Risk</Link>&nbsp;
           <Link to="/FAQ">FAQ</Link>
@@ -40,7 +40,7 @@ const FooterNav = ({
         <p to="#0" style={{paddingLeft:10}}><b>STARTUPS</b></p>
           <Link to="/Login">Log In</Link>&nbsp;
           <Link to="#0">Why Raise</Link>&nbsp;
-          <Link to="#0">Learn</Link>
+          <Link to="/Learn">Learn</Link>
         </li></div>
 
          <div style={{paddingLeft:80,paddingBottom:5}} align="left"><li>

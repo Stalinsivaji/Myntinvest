@@ -74,7 +74,7 @@ const propTypes = {
                     </Input>
                   </div>
                 </div><hr/> &nbsp;
-          <div className="row">
+          <div className="col-md-12">
           <h2 align="left">Campaign Logistics</h2>
 
                    <Accordion >
@@ -145,7 +145,7 @@ const propTypes = {
          </Accordion>
         </div>&nbsp;
 
-        <div className="row">
+        <div className="col-md-12">
           <h2 align="left">Eligibility</h2>
                    <Accordion >
             <AccordionItem >
@@ -229,7 +229,7 @@ const propTypes = {
          </Accordion>
         </div>&nbsp;
 
-        <div className="row">
+        <div className="col-md-12">
           <h2 align="left">Campaign Logistics</h2>
 
                    <Accordion >
@@ -300,7 +300,7 @@ const propTypes = {
          </Accordion>
         </div>&nbsp;
 
-        <div className="row">
+        <div className="col-md-12">
           <h2 align="left">Eligibility</h2>
                    <Accordion >
             <AccordionItem >

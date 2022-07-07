@@ -75,7 +75,7 @@ const Deals_Team = ({
                       alt="Features tile icon 01"
                       width={100}
                       height={100}
-                      class="rounded" />
+                      class="rounded-circle" />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
@@ -100,7 +100,7 @@ const Deals_Team = ({
                       alt="Features tile icon 01"
                       width={100}
                       height={100}
-                      class="rounded" />
+                      class="rounded-circle" />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
@@ -123,7 +123,7 @@ const Deals_Team = ({
                       alt="Features tile icon 01"
                       width={100}
                       height={100}
-                      class="rounded" />
+                      class="rounded-circle" />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
@@ -146,7 +146,7 @@ const Deals_Team = ({
                       alt="Features tile icon 01"
                       width={100}
                       height={100}
-                      class="rounded" />
+                      class="rounded-circle" />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
@@ -169,7 +169,7 @@ const Deals_Team = ({
                       alt="Features tile icon 01"
                       width={100}
                       height={100}
-                      class="rounded" />
+                      class="rounded-circle" />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
@@ -192,7 +192,7 @@ const Deals_Team = ({
                       alt="Features tile icon 01"
                       width={100}
                       height={100}
-                      class="rounded" />
+                      class="rounded-circle" />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
@@ -215,7 +215,7 @@ const Deals_Team = ({
                       alt="Features tile icon 01"
                       width={100}
                       height={100}
-                      class="rounded" />
+                      class="rounded-circle" />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
@@ -238,7 +238,8 @@ const Deals_Team = ({
                       alt="Features tile icon 01"
                       width={100}
                       height={100}
-                     />
+                      class="rounded-circle" />
+                    
                   </div>
                 </div>
                 <div className="features-tiles-item-content">

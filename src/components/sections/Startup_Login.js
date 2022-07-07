@@ -5,57 +5,96 @@ import Button from '../elements/Button';
 import classNames from 'classnames';
 
 
-const Welcome = ({
-    className,
-    topOuterDivider,
-    bottomOuterDivider,
-    topDivider,
-    bottomDivider,
-    hasBgColor,
-    invertColor,
-    pushLeft,
-    ...props
-  }) => {
-    
-    const [firstName, setFirstName] = useState(null);
-    const [lastName, setLastName] = useState(null);
-    const [email, setEmail] = useState(null);
-    const [password,setPassword] = useState(null);
-    const [confirmPassword,setConfirmPassword] = useState(null);
-
-    const handleInputChange = (e) => {
-        const {id , value} = e.target;
-        if(id === "firstName"){
-            setFirstName(value);
-        }
-        if(id === "lastName"){
-            setLastName(value);
-        }
-        if(id === "email"){
-            setEmail(value);
-        }
-        if(id === "password"){
-            setPassword(value);
-        }
-        if(id === "confirmPassword"){
-            setConfirmPassword(value);
-        }
-
-    }
-
-    const tilesClasses = classNames(
+const tilesClasses = classNames(
         'tiles-wrap center-content',
-        pushLeft && 'push-left'
+
       );
+class Startup_Login extends React.Component { 
+    constructor() {
+        super();
+        this.state = {
+          input: {},
+          errors: {}
+        };
+         
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+      }
+         
+      handleChange(event) {
+        let input = this.state.input;
+        input[event.target.name] = event.target.value;
+      
+        this.setState({
+          input
+        });
+      }
+         
+      handleSubmit(event) {
+        event.preventDefault();
+      
+        if(this.validate()){
+            console.log(this.state);
+      
+            let input = {};
+            input["email"] = "";
+            input["password"] = "";
+            this.setState({input:input});
+      
+            alert('Demo Form is submitted');
+        }
+      }
+      
+      validate(){
+          let input = this.state.input;
+          let errors = {};
+          let isValid = true;
+       
+         
+      
+          if (!input["email"]) {
+            isValid = false;
+            errors["email"] = "Please enter your email Address.";
+          }
+      
+          if (typeof input["email"] !== "undefined") {
+              
+            var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+            if (!pattern.test(input["email"])) {
+              isValid = false;
+              errors["email"] = "Please enter valid email address.";
+            }
+          }
+      
+          if (!input["password"]) {
+            isValid = false;
+            errors["password"] = "Please enter your password.";
+          }
+      
+          if (!input["confirm_password"]) {
+            isValid = false;
+            errors["confirm_password"] = "Please enter your confirm password.";
+          }
+      
+      
+          this.setState({
+            errors: errors
+          });
+      
+          return isValid;
+      }
 
-    const handleSubmit  = () => {
-        console.log(firstName,lastName,email,password,confirmPassword);
-    }
-
+    
+         
+render() {
     return(
             <body className='bg-white'>
-          
-            <div className='row' > 
+            <nav class="bg-White navbar-dark navbar" style={{paddingLeft:500,paddingTop:50}}>
+            <div className="row col-12 d-flex justify-content-center text-white">
+                <h3></h3>
+            </div>
+        </nav>
+            <div className='row'> 
             <div className='col-md-1'></div>
             <div className='col-md-5'style={{backgroundColor: "#2ECC71",height:850}}>
             <div className='row' align="Left" style={{paddingLeft:70}} >
@@ -67,7 +106,7 @@ const Welcome = ({
             <a href="#" class="fa fa-linkedin" style={{fontSize: 20,width: 30,borderRadius: 50,color:'white'}}></a> 
             </div>&nbsp;
 
-            <div className={tilesClasses} align="center">
+            <div className={tilesClasses}  align="center">
             <div className="col-sm-4">
             <h5 className='text-white' align="Right"><strong>$700M+</strong> 
             <p className='text-white' align="Right" style={{fontSize:9}}>Invested Since 2022</p>
@@ -90,7 +129,7 @@ const Welcome = ({
 
             <div className='row'>
             <div className='col-md-12'>
-            <p className='text-white' style={{paddingLeft:70,fontSize: 13}}>Trusted By Hundreds<br/> Of Companies</p>
+            <p className='text-white' style={{paddingLeft:70,fontSize: 20}}>Trusted By Hundreds<br/> Of Companies</p>
             </div>
             </div>
 
@@ -125,24 +164,42 @@ const Welcome = ({
         
 
             <div className='col-md-6'style={{paddingLeft:50}}>
-            <form className="form-inline"> 
+            <form onSubmit={this.handleSubmit}>
           
             <div className='row' align="center">
             <div className='row'>&nbsp;
             <p style={{color:"grey"}} align="right">Not a member?<span style={{color:"#2ECC71",fontSize:15}}>&nbsp;Sign up now</span></p>
             <div className='col-md-1'></div>
-            <div className="col-md-10">
-            <h3 align="Center">Welcome Back!</h3>     
-            <label for="exampleInputEmail1"></label>
+            <div className="col-md-10 ">
+            <h3 align="Center">Welcome Back!</h3> 
+
+            <label for="email"></label>
             <h5 align="left">E-mail</h5>
-            <input type="email" className="form-control " id="LodinEmail" aria-describedby="emailHelp" placeholder="Enter your Email" /><br/>
-            </div></div>
+            <input 
+              type="text" 
+              name="email" 
+              value={this.state.input.email}
+              onChange={this.handleChange}
+              class="form-control" 
+              placeholder="Enter Your Email" 
+              id="email" />
+            </div><br/> <div className="text-danger">{this.state.errors.email}</div></div>
 
             <div className='row' >
                 <div className='col-md-1'></div>
             <div className="col-md-10">
             <h5 align="left" >Password</h5>   
-            <div className="input-group"><input type="password"id="Loginpassword" className="form-control" placeholder="Enter Your Password" /></div><br/>
+            <div class="form-group">
+            <input 
+              type="password" 
+              name="password" 
+              value={this.state.input.password}
+              onChange={this.handleChange}
+              class="form-control" 
+              placeholder="Enter password" 
+              id="password" /></div> 
+             <div className="text-danger">{this.state.errors.password}</div><br/>
+           
             </div></div>
             </div>
 
@@ -156,12 +213,13 @@ const Welcome = ({
           
             </label> 
             </div>
+            
             <ButtonGroup style={{paddingLeft:80}} align="Center">
-                  <Button tag="a"  color="primary" style={{borderRadius:8,color:"white",width:500}} wideMobile href="/Investor_Signup">
+                  <Button type="submit" value="Submit" color="primary" style={{borderRadius:8,color:"white",width:500}} wideMobile href="/StartUp_Dashboard">
                     Login
                     </Button>
                 </ButtonGroup>
-
+             
                 
             <div className='row'>
             <div className='col-md-12'style={{paddingLeft:40}}>
@@ -170,15 +228,12 @@ const Welcome = ({
             </div>
 
                 <ButtonGroup style={{paddingLeft:80}}>
-                  <Button tag="a" color="secondary" style={{backgroundColor:"#ECF0F1",borderRadius:8,color:"black",width:500}} wideMobile href="">
+                  <Button tag="a" color="secondary" style={{backgroundColor:"#ECF0F1",borderRadius:8,color:"black",width:500}} wideMobile href="/StartUp_Dashboard">
                     Sign in With Google
-                    </Button>
-                    
-                  <Button tag="a" color="secondary" style={{backgroundColor:"#f9faf9",borderRadius:8,color:"#2ECC71",width:500}} wideMobile href="/Startup_Dashboard">
-                  Log In as Startup
                     </Button>
                 </ButtonGroup>
             </div>  &nbsp;      
+           
             </form>
             </div>
            </div>
@@ -186,4 +241,8 @@ const Welcome = ({
     )       
 }
 
-export default Welcome;
+}
+
+
+export default Startup_Login;
+

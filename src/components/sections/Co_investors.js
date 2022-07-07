@@ -1,13 +1,8 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Image from "../elements/Image";
-import {
-    Box,
-    Card,
-    CardHeader,
-  
-  } from "@material-ui/core";
-  import { Theme, createStyles, makeStyles } from "@material-ui/core/styles";
+import {Box,Card,CardHeader} from "@material-ui/core";
+import { Theme, createStyles, makeStyles } from "@material-ui/core/styles";
 
   
   const useStyles = makeStyles((theme: Theme) =>

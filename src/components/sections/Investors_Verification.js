@@ -10,7 +10,7 @@ import Button from '../elements/Button';
   
 
 
-const InvestorskycOTP = () => {
+const Investors_Verification= () => {
     const [otp, setOtp] = useState(new Array(4).fill(""));
 
     const handleChange = (element, index) => {
@@ -37,7 +37,7 @@ const InvestorskycOTP = () => {
                                   <ul className="navbar-nav" style={{fontSize:13}}>
                                   
                                       <li className="nav-item">
-                                          <NavLink to="/Investors" className="nav-link" style={{color:"#B1B0AD"}}>Back to Dashboard</NavLink>
+                                          <NavLink to= "/Investors_Dashboard" className="nav-link" style={{color:"#B1B0AD"}}>Back to Dashboard</NavLink>
                                         </li>
                                   
                                     </ul>
@@ -85,7 +85,7 @@ const InvestorskycOTP = () => {
                                             
                                             </div>
                                     <div className='col-md-7' align="center" style={{marginTop:20}}>
-                                        <Button tag="a" color="primary" style={{borderRadius:8,color:"white"}} wideMobile href="/Investors_Pan">
+                                        <Button tag="a" color="primary" style={{borderRadius:8,color:"white"}} wideMobile href="/Pancard_Details">
                                            Verify & Continue
                                          </Button>
                                          
@@ -154,4 +154,4 @@ const InvestorskycOTP = () => {
 
 
 
-export default InvestorskycOTP;
+export default Investors_Verification;

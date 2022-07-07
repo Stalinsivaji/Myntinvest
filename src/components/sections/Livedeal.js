@@ -13,7 +13,7 @@ const propTypes = {
 const defaultProps = {
   ...SectionTilesProps.defaults
 }
-const Livedeals = ({
+const Livedeal = ({
   className,
   topOuterDivider,
   bottomOuterDivider,
@@ -78,7 +78,7 @@ const Livedeals = ({
                   <div className='col-md-3'></div>
                   <div className='col-md-2'>
                   <label>
-                    <select style={{backgroundColor:"#E9E9FF",width: 185,height: 40,fontSize:20,color:"grey"}}>
+                    <select style={{width: 185,height: 40,fontSize:20,color:"grey",backgroundColor:"#E9E9FF"}}>
                         <option value="grapefruit"> Filters</option>
                         <option value="lime">Most Transaction</option>
                         <option value="coconut">Closing Soon</option>
@@ -99,7 +99,50 @@ const Livedeals = ({
                     </div>
                  </div>&nbsp;
 
-                
+                 <div className='row'>
+                 <div className="col-md-2">
+                <label>Sectors
+                    <select style={{backgroundColor:"#E9E9FF",width: 250,height: 40,fontSize:20,color:"grey"}}>
+                        <option value="Most Funded">EdTech & Education</option>
+                        <option value="Most Transaction">Sort By : Most Transaction</option>
+                        <option value="Closing Soon">Sort By : Closing Soon</option>
+                       
+                    </select>
+                    </label>
+                    </div>
+                    <div className='col-md-1'></div>
+                    <div className="col-md-2">
+                <label>Revenue
+                    <select style={{backgroundColor:"#E9E9FF",width: 250,height: 40,fontSize:20,color:"grey"}}>
+                        <option value="Most Funded">30k - 50k</option>
+                        <option value="Most Transaction">Sort By : Most Transaction</option>
+                        <option value="Closing Soon">Sort By : Closing Soon</option>    
+                    </select>
+                    </label>
+                    </div>
+                    <div className='col-md-1'></div>
+                    <div className="col-md-2">
+                <label>Tech
+                    <select style={{backgroundColor:"#E9E9FF",width: 250,height: 40,fontSize:20,color:"grey"}}>
+                        <option value="Most Funded">Blockchain</option>
+                        <option value="Most Transaction">Sort By : Most Transaction</option>
+                        <option value="Closing Soon">Sort By : Closing Soon</option>
+                       
+                    </select>
+                    </label>
+                    </div>
+                    <div className='col-md-1'></div>
+                    <div className="col-md-2">
+                <label>Min.Investment
+                    <select style={{backgroundColor:"#E9E9FF",width: 250,height: 40,fontSize:20,color:"grey"}}>
+                        <option value="Most Funded">$1000</option>
+                        <option value="Most Transaction">Sort By : Most Transaction</option>
+                        <option value="Closing Soon">Sort By : Closing Soon</option>
+                       
+                    </select>
+                    </label>
+                    </div>
+                 </div>&nbsp;
 
           <div className={tilesClasses}>
 
@@ -352,7 +395,7 @@ const Livedeals = ({
   );
 }
 
-Livedeals.propTypes = propTypes;
-Livedeals.defaultProps = defaultProps;
+Livedeal.propTypes = propTypes;
+Livedeal.defaultProps = defaultProps;
 
-export default Livedeals;
+export default Livedeal;

@@ -11,7 +11,7 @@ import Button from '../elements/Button';
   
 
 
- function InvestorskycMobile() {
+ function Investors_Details() {
 
     const [value,setValue] = useState();
        
@@ -31,7 +31,7 @@ import Button from '../elements/Button';
                                   <ul className="navbar-nav" style={{fontSize:13}}>
                                   
                                       <li className="nav-item">
-                                          <NavLink to="/Investors" className="nav-link" style={{color:"#B1B0AD"}}>Back to Dashboard</NavLink>
+                                          <NavLink to= "/Investors_Dashboard" className="nav-link" style={{color:"#B1B0AD"}}>Back to Dashboard</NavLink>
                                         </li>
                                   
                                     </ul>
@@ -69,7 +69,7 @@ import Button from '../elements/Button';
                                                 <br/>
                                                 </div>
                                     <div className='col-md-7' align="center">
-                                        <Button tag="a" className="text-white" style={{backgroundColor:"#2ECC71",borderRadius:5,color:"grey",width:200}} wideMobile href="/Investors_Ottp">
+                                        <Button tag="a" className="text-white" style={{backgroundColor:"#2ECC71",borderRadius:5,color:"grey",width:200}} wideMobile href="/Investors_Verification">
                                          SEND OTP
                                         </Button>
                                         
@@ -131,4 +131,4 @@ import Button from '../elements/Button';
 
 
 
-export default InvestorskycMobile;
+export default Investors_Details;

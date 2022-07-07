@@ -3,6 +3,9 @@ import classNames from 'classnames';
 import Image from "../elements/Image";
 import Button from '../elements/Button';
 import ButtonGroup from "../elements/ButtonGroup";
+import Link from "@material-ui/core/Link";
+import Typography from "@material-ui/core/Typography";
+import Breadcrumbs from "@material-ui/core/Breadcrumbs";
 import '../Css/styles.css';
 import {
     Card   
@@ -39,24 +42,52 @@ pushLeft && 'push-left'
                <div className="col-md-11">
                <div className="m-5 p-4">
                <div className="row">
-                <div className="col-md-12">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb arr-right">
-                      <li class="breadcrumb-item text-sm" aria-current="page" style={{color:"Grey"}}>Startup</li>
-                      <li class="breadcrumb-item text-sm active" aria-current="page" style={{color:'#23b347'}}>Dashboard</li>
-                      <li class="breadcrumb-item text-sm text-dark active"><a class="opacity-5 text-dark" href="/Campaign">Campaign</a></li>
-                      <li class="breadcrumb-item text-sm text-dark active"><a class="opacity-5 text-dark" href="/Analystics">Analystics</a></li>
-                    </ol>
-                  </nav>
-                </div>
-                <h3 align="left" style={{marginTop:100}}>Raise with MyntInvest</h3>
+               <div className="row">
+                <Breadcrumbs separator=">" aria-label="breadcrumb">
+                    <Link
+                    color="inherit"
+                    href="/"
+                    style={{color:"Grey"}}
+                    onClick={(event) => {
+                        event.preventDefault();
+                        alert("Home Page Clicked");
+                        
+                    }}
+                    >
+                    Startup
+                    </Link>
+                    <Typography  style={{color:"#2ECC71"}} > Dashboard
+                    </Typography>
+                    <Link
+                    color="inherit"
+                    href="/Terms_Of_Service"
+                    onClick={(event) => {
+                        event.preventDefault();
+                        alert("Dashboard Clicked");
+                    }}
+                    >
+                    Campaign
+                    </Link>
+                    <Link
+                    color="inherit"
+                    href="/Code_Of_Conduct"
+                    onClick={(event) => {
+                        event.preventDefault();
+                        alert("Dashboard Clicked");
+                    }}
+                    >
+                    Analystics
+                    </Link>
+                </Breadcrumbs>
+              </div>
+              
+                 <h3 align="left" style={{marginTop:100}}>Raise with MyntInvest</h3>
                  <p align="left" style={Color}>We collect and determine the purposes and means of the processing of certainin formation that may also receive,and process Personal Information controlled and stored by third parties with your consent </p>
-                
-                 <Card style={{backgroundColor:"#F2F3F4",width:500,height:180,borderRadius:15}}>
+                 <Card style={{backgroundColor:"#F2F3F4",width:500,height:180}}>
                 <div className="row"><div className="col-md-6" align="left" style={{marginTop:18}}> <strong>E-Sign</strong>
                 <p style={{fontSize:12,color:"grey"}}>E-Sign your aggrementes to finalize investment in your Campaign</p></div>          
                 <div className="col-md-6" >
-                <Button tag="a" color="secondary" style={{color:"white",backgroundColor:"#2ECC71",borderRadius:10,marginTop:18}} wideMobile href="/" >
+                <Button style={{backgroundColor:"#2ECC71",borderRadius:10,fontSize:20,marginTop:18}}  className='text-white'>
                 Download
                 </Button>
                 </div>  
@@ -64,68 +95,76 @@ pushLeft && 'push-left'
                 </Card>
                 <h3 align="left" style={{marginTop:50}}>About</h3>
                 <div className="row">
-              
-                <Card style={{backgroundColor:"#FDF2E9",width:500,height:160,borderRadius:15}}>
+                <div className="col-md-5">
+                <Card style={{backgroundColor:"#FDF2E9",width:500,height:160}}>
                 <div className="row"><div className="col-md-6" align="left" style={{marginTop:18}}> <strong>Company Profile</strong>
                 <p style={{fontSize:12,color:"grey"}}>Tell us a little about your company</p></div>          
                 <div className="col-md-6" >
-                <Button tag="a" color="secondary" style={{color:"white",backgroundColor:"#2ECC71",borderRadius:10,marginTop:18}} wideMobile href="/Company_Info" >
+                <Button tag="a" color="secondary" style={{backgroundColor:"#2ECC71",borderRadius:10,fontSize:20,marginTop:18}} wideMobile href="/Startup_Company">
                 Completed
-                </Button>
-                </div>
-                </div>      
-                </Card>&nbsp;&nbsp;&nbsp;&nbsp;
-              
-                <Card style={{backgroundColor:"#F4F6F6 ",width:500,height:160,borderRadius:15}}>
-                <div className="row"><div className="col-md-6" align="left" style={{marginTop:18}}> <strong>Team</strong>
-                <p style={{fontSize:12,color:"grey"}}>Tell us a little about your team</p></div>          
-                <div className="col-md-6" >
-                <Button tag="a" color="secondary" style={{color:"white",backgroundColor:"Red",borderRadius:10,marginTop:18}} wideMobile href="Team_Info">
-                Pending
-                </Button>
+                  </Button>
                 </div>
                 </div>      
                 </Card>
                 </div>
+                <div className="col-md-2"></div>
+                <div className="col-md-5">
+                <Card style={{backgroundColor:"#F4F6F6 ",width:500,height:160}}>
+                <div className="row"><div className="col-md-6" align="left" style={{marginTop:18}}> <strong>Team</strong>
+                <p style={{fontSize:12,color:"grey"}}>Tell us a little about your team</p></div>          
+                <div className="col-md-6" >
+                <Button tag="a" color="secondary" style={{backgroundColor:"#2ECC71",borderRadius:10,fontSize:20,marginTop:18}} wideMobile href="/Startup_Teaminfo">
+                Pending
+                  </Button>
+                </div>
+                </div>      
+                </Card>
+                </div>  
+                </div>
 
                 <h3 align="left" style={{marginTop:50}}>Pitch</h3>
                 <div className="row">
-                
-                <Card style={{backgroundColor:"#EAFAF1 ",width:500,height:250,borderRadius:15}}>
+                <div className="col-md-5">
+                <Card style={{backgroundColor:"#EAFAF1 ",width:500,height:250}}>
                 <div className="row">
                 <div className="col-md-6" align="left" style={{marginTop:18}}> <strong>Pitch Deck</strong>
                 <p style={{fontSize:12,color:"grey"}}>This will be displayed to your potential Investors</p></div>          
                 <div className="col-md-6" >
-                <Button style={{backgroundColor:"red",borderRadius:10,marginTop:18}}  className='text-white'wideMobile href="/">
+                <Button style={{backgroundColor:"red",borderRadius:10,fontSize:20,marginTop:18}}  className='text-white'>
                 Pending
                 </Button>
                 </div>
                 </div> 
                 <div className="row" style={{marginBotom:200}}>
-                 <div className="col-md-12">
-                 <Button tag="a" className='text-white' style={{backgroundColor:"#2ECC71",borderRadius:10,marginTop:18}} wideMobile href="/Upload_Pitch">
+                 <div className="col-md-10">
+                 <Button tag="a" className='text-white' style={{backgroundColor:"#2ECC71",borderRadius:10,fontSize:13,marginTop:18}} wideMobile href="/Startup_Pitchpage">
                  Upload a PDF
                   </Button>&nbsp;
 
-                  <Button tag="a" className='text-dark' style={{backgroundColor:"white",borderRadius:10,marginTop:18}} wideMobile href="/Create_Pitch">
+                  <Button tag="a" className='text-dark' style={{backgroundColor:"white",borderRadius:10,fontSize:13,marginTop:18}} wideMobile href="/Startup_Createpitch">
                   Create a Pitch
                   </Button></div>
-                <div className="col-md-2"></div></div>     
-                </Card>&nbsp;&nbsp;&nbsp;&nbsp;
-          
+                
+                  
+  
+                <div className="col-md-2"></div>   </div>     
+                </Card>
+                </div>
 
-              
-                <Card style={{backgroundColor:"#F4F6F6 ",width:500,height:250,borderRadius:15}}>
+                <div className="col-md-2"></div>
+
+                <div className="col-md-5">
+                <Card style={{backgroundColor:"#F4F6F6 ",width:500,height:250}}>
                 <div className="row"><div className="col-md-6" align="left" style={{marginTop:18}}> <strong>Review Pitch</strong>
                 <p style={{fontSize:12,color:"grey"}}>Review your Pitch(created using MyntInvest pitch builder)</p></div>          
                 <div className="col-md-6" >
-                <Button style={{backgroundColor:"#2ECC71",borderRadius:10,marginTop:18}}  className='text-white' wideMobile href="/">
+                <Button style={{backgroundColor:"#2ECC71",borderRadius:10,fontSize:20,marginTop:18}}  className='text-white'>
                 Completed
                 </Button>
                 </div>
                 </div>      
                 </Card>
-                 
+                </div>  
                 
                 </div>
                 </div>
@@ -135,12 +174,10 @@ pushLeft && 'push-left'
                 
             <div className={tilesClasses}>
                 <div className="">
-                    <Card style={{height:550,width:350,borderRadius:15}}>
+                    <Card style={{height:550,width:350}}>
                         <div className="row" style={{marginTop:150}}>
                             <div className="col-md-4"></div>
-                            <div className="col-md-4"><h6 style={{color:'grey'}}>Add a New Campaign</h6>
-                            <ButtonGroup>
-                              <Button tag="a" color="secondary" style={{backgroundColor:"white",fontSize:30,color:"grey",backgroundColor:"#ECF0F1 "}} wideMobile href="Campaign">+</Button></ButtonGroup></div>
+                            <div className="col-md-4"><h6 style={{color:'grey'}}>Add a New Campaign</h6><Button style={{backgroundColor:"white",fontSize:30,color:"grey",backgroundColor:"#ECF0F1 "}}>+</Button></div>
                             <div className="col-md-4"></div></div>
                     </Card></div>&nbsp;
 
@@ -166,10 +203,10 @@ pushLeft && 'push-left'
                     </p><br/>
                     <p align="left" style={{color:"grey"}} >Santa Monica,CA</p>
                 <ButtonGroup>
-                <Button tag="a" color="secondary" style={{backgroundColor:"white",borderRadius:8,color:"orange",fontSize:11}} wideMobile href="">
+                <Button tag="a" color="secondary" style={{backgroundColor:"white",borderRadius:8,color:"orange",fontSize:10}} wideMobile href="">
                     B2C
                     </Button>
-                  <Button tag="a" color="secondary" style={{backgroundColor:"#FADBD8",borderRadius:8,color:"RED",fontSize:11}} wideMobile href="">
+                  <Button tag="a" color="secondary" style={{backgroundColor:"#FADBD8",borderRadius:8,color:"RED",fontSize:10}} wideMobile href="">
                     HEALTH & WELLNESS
                     </Button>
                 </ButtonGroup>

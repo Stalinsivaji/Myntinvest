@@ -10,7 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
   
 
 
-const Investors_Bank = () => {
+const Payment_Details= () => {
    
 
     return (
@@ -26,7 +26,7 @@ const Investors_Bank = () => {
                                   <ul className="navbar-nav" style={{fontSize:13}}>
                                   
                                       <li className="nav-item">
-                                          <NavLink to="/Investors" className="nav-link" style={{color:"#B1B0AD"}}>Back to Dashboard</NavLink>
+                                          <NavLink to="/Investors_Dashboard" className="nav-link" style={{color:"#B1B0AD"}}>Back to Dashboard</NavLink>
                                         </li>
                                   
                                     </ul>
@@ -66,7 +66,7 @@ const Investors_Bank = () => {
                 
                                     </div>
                                     <div className='col-md-10' align="center">
-                                        <Button tag="a" color="primary" style={{borderRadius:8,color:"white"}} wideMobile href="InvestorsPan">
+                                        <Button tag="a" color="primary" style={{borderRadius:8,color:"white"}} wideMobile href="/Investors_Dashboard">
                                            Submit
                                          </Button>
                                         
@@ -135,4 +135,4 @@ const Investors_Bank = () => {
 
 
 
-export default Investors_Bank;
+export default Payment_Details;

@@ -44,8 +44,8 @@ render() {
                          <label>
                             <Switch onChange={this.handleChange} checked={this.state.checked} />
                         </label><p style={{fontSize:12,marginLeft:80,marginTop:-19}}>I understand that I can lose the money i'm investing</p>
-                    </div>
-               </div><hr/>
+                    </div><hr/>
+               </div>
                <div className="col-md-1"></div>
                </div>
 
@@ -63,8 +63,8 @@ render() {
                          <label>
                             <Switch onChange={this.handleChange} checked={this.state.checked} />
                         </label><p style={{fontSize:12,marginLeft:80,marginTop:-19}}>I understand that I can lose the money i'm investing</p>
-                    </div>
-               </div><hr/>
+                    </div><hr/>
+               </div>
                <div className="col-md-1"></div>
                </div>
 
@@ -82,8 +82,8 @@ render() {
                          <label>
                             <Switch onChange={this.handleChange} checked={this.state.checked} />
                         </label><p style={{fontSize:12,marginLeft:80,marginTop:-19}}>I understand that it's safer to split money across many investments across asset classes</p>
-                    </div>
-               </div><hr/>
+                    </div><hr/>
+               </div>
                <div className="col-md-1"></div>
                </div>
 
@@ -102,8 +102,8 @@ render() {
                          <label>
                             <Switch onChange={this.handleChange} checked={this.state.checked} />
                         </label><p style={{fontSize:12,marginLeft:80,marginTop:-19}}>I understand that i can lose the money i'm investing</p>
-                    </div>
-               </div><hr/>
+                    </div><hr/>
+               </div>
                <div className="col-md-1"></div>
                </div>
       
@@ -125,8 +125,8 @@ render() {
                          <label>
                             <Switch onChange={this.handleChange} checked={this.state.checked} />
                         </label><p style={{fontSize:12,marginLeft:80,marginTop:-19}}>I understand that doing research is my own responsibillity</p>
-                    </div>
-               </div><hr/>
+                    </div><hr/>
+               </div>
                <div className="col-md-1"></div>
                </div>
 

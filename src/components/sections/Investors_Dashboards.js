@@ -19,28 +19,17 @@ function Investors_Dashboards() {
             <div className='container'>
             
                 <div className='row' style={{padding:50,height:1600}}>
-                    <div className='row'>
-                    <div className="hero-content">
-                        <nav className="navbar navbar-expand-sm bg-Secondary navbar-white " >
-                              <div className="container-fluid">
-                                <ul className="navbar-nav" style={{fontSize:13}}>
-                                  
-                                <li className="nav-item" >
-                                    <NavLink to="/Investors"  className="nav-link" >Investor</NavLink>
-                                  </li>
-                                  <li className="nav-item">
-                                    <NavLink to="/Investors_Dashboards" className="nav-link" style={{color:'#23b347'}} >Dashboard</NavLink>
-                                  </li>
-                                  <li className="nav-item">
-                                    <NavLink to="/" className="nav-link" >Protfolio</NavLink>
-                                  </li>
-                                  <li className="nav-item">
-                                    <NavLink to="/" className="nav-link" >Analytics</NavLink>
-                                  </li>
-                                </ul>
-                              </div>
-                            </nav>
-                            </div>
+                    <div className='row'>&nbsp;
+                        <div className="col-md-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb arr-right">
+                              <li class="breadcrumb-item text-sm" aria-current="page" style={{color:"Grey"}}>Investor</li>
+                              <li class="breadcrumb-item text-sm active" aria-current="page" style={{color:'#23b347'}}>Dashboard</li>
+                              <li class="breadcrumb-item text-sm text-dark active"><a class="opacity-5 text-dark" href="/Portfolio">Portfolio</a></li>
+                              <li class="breadcrumb-item text-sm text-dark active"><a class="opacity-5 text-dark" href="/Investors_Analystics">Analystics</a></li>
+                            </ol>
+                          </nav>
+                        </div>
                        <div className='col-md-12'>
                          <h4><strong>Overview</strong>&nbsp;<p style={{fontSize:10,}}>Goog Morning Laura</p></h4>
                         </div> 
@@ -84,49 +73,37 @@ function Investors_Dashboards() {
                      </div>&nbsp;
 
                        
-                       
-                       
-                       
-                       
-                       
+      
                         <div className='row' align="left">
                             <h3 align="left">Complete Your Profile <br/><span style={{fontSize:15,color:"grey"}}>Complete your profile to start investing! </span></h3>
-                      
-                        </div><br/>
-
-                        <div className='row' style={{height:20,marginTop:-30}}>
-                            <div className='col-md-6' style={{marginTop:10}}>
-                            <Card   style={{backgroundColor:"#F2F3F4",width:380,height:120,alignItems:''}}>
-                              <strong style={{fontSize:25,padding:20}}>KYC</strong>
-                              
-                              <div style={{marginLeft:250}}>
-                                <button style={{backgroundColor: "red",border:0,fontSize:20}} className='text-white'>
-                                     PENDING
-                                </button>
-                                </div>
-                              
-                              <p style={{fontSize:12,padding:15,height:100}}>Complete your online KYC to start investing<br/>keep your PAN card handy!</p>      
-                            </Card>
-                            </div>
-
-                            <div className='col-md-6' style={{marginTop:10}}>
-                             <Card   style={{backgroundColor:"#F2F3F4",width:380,height:120,alignItems:''}}>
-                              <strong style={{fontSize:25,padding:15}}>Payment Details</strong>
-                              
-                               <div style={{marginLeft:250}}>
-                                  <button style={{backgroundColor: "red",border:0,fontSize:20}} className='text-white'>
-                                     PENDING
-                                    </button>
-                                </div>
-                              
-                                <p style={{fontSize:12,padding:15,height:100}}>Complete your Payment Details</p>
-                              
-                             </Card>
-                            </div>
-
                         </div>
 
-                        <div className='row' style={{marginTop:250 ,paddingLeft:30}}>
+
+                        <div className="row">
+                        <Card style={{backgroundColor:"#FDF2E9",width:400,height:150,borderRadius:15}}>
+                        <div className="row"><div className="col-md-6" align="left" style={{marginTop:18}}><strong>KYC</strong>
+                        <p style={{fontSize:10,color:"grey"}}>Complete your online KYC to start investing keep your PAN card handy!</p></div>          
+                        <div className="col-md-6" align="center" >
+                        <Button tag="a" color="secondary"style={{backgroundColor:"red",borderRadius:10,marginTop:10}} wideMobile href="/Investors_Details" className='text-white'>
+                        PENDING
+                        </Button>
+                        </div> 
+                        </div>
+                        </Card>&nbsp;&nbsp;&nbsp;&nbsp;
+
+                        <Card style={{backgroundColor:"whitesmoke",width:400,height:150,borderRadius:15}}>
+                        <div className="row"><div className="col-md-6" align="left" style={{marginTop:18}}> <strong>Payment Details</strong>
+                        <p style={{fontSize:12,color:"grey"}}>Complete your Payment Detailse</p></div>          
+                        <div className="col-md-6" align="center">
+                        <Button tag="a" color="secondary" style={{backgroundColor:"red",borderRadius:10,marginTop:10}}  className='text-white'wideMobile href="/Payment_Details">
+                        PENDING
+                        </Button>
+                        </div> 
+                        </div>
+                        </Card>
+                        </div>
+
+                        <div className='row' style={{paddingLeft:30}}>
                             <div className='row' style={{marginTop:10}}>
                                 <h3>Our Community</h3>
                                 <Card  style={{backgroundColor:"white",width:1000}}>
@@ -172,7 +149,7 @@ function Investors_Dashboards() {
                         </div>
 
                   <div className="reveal-from-bottom" data-reveal-delay="600" align="Center" style={{marginTop:10}}>
-                  <Button tag="a" color="primary" style={{borderRadius:8,color:"white",width:300}} wideMobile href="/Investors_Kyc">
+                  <Button tag="a" color="primary" style={{borderRadius:8,color:"white",width:300}} wideMobile href="">
                   View More
                   </Button>
                   </div>
