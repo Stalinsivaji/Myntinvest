@@ -66,7 +66,7 @@ pushLeft && 'push-left'
                 <div className="row"><div className="col-md-6" align="left" style={{marginTop:18}}> <strong>Blogs</strong>
                 <p style={{fontSize:10,color:"grey"}}>Stay up to date with what's brewing in the Startup ecosystems</p></div>          
                 <div className="col-md-6" >
-                <Button tag="a" color="secondary" style={{backgroundColor:"#2ECC71",borderRadius:10,marginTop:15}}  className='text-white' wideMobile href="/How_It_Works">
+                <Button tag="a" color="secondary" style={{backgroundColor:"#2ECC71",borderRadius:10,marginTop:15}}  className='text-white' wideMobile href="/Blog">
                 VIEW
                 </Button>
                 </div> 
