@@ -46,11 +46,12 @@ pushLeft && 'push-left'
                <div className="m-5 p-4">
                <div className="row">
                <div className="row" >
+
                 <div className="col-md-8">
                 <div className="cta-slogan">
                     <br/>
                     <br/>
-                    <h2>
+                    <h2 style={{width:'auto'}}>
                        Automate Your<br/><span style={{color:"#2ECC71"}}>Fundraising</span> process</h2><br/>
                        <span>Invite Investors And Fundraising Digitally So That You Can<br/>Focus On Building Your Busniess </span>
             
@@ -163,8 +164,9 @@ pushLeft && 'push-left'
                 </div>
 
                 <br/>
-                <div className="row">
+                <div className="row" style={{width:'auto'}}>
                     <div className="col-md-4">
+                        &nbsp;
                         <div className="tiles-item reveal-from-bottom" style={{backgroundColor:"white"}} >
                              <div className="tiles-item-inner">
                                   <div className="features-tiles-item-content">
@@ -179,6 +181,7 @@ pushLeft && 'push-left'
                              </div>
                     </div>
                     <div className="col-md-4">
+                    &nbsp;
                     <div className="tiles-item reveal-from-bottom" style={{backgroundColor:"white"}} >
                              <div className="tiles-item-inner">
                                   <div className="features-tiles-item-content">
@@ -193,6 +196,7 @@ pushLeft && 'push-left'
                              </div>
                     </div>
                     <div className="col-md-4">
+                    &nbsp;    
                     <div className="tiles-item reveal-from-bottom" style={{backgroundColor:"white"}} >
                              <div className="tiles-item-inner">
                                   <div className="features-tiles-item-content">
@@ -221,6 +225,7 @@ pushLeft && 'push-left'
                     </div>
                     
                     <div className="col-md-6">
+                     &nbsp;   
                     <div className="cta-action" align="right"> 
                           <Image
                                src={require('./../../assets/images/Mixed.jpg')}
