@@ -65,7 +65,7 @@ pushLeft && 'push-left'
                 <h3 align="left" style={{marginTop:50}}>About</h3>
                 <div className="row">
               
-                <Card style={{backgroundColor:"#FDF2E9",width:500,height:160,borderRadius:15}}>
+                <Card style={{backgroundColor:"#FDF2E9",width:500,height:180,borderRadius:15}}>
                 <div className="row"><div className="col-md-6" align="left" style={{marginTop:18}}> <strong>Company Profile</strong>
                 <p style={{fontSize:12,color:"grey"}}>Tell us a little about your company</p></div>          
                 <div className="col-md-6" >
@@ -76,7 +76,7 @@ pushLeft && 'push-left'
                 </div>      
                 </Card>&nbsp;&nbsp;&nbsp;&nbsp;
               
-                <Card style={{backgroundColor:"#F4F6F6 ",width:500,height:160,borderRadius:15}}>
+                <Card style={{backgroundColor:"#F4F6F6 ",width:500,height:180,borderRadius:15}}>
                 <div className="row"><div className="col-md-6" align="left" style={{marginTop:18}}> <strong>Team</strong>
                 <p style={{fontSize:12,color:"grey"}}>Tell us a little about your team</p></div>          
                 <div className="col-md-6" >
@@ -134,19 +134,19 @@ pushLeft && 'push-left'
                 </div>
                 
             <div className={tilesClasses}>
-                <div className="">
+                
                     <Card style={{height:550,width:350,borderRadius:15}}>
                         <div className="row" style={{marginTop:150}}>
                             <div className="col-md-4"></div>
                             <div className="col-md-4"><h6 style={{color:'grey'}}>Add a New Campaign</h6>
-                            <ButtonGroup>
-                              <Button tag="a" color="secondary" style={{backgroundColor:"white",fontSize:30,color:"grey",backgroundColor:"#ECF0F1 "}} wideMobile href="Campaign">+</Button></ButtonGroup></div>
+                            <div align="center" >
+                              <Button tag="a" color="secondary" style={{height:50,width:50,backgroundColor:"white",fontSize:30,color:"grey",backgroundColor:"#ECF0F1 "}} wideMobile href="Campaign">+</Button></div></div>
                             <div className="col-md-4"></div></div>
-                    </Card></div>&nbsp;
+                    </Card>&nbsp;&nbsp;&nbsp;&nbsp;
 
-                <div className="" align="center">  
-                 <Card> 
-                    <div className="tiles-item reveal-from-bottom" data-reveal-delay="400" >
+                 
+                 <Card style={{borderRadius:15}}> 
+              <div className="tiles-item reveal-from-bottom" data-reveal-delay="400">
               <div className="tiles-item-inner" >
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
@@ -175,10 +175,8 @@ pushLeft && 'push-left'
                 </ButtonGroup>
                 </div>
               </div>
-            </div></Card></div>
-                <div className=""></div>
-        
-
+            </div>
+            </Card>
            </div>
            </div>
 

@@ -56,7 +56,7 @@ const Deals_Press = ({
       <div className="container">
         <div className={innerClasses} />
          <SectionHeader data={sectionHeader} className="center-content" />
-         <h2 style={{background:"#f9faf9"}}>press</h2>
+         <h2 style={{background:"#f9faf9"}}>Press</h2>
           <div className={tilesClasses}>
             
 

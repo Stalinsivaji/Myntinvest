@@ -44,7 +44,7 @@ pushLeft && 'push-left'
                 </div>
                  
                 <div className="row">
-                 <Card style={{backgroundColor:"#FDF2E9",width:500,height:150,borderRadius:15}}>
+                 <Card style={{backgroundColor:"#FDF2E9",width:500,height:180,borderRadius:15}}>
                 <div className="row"><div className="col-md-6" align="left" style={{marginTop:18}}> <strong>Bannner Video/Photo</strong>
                 <p style={{fontSize:12,color:"grey"}}>Upload or embed a video</p></div>          
                 <div className="col-md-6" >
@@ -55,7 +55,7 @@ pushLeft && 'push-left'
                 </div>
                 </Card>&nbsp;&nbsp;
 
-                <Card style={{backgroundColor:"whitesmoke",width:500,height:150,borderRadius:15}}>
+                <Card style={{backgroundColor:"whitesmoke",width:500,height:180,borderRadius:15}}>
                 <div className="row"><div className="col-md-6" align="left" style={{marginTop:18}}> <strong>Investors</strong>
                 <p style={{fontSize:12,color:"grey"}}>Tell us who are the Top investor are</p></div>          
                 <div className="col-md-6" >
@@ -70,7 +70,7 @@ pushLeft && 'push-left'
 
 
                 <div className="row" style={{marginTop:50}}>
-                <Card style={{backgroundColor:"whitesmoke",width:500,height:150,borderRadius:15}}>
+                <Card style={{backgroundColor:"whitesmoke",width:500,height:180,borderRadius:15}}>
                 <div className="row"><div className="col-md-6" align="left" style={{marginTop:18}}> <strong>FAQs</strong>
                 <p style={{fontSize:11,color:"grey"}}>Help investors understand your weven better</p></div>          
                 <div className="col-md-6" >
@@ -82,7 +82,7 @@ pushLeft && 'push-left'
                 </Card>&nbsp;&nbsp;
 
 
-                <Card style={{backgroundColor:"whitesmoke",width:500,height:150,borderRadius:15}}>
+                <Card style={{backgroundColor:"whitesmoke",width:500,height:180,borderRadius:15}}>
                 <div className="row"><div className="col-md-6" align="left" style={{marginTop:18}}> <strong>Press</strong>
                 <p style={{fontSize:12,color:"grey"}}>Show your reach!</p></div>          
                 <div className="col-md-6" >

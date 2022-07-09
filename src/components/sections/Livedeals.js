@@ -67,18 +67,18 @@ const Livedeals = ({
                     All Regulation Crowdfunding Deals Are Highly Vetted <br/> By <span style={{color:"#23b347"}}>Our Investment Team.</span>
                   </p>
                 </div> &nbsp;
-                <div className='row'>
-                    <div className='col-md-4'>
+                <div className={tilesClasses}>
+                    <div className="col-md-4">
                      <Input id="newsletter" type="email" style={{backgroundColor:"white",textColor:"white"}} label="Subscribe" labelHidden hasIcon="right" placeholder="Enter The Keyword Here">
                          <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
                            <path d="M9 5H1c-.6 0-1 .4-1 1s.4 1 1 1h8v5l7-6-7-6v5z" fill="#376DF9" />
                           </svg>
                         </Input>
                   </div>
-                  <div className='col-md-3'></div>
-                  <div className='col-md-2'>
+                  <div className="col-md-1"></div>
+                  <div className="col-md-2">
                   <label>
-                    <select style={{backgroundColor:"#E9E9FF",width: 185,height: 40,fontSize:20,color:"grey"}}>
+                    <select style={{width: 185,height: 40,fontSize:20,color:"grey",backgroundColor:"#E9E9FF"}}>
                         <option value="grapefruit"> Filters</option>
                         <option value="lime">Most Transaction</option>
                         <option value="coconut">Closing Soon</option>
@@ -87,12 +87,12 @@ const Livedeals = ({
                     </label>
                   </div>
                
-                  <div className="col-md-2">
-                <label>
+                  <div className="col-md-4">
+                <label >Sort By &nbsp;
                     <select style={{backgroundColor:"#E9E9FF",width: 250,height: 40,fontSize:20,color:"grey"}}><p>22</p>
-                        <option value="Most Funded">Sort By : Most Funded</option>
-                        <option value="Most Transaction">Sort By : Most Transaction</option>
-                        <option value="Closing Soon">Sort By : Closing Soon</option>
+                        <option value="Most Funded"> Most Funded</option>
+                        <option value="Most Transaction">Most Transaction</option>
+                        <option value="Closing Soon">Closing Soon</option>
                        
                     </select>
                     </label>

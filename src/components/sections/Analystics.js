@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React from "react";
 import {
   Accordion,
   AccordionItem,
@@ -11,15 +11,19 @@ import {
 import 'react-accessible-accordion/dist/fancy-example.css';
 
 import classNames from 'classnames';
-import ButtonGroup from '../elements/ButtonGroup';
-import Button from '../elements/Button';
-import '../Css/styles.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { SectionSplitProps } from '../../utils/SectionProps';
+import SectionHeader from './partials/SectionHeader';
+import Button from "../elements/Button";
 
-
-
+const propTypes = {
+    ...SectionSplitProps.types
+  }
   
-const Analystics = ({
+  const defaultProps = {
+    ...SectionSplitProps.defaults
+  }
+  
+  const Analystics = ({
     className,
     topOuterDivider,
     bottomOuterDivider,
@@ -27,29 +31,40 @@ const Analystics = ({
     bottomDivider,
     hasBgColor,
     invertColor,
-    pushLeft,
+    invertMobile,
+    invertDesktop,
+    alignTop,
+    imageFill,
     ...props
   }) => {
+  
+    const outerClasses = classNames(
+      'features-split section',
+      topOuterDivider && 'has-top-divider',
+      bottomOuterDivider && 'has-bottom-divider',
+      hasBgColor && 'has-bg-color',
+      invertColor && 'invert-color',
+      className
+    );
+  
+    const innerClasses = classNames(
+      'features-split-inner section-inner',
+      topDivider && 'has-top-divider',
+      bottomDivider && 'has-bottom-divider' 
+    );
+  
+    const sectionHeader = {
+      title: '',
+      paragraph: ''
+    };
 
-    
-    const options = [
-        'one', 'two', 'three'
-      ];
-    
- 
-const tilesClasses = classNames(
-'tiles-wrap',
-pushLeft && 'push-left'
-);return (
-
-       <body>
-
-            <div className="row">
-               <div className="col-md-1"></div>
-               <div className="col-md-11">
-               <div className="m-5 p-4">
-               <div className="row">
-               <div className="col-md-12">
+    return (
+        <section
+        {...props}
+        className={outerClasses}
+      >
+        <div className="container" >
+        <div className="col-md-12">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb arr-right">
                       <li class="breadcrumb-item text-sm" aria-current="page" style={{color:"Grey"}}>Startup</li>
@@ -58,21 +73,20 @@ pushLeft && 'push-left'
                       <li class="breadcrumb-item text-sm active" aria-current="page" style={{color:'#23b347'}}>Analystics</li>
                     </ol>
                   </nav>
-                </div>           
-              </div>
-              <br/>        
-    
+                </div>
+          <div className={innerClasses}>&nbsp;
+          
+           <SectionHeader data={sectionHeader} className="center-content" />
 
-                <div className="col-md-12">      
-                 <Accordion  >
-                    <AccordionItem >
-                        <AccordionItemHeading >
-                        <AccordionItemButton style={{backgroundColor:"#f9faf9"}}>
-                        <b style={{color:'#23b347'}}>Total Revenue(TR)</b>
-                            </AccordionItemButton>
-                        </AccordionItemHeading>
-                        <AccordionItemPanel>
-                            <p style={{color:'grey'}}>
+                   <Accordion >
+            <AccordionItem >
+                <AccordionItemHeading>
+                <AccordionItemButton style={{backgroundColor:"#f9faf9"}}>
+                <b style={{color:'#23b347'}}>Total Revenue(TR)</b>
+                    </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel>
+                <p style={{color:'grey'}}>
                             Additionally,the SEC limits the maximum amount you can invest
                             across all startup using the Reg CF legel framework based on your
                             finalcial situation.
@@ -84,66 +98,51 @@ pushLeft && 'push-left'
                                     Upload a Picture
                             </Button></div>
                             </div>
-                        </AccordionItemPanel>
-                    </AccordionItem>
-                    </Accordion>
-
-            
-                    <Accordion  >
-                    <AccordionItem >
-                        <AccordionItemHeading >
-                        <AccordionItemButton style={{backgroundColor:"#f9faf9"}}>
-                        <b>Growth Profit Amrgin(%)</b>
-                            </AccordionItemButton>
-                        </AccordionItemHeading>
-                        <AccordionItemPanel>
-                            <p>
+                </AccordionItemPanel>
+            </AccordionItem>
+            <AccordionItem>
+                <AccordionItemHeading>
+                    <AccordionItemButton  style={{backgroundColor:"#f9faf9"}}>
+                    <b>Growth Profit Amrgin(%)</b>
+                    </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel>
+                <p>
                             Additionally,the SEC limits the maximum amount you can invest
                             across all startup using the Reg CF legel framework based on your
                             finalcial situation.
                             </p>
-                        </AccordionItemPanel>
-                    </AccordionItem>
-                    </Accordion>
-
-                    <Accordion  >
-                    <AccordionItem >
-                        <AccordionItemHeading >
-                        <AccordionItemButton style={{backgroundColor:"#f9faf9"}}>
-                       <b>Monthly Recurring Revenue (MRR)</b>
-                            </AccordionItemButton>
-                        </AccordionItemHeading>
-                        <AccordionItemPanel>
-                            <p>
-                            Additionally,the SEC limits the maximum amount you can invest
-                            across all startup using the Reg CF legel framework based on your
-                            finalcial situation.
-                            </p>
-                        </AccordionItemPanel>
-                    </AccordionItem>
-                    </Accordion>
-
-
-                    <Accordion  >
-                    <AccordionItem >
-                        <AccordionItemHeading >
-                        <AccordionItemButton style={{backgroundColor:"#f9faf9"}}>
+                </AccordionItemPanel>
+            </AccordionItem>
+            <AccordionItem>
+                <AccordionItemHeading>
+                    <AccordionItemButton style={{backgroundColor:"#f9faf9"}}>
+                    <b>Monthly Recurring Revenue (MRR)</b>
+                    </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel>
+                    <p>
+                      Additionally,the SEC limits the maximum amount you can invest
+                      across all startup using the Reg CF legel framework based on your
+                      finalcial situation.
+                    </p>
+                </AccordionItemPanel>
+            </AccordionItem>
+            <AccordionItem>
+                <AccordionItemHeading>
+                <AccordionItemButton style={{backgroundColor:"#f9faf9"}}>
                        <b>Customer Churn Rate (%)</b> 
-                            </AccordionItemButton>
-                        </AccordionItemHeading>
-                        <AccordionItemPanel>
-                            <p>
-                            Additionally,the SEC limits the maximum amount you can invest
-                            across all startup using the Reg CF legel framework based on your
-                            finalcial situation.
-                            </p>
-                        </AccordionItemPanel>
-                    </AccordionItem>
-                    </Accordion>
-
-
-                    <Accordion  >
-                    <AccordionItem >
+                    </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel>
+                    <p>
+                      Additionally,the SEC limits the maximum amount you can invest
+                      across all startup using the Reg CF legel framework based on your
+                      finalcial situation.
+                    </p>
+                </AccordionItemPanel>
+            </AccordionItem>
+            <AccordionItem >
                         <AccordionItemHeading >
                         <AccordionItemButton style={{backgroundColor:"#f9faf9"}}>
                         <b>Monthly Active Users (MAU)</b>
@@ -157,9 +156,6 @@ pushLeft && 'push-left'
                             </p>
                         </AccordionItemPanel>
                     </AccordionItem>
-                    </Accordion>
-
-                    <Accordion  >
                     <AccordionItem >
                         <AccordionItemHeading >
                         <AccordionItemButton style={{backgroundColor:"#f9faf9"}}>
@@ -174,16 +170,15 @@ pushLeft && 'push-left'
                             </p>
                         </AccordionItemPanel>
                     </AccordionItem>
-                    </Accordion>
-            </div>                 
-            </div>
-            </div>
-            </div>
-                     
+         </Accordion>
+        </div>
+       
+      </div>
+    </section>
+);
+}
 
+Analystics .propTypes = propTypes;
+Analystics .defaultProps = defaultProps;
 
-        
-        </body>
-    );  
-};
-export default Analystics;        
+export default Analystics ;

@@ -158,6 +158,8 @@ const Deals_Pitch = ({
                 </div>
                 </div>
 
+
+
                 <div className={tilesClasses}>
                 <div className="row">
                 <div className="col-md-1">
@@ -341,59 +343,12 @@ const Deals_Pitch = ({
                     &nbsp; Join the Waitlist &nbsp;
                     </Button>
                 </ButtonGroup>
-                </div>
+                </div>&nbsp;&nbsp;
 
                 <div className="col-md-1">
                 </div>
-                </div></div><br/>&nbsp;
-                <hr/>
-
-              
-                <div className="container">
-                <h2 style={{background:"#f9faf9"}} align="left">About</h2>
-                <div className="row" align="center">     
-                <div className="col-md-1">
-                </div>
-                <div className="col-md-2">
-                 <h5>Website</h5> 
-                 <p style={{color:"#2ECC71 "}}>http://www.xyz.com</p>
-                </div>
-                <div className="col-md-2">
-                <h5> Company Size</h5>
-                <p style={{color:"grey"}}> 11-50 employees</p>
-                </div>
-                <div className="col-md-2">
-                 <h5>Headquarters</h5>
-                 <p style={{color:"grey"}}>Bangalore</p>
-                </div>
-                <div className="col-md-2">
-                  <h5>Founded</h5>
-                  <p style={{color:"grey"}}>2000</p>
-                </div>
-                <div className="col-md-2">
-                  <h5>Social Media</h5>
-                  <h5>
-                  <a href="#" class="fa fa-instagram"  style={{color:"grey",fontSize:25}}></a>&nbsp;&nbsp;
-                  <a href="#" class="fa fa-twitter" style={{color:"grey",fontSize:25}}></a>&nbsp; &nbsp;
-                  <a href="#" class="fa fa-linkedin" style={{color:"grey",fontSize:25}}></a>
-                  </h5>
-           
-                </div>
-                <div className="col-md-1">
-                </div>
-                </div>
-                </div>
-
-                <div className="container">
-                <h2 style={{background:"#f9faf9"}} align="left">Company Location</h2>
-                  <div className={tilesClasses}>
-                      <Image
-                              src={require('./../../assets/images/Location.jpg')}
-                              alt="Features tile icon 05"
-                              width={1000}
-                              height={1000} />
-                  </div>
-                </div>
+                </div></div><div className="row"></div><br/><hr/>
+                
                 
 </div>)
 

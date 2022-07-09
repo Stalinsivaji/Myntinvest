@@ -54,7 +54,7 @@ pushLeft && 'push-left'
              
         <div className="row" >
   
-               <div className="row">
+               <div className={tilesClasses}>
                <div className="col-md-1"></div>
                <div className="col-md-11">
                <div className="m-5 p-4">

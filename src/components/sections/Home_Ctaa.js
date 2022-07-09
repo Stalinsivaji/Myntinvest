@@ -69,19 +69,19 @@ const Home_Ctaa = ({
             
             <div className="reveal-from-bottom" data-reveal-delay="600">
             <ButtonGroup>
-                  <Button tag="a" color="secondary" style={{backgroundColor:"#E9E9FF",borderRadius:5,color:"grey"}} wideMobile href="">
+                  <Button tag="a" color="secondary" style={{backgroundColor:"#E9E9FF",borderRadius:8,color:"grey"}} wideMobile href="">
                     9UNICORNS
                     </Button>
-                  <Button tag="a" color="primary" style={{backgroundColor:"grey",color:"white"}} wideMobile href="">
+                  <Button tag="a" color="primary" style={{backgroundColor:"grey",borderRadius:8,color:"white"}} wideMobile href="">
                     Better
                     </Button>
-                    <Button tag="a" color="secondary" style={{backgroundColor:"#E9E9FF",borderRadius:5,color:"grey"}} wideMobile href="">
+                    <Button tag="a" color="secondary" style={{backgroundColor:"#E9E9FF",borderRadius:8,color:"grey"}} wideMobile href="">
                     R
                     </Button>
-                  <Button tag="a" color="secondary" style={{backgroundColor:"#E9E9FF",borderRadius:5,color:"grey"}} wideMobile href="">
+                  <Button tag="a" color="secondary" style={{backgroundColor:"#E9E9FF",borderRadius:8,color:"grey"}} wideMobile href="">
                     L I V W E L L
                     </Button>
-                    <Button tag="a" color="primary" style={{backgroundColor:"grey",color:"white"}} wideMobile href="">
+                    <Button tag="a" color="primary" style={{backgroundColor:"grey",borderRadius:8,color:"white"}} wideMobile href="">
                     Better
                     </Button>
                 </ButtonGroup>

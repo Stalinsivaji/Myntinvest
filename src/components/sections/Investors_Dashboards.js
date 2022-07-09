@@ -71,41 +71,23 @@ pushLeft && 'push-left'
 
               <br/>
               <div className="row">
-                <div className="col-md-4">
-                  
-                     &nbsp;
-                      <Card  style={{backgroundColor:"#E9F7EF ",width:360,height:120}}>
+              
+                      <Card style={{backgroundColor:"#E9F7EF ",width:360,height:120}}>
                             <p style={{fontSize:12,padding:15}}>Total Investment value</p>
                             <strong style={{fontSize:25,padding:15,}}>$21.,500.00</strong>
-                          </Card>
+                      </Card>&nbsp;&nbsp;&nbsp;&nbsp;
 
-        
-                    
-                </div>
-                
-               
-                <div className="col-md-4">
-
-  
-                 
-                    &nbsp;                       
-                    <Card   style={{backgroundColor:"#FDF2E9",width:360,height:120,alignItems:''}}>
+                     <Card style={{backgroundColor:"#FDF2E9",width:360,height:120,alignItems:''}}>
                         <p style={{fontSize:12,padding:15}}>Startups Invested</p>
                         <strong style={{fontSize:25,padding:15,marginTop:-40}}>25</strong>
-                      </Card>
+                      </Card>&nbsp;&nbsp;&nbsp;&nbsp;
 
-        
-                  
-                </div>
-
-                <div className="col-md-3">
-                  &nbsp;
-                    <Card   style={{backgroundColor:"#F2F3F4 ",width:200,height:120,alignItems:''}}>
-                         <p style={{fontSize:12,alignItems:'center',marginTop:40}} className='text-center' >View All <br/>Investment<br/></p>
-                            
+                      <Card style={{backgroundColor:"#F2F3F4 ",width:360,height:120,alignItems:''}}>
+                         <p style={{fontSize:12,alignItems:'center',marginTop:40}} className='text-center' >View All</p>  
+                         <p className='text-center' style={{fontSize:25,padding:15,marginTop:-40}}>Investment</p>
                       </Card>
                 
-                </div>
+                
               </div>
 
 
@@ -119,10 +101,10 @@ pushLeft && 'push-left'
 
               <br/>
               <div className="row">
-                     <Card style={{backgroundColor:"#FDF2E9",width:400,height:150,borderRadius:15}}>
+                     <Card style={{backgroundColor:"#FDF2E9",width:400,height:180,borderRadius:15}}>
                         <div className="row">
-                             <div className="col-md-7" align="left" style={{paddingTop:8}}> <strong>KYC</strong>
-                                <p style={{fontSize:9,color:"grey"}}>Complete your online KYC to start investing keep your PAN card handy!</p>
+                             <div className="col-md-7" align="left" style={{paddingTop:18}}> <strong>KYC</strong>
+                                <p style={{fontSize:12,color:"grey"}}>Complete your online KYC to start investing keep your PAN card handy!</p>
                               </div>          
                         <div className="col-md-4" align="center">
                         <Button tag="a" color="secondary" style={{backgroundColor:"red",borderRadius:10,marginTop:10}}  wideMobile href="/Investors_Details" className='text-white'>
@@ -133,9 +115,9 @@ pushLeft && 'push-left'
                         </Card>&nbsp;&nbsp;&nbsp;&nbsp;
 
                         
-                        <Card style={{backgroundColor:"whitesmoke",width:'auto',height:150,borderRadius:15}}>
-                        <div className="row"><div className="col-md-6" align="left" style={{paddingTop:8}}> <strong>Payment Details</strong>
-                        <p style={{fontSize:9,color:"grey"}}>Complete your Payment Detailse</p></div>          
+                        <Card style={{backgroundColor:"whitesmoke",width:'auto',height:180,borderRadius:15}}>
+                        <div className="row"><div className="col-md-6" align="left" style={{paddingTop:18}}> <strong>Payment Details</strong>
+                        <p style={{fontSize:12,color:"grey"}}>Complete your Payment Detailse</p></div>          
                         <div className="col-md-6" align="center">
                         <Button tag="a" color="secondary" style={{backgroundColor:"red",borderRadius:10,marginTop:10}}  className='text-white'wideMobile href="/Payment_Details">
                         PENDING
@@ -147,9 +129,8 @@ pushLeft && 'push-left'
               </div>
 
                         <br/>
-                        <div className='row'>
+                        <div className="row">
                         <h3>Our Community</h3>
-
                         </div>
 
                         <br/>

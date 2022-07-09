@@ -81,7 +81,7 @@ const Deals_Realm = ({
                 alt="Features tile icon 01"
                 width={80}
                 height={80} />}
-         /> <h2 align="right">Realm Real Estate</h2>
+         /> <h2>Realm Real Estate</h2>
           <SectionHeader data={sectionHeader} className="center-content"style={{paddingRight:400,paddingBottom:0,borderRadius:50}} />
           <p>Apparel that boosts your immune health,Cognition, recovery and sleep</p>
           </div>

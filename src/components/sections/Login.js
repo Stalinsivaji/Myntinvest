@@ -210,33 +210,32 @@ render() {
             <label className="form-check-label">  
             <input type="checkbox" className="form-check-input" /> 
             <div className='row'>
-            <p>Remember me<span style={{color:"#2ECC71",paddingLeft:100}}>Forgot Password</span></p>
+            <p>Remember me&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style={{color:"#2ECC71"}}>Forgot Password</span></p>
                 </div> 
           
             </label> 
             </div>
-            
-            <ButtonGroup style={{paddingLeft:80}} align="Center">
+            <div className={tilesClasses} >
+            <ButtonGroup >
                   <Button type="submit" value="Submit" color="primary" style={{borderRadius:8,color:"white",width:500}} wideMobile href="/StartUp_Dashboard">
                     Login
                     </Button>
-                </ButtonGroup>
+                </ButtonGroup></div>
              
                 
-            <div className='row'>
-            <div className='col-md-12'style={{paddingLeft:40}}>
+            <div className={tilesClasses} >
             <p>------- OR --------</p>
             </div>
-            </div>
 
-                <ButtonGroup style={{paddingLeft:80}}>
+            <div className={tilesClasses} >
+                <ButtonGroup>
                   <Button tag="a" color="secondary" style={{backgroundColor:"#ECF0F1",borderRadius:8,color:"black",width:500}} wideMobile href="/Investor_Signup">
                     Sign in With Google
                     </Button>
                     <Button tag="a" color="secondary" style={{backgroundColor:"#f9faf9",borderRadius:8,color:"#2ECC71",width:500}} wideMobile href="/Startup_Login">
                     Log In as Startup
                     </Button>
-                </ButtonGroup>
+                </ButtonGroup></div>
             </div>  &nbsp;      
            
             </form>

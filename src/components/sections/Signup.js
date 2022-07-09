@@ -339,20 +339,21 @@ class Registration extends React.Component {
           
             </label> 
             </div>
-            <div className='row'>
-                <div className='col-md-10'align="Center">
-            <ButtonGroup align="Center" style={{paddingLeft:20}}>
+            <div className='row'align="Center">
+                <div className='col-md-12'>
+            <ButtonGroup align="Center">
                   <Button  type="submit" value="Submit" color="primary" style={{borderRadius:8,color:"white",width:500}} wideMobile href="//Investor_Signup">
                     Sign Up
                     </Button>
-                </ButtonGroup> 
-            <div className='row' align="center">
-            <div className='col-md-12'>
+                </ButtonGroup></div>
+
+            <div className='row' style={{paddingRight:80}}>
             <p>------- OR --------</p>
             </div>
-            </div>
-
-                <ButtonGroup style={{paddingLeft:20}}>
+          
+            
+            <div>
+                <ButtonGroup>
                   <Button tag="a" color="secondary" style={{backgroundColor:"#ECF0F1",borderRadius:8,color:"black",width:500}} wideMobile href="/Login">
                     Sign up With Google
                     </Button>

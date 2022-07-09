@@ -20,10 +20,9 @@ import Signup from './components/sections/Signup';
 import Privacy_Policy from './components/sections/Privacy_Policy';
 import Blog from './views/Blog';
 import FAQ from './components/sections/FAQ'
-import Learn from './components/sections/Learn';
+import Learn from './views/Learn';
 import How_It_Works from './components/sections/How_It_Works';
-import Private_Deals from './components/sections/Private_Deals';
-
+import Private_Deals from './views/Private_Deals';
 //Investors
 import Investor_Signup from './components/sections/Investor_Signup';
 import Investors_Terms from './components/sections/Investors_Terms';
@@ -143,6 +142,7 @@ const App = () => {
           <AppRoute exact path="/Blog" component={Blog} layout={LayoutDefault} />
           <AppRoute exact path="/FAQ" component={FAQ} layout={LayoutDefault} />
        
+
         </Switch>
       )} />
   );

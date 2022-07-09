@@ -1,102 +1,81 @@
-import React, {Component} from "react";
+import React from 'react';
 import classNames from 'classnames';
+import { SectionTilesProps } from '../../utils/SectionProps';
+import SectionHeader from './partials/SectionHeader';
+import Image from '../elements/Image';
+import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
-import Image from "../elements/Image";
-import '../Css/styles.css';
-import {
-  Card   
-} from "@material-ui/core";
 
 
-const Learn = ({
-    className,
-    topOuterDivider,
-    bottomOuterDivider,
-    topDivider,
-    bottomDivider,
-    hasBgColor,
-    invertColor,
-    pushLeft,
-    ...props
-  }) => {
+const propTypes = {
+  ...SectionTilesProps.types
+}
 
-    
+const defaultProps = {
+  ...SectionTilesProps.defaults
+}
+const Learn_Read = ({
+  className,
+  topOuterDivider,
+  bottomOuterDivider,
+  topDivider,
+  bottomDivider,
+  hasBgColor,
+  invertColor,
+  pushLeft,
+  ...props
+}) => {
 
-    
- 
-const tilesClasses = classNames(
-'tiles-wrap',
-pushLeft && 'push-left'
-);return (
+  const outerClasses = classNames(
+    'features-tiles section',
+    topOuterDivider && 'has-top-divider',
+    bottomOuterDivider && 'has-bottom-divider',
+    hasBgColor && 'has-bg-color',
+    invertColor && 'invert-color',
+    className
+  );
 
-    <body>
-    
-             
-        <div className="row" >
-  
-               <div className="row">
-               <div className="col-md-1"></div>
-               <div className="col-md-11">
-               <div className="m-5 p-4">
-               <div className="row">
-                <br/>
-               <div className="row" >
+  const innerClasses = classNames(
+    'features-tiles-inner section-inner pt-0',
+    topDivider && 'has-top-divider',
+    bottomDivider && 'has-bottom-divider'
+  );
 
-                <h3>learn</h3>             
-                <p>understand How MyntInvest's Different Processes Work To Complete A Successful Deal</p>   
+  const tilesClasses = classNames(
+    'tiles-wrap center-content',
+    pushLeft && 'push-left'
+  );
 
-                
-              </div>              
-              </div>
+  const sectionHeader = {
+    title: '',
+    paragraph: ''
+  };
 
-               <div className="row" style={{marginTop:50}}>
-                <Card style={{backgroundColor:"whitesmoke",width:500,height:170,borderRadius:15}}>
-                <div className="row"><div className="col-md-6" align="left" style={{marginTop:18}}> <strong>How it works</strong>
-                <p style={{fontSize:10,color:"grey"}}>Understand how MyntInvest's different Processes work to Complete a successful deal</p></div>          
-                <div className="col-md-6" >
-                <Button tag="a" color="secondary" style={{backgroundColor:"#2ECC71",borderRadius:10,marginTop:15}}  className='text-white' wideMobile href="/How_It_Works">
-                VIEW
-                </Button>
-                </div> 
-                </div>
-                </Card>&nbsp;&nbsp;
-
-
-                <Card style={{backgroundColor:"whitesmoke",width:500,height:170,borderRadius:15}}>
-                <div className="row"><div className="col-md-6" align="left" style={{marginTop:18}}> <strong>Blogs</strong>
-                <p style={{fontSize:10,color:"grey"}}>Stay up to date with what's brewing in the Startup ecosystems</p></div>          
-                <div className="col-md-6" >
-                <Button tag="a" color="secondary" style={{backgroundColor:"#2ECC71",borderRadius:10,marginTop:15}}  className='text-white' wideMobile href="/Blog">
-                VIEW
-                </Button>
-                </div> 
-                </div>
-                </Card>
-                </div>
-              
-              <br/>
-              <br/>
-              <div className='row'>
-                <h3>Quick Reads</h3>
-                <p>Quick Courses To Digest in Less Than 30 Minutes</p>
-              </div>
-
-              <br/>
-              <div className="row">
-                <div className="col-md-8">
-                <Image
+  return (
+    <section
+      {...props}
+      className={outerClasses}
+    >
+      <div className="container">&nbsp;
+        <div className={innerClasses}>
+          <SectionHeader data={sectionHeader} className="center-content" />
+               <div className="features-tiles-item-content">
+                  <h2 className="mt-0 mb-8">
+                  Quick Reads
+                    </h2>
+                  <span className="m-0 text-sm" style={{color:"black"}}>
+                          &nbsp;  Quick Courses To Digest in Less Than 30 Minutes
+                  </span>
+                </div> &nbsp;
+                <div className={tilesClasses}>
+              <Image
                       src={require('./../../assets/images/Metaverse.jpg')}
                       alt="Metaverse"
                       width={700}
-                      height={600} 
-                    />
-                </div>   
-                
-               
-                
-                
-                <div className="col-md-4" data-reveal-delay="200">
-             
+                      height={400} 
+                     />
+            <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
+              <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
@@ -116,15 +95,12 @@ pushLeft && 'push-left'
                     <span  align="left">by Lee Morgan</span><br/>
                     <span  align="left" style={{color:"grey"}}>July 23,2022</span>
                 </div>
-              
-            </div>
-                
               </div>
+            </div>
 
-
-            <div className="row">
-              
-            <div className="col-md-4" data-reveal-delay="200">
+          </div>
+          <div className={tilesClasses}>
+            <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
@@ -149,7 +125,8 @@ pushLeft && 'push-left'
             </div>
 
             
-            <div className="col-md-4" data-reveal-delay="200">
+            
+            <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
@@ -172,8 +149,7 @@ pushLeft && 'push-left'
                 </div>
               </div>
             </div>
-
-            <div className="col-md-4" data-reveal-delay="200">
+            <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
@@ -196,43 +172,23 @@ pushLeft && 'push-left'
                 </div>
               </div>
             </div>
-            </div>
 
-              
-              
-              
+          </div>
+          <div className={tilesClasses}>
+             <div className="reveal-from-bottom" data-reveal-delay="600" >
+                <ButtonGroup>
+                  <Button tag="a" color="primary" style={{borderRadius:8,color:"white"}} wideMobile href="">
+                    Load More
+                    </Button>
+                </ButtonGroup>
+              </div></div>
+        </div>
+      </div>
+    </section>
+  );
+}
 
+Learn_Read.propTypes = propTypes;
+Learn_Read.defaultProps = defaultProps;
 
-                       
-              
-
-
-                         
-
-
-
-
-
-
-              </div>
-              </div>
-              </div>
-              </div>
-
-
-    </body>          
-              
-
-              
-
-
-              
-               
-               
-
-) ;       
-};
-
-
-
-export default Learn;
+export default Learn_Read;

@@ -67,16 +67,16 @@ const Livedeal = ({
                     All Regulation Crowdfunding Deals Are Highly Vetted <br/> By <span style={{color:"#23b347"}}>Our Investment Team.</span>
                   </p>
                 </div> &nbsp;
-                <div className='row'>
-                    <div className='col-md-4'>
+                <div className={tilesClasses}>
+                    <div className="col-md-4">
                      <Input id="newsletter" type="email" style={{backgroundColor:"white",textColor:"white"}} label="Subscribe" labelHidden hasIcon="right" placeholder="Enter The Keyword Here">
                          <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
                            <path d="M9 5H1c-.6 0-1 .4-1 1s.4 1 1 1h8v5l7-6-7-6v5z" fill="#376DF9" />
                           </svg>
                         </Input>
                   </div>
-                  <div className='col-md-3'></div>
-                  <div className='col-md-2'>
+                  <div className="col-md-1"></div>
+                  <div className="col-md-2">
                   <label>
                     <select style={{width: 185,height: 40,fontSize:20,color:"grey",backgroundColor:"#E9E9FF"}}>
                         <option value="grapefruit"> Filters</option>
@@ -87,22 +87,22 @@ const Livedeal = ({
                     </label>
                   </div>
                
-                  <div className="col-md-2">
-                <label>
+                  <div className="col-md-4">
+                <label >Sort By :
                     <select style={{backgroundColor:"#E9E9FF",width: 250,height: 40,fontSize:20,color:"grey"}}><p>22</p>
-                        <option value="Most Funded">Sort By : Most Funded</option>
-                        <option value="Most Transaction">Sort By : Most Transaction</option>
-                        <option value="Closing Soon">Sort By : Closing Soon</option>
+                        <option value="Most Funded"> Most Funded</option>
+                        <option value="Most Transaction">Most Transaction</option>
+                        <option value="Closing Soon">Closing Soon</option>
                        
                     </select>
                     </label>
                     </div>
                  </div>&nbsp;
 
-                 <div className='row'>
+                 <div className={tilesClasses}>
                  <div className="col-md-2">
-                <label>Sectors
-                    <select style={{backgroundColor:"#E9E9FF",width: 250,height: 40,fontSize:20,color:"grey"}}>
+                <label align="left">Sectors
+                    <select style={{backgroundColor:"#AAB7B8",width: 250,height: 40,fontSize:20,color:"white"}}>
                         <option value="Most Funded">EdTech & Education</option>
                         <option value="Most Transaction">Sort By : Most Transaction</option>
                         <option value="Closing Soon">Sort By : Closing Soon</option>
@@ -110,20 +110,21 @@ const Livedeal = ({
                     </select>
                     </label>
                     </div>
-                    <div className='col-md-1'></div>
+                  <div className='col-md-1'></div>
                     <div className="col-md-2">
-                <label>Revenue
-                    <select style={{backgroundColor:"#E9E9FF",width: 250,height: 40,fontSize:20,color:"grey"}}>
+                <label align="left">Revenue
+                    <select style={{backgroundColor:"#AAB7B8",width: 250,height: 40,fontSize:20,color:"white"}}>
                         <option value="Most Funded">30k - 50k</option>
                         <option value="Most Transaction">Sort By : Most Transaction</option>
                         <option value="Closing Soon">Sort By : Closing Soon</option>    
                     </select>
                     </label>
                     </div>
+
                     <div className='col-md-1'></div>
                     <div className="col-md-2">
-                <label>Tech
-                    <select style={{backgroundColor:"#E9E9FF",width: 250,height: 40,fontSize:20,color:"grey"}}>
+                <label align="left">Tech
+                    <select style={{backgroundColor:"#AAB7B8",width: 250,height: 40,fontSize:20,color:"white"}}>
                         <option value="Most Funded">Blockchain</option>
                         <option value="Most Transaction">Sort By : Most Transaction</option>
                         <option value="Closing Soon">Sort By : Closing Soon</option>
@@ -131,13 +132,14 @@ const Livedeal = ({
                     </select>
                     </label>
                     </div>
+
                     <div className='col-md-1'></div>
                     <div className="col-md-2">
-                <label>Min.Investment
-                    <select style={{backgroundColor:"#E9E9FF",width: 250,height: 40,fontSize:20,color:"grey"}}>
+                <label align="left">Min.Investment
+                    <select style={{backgroundColor:"#AAB7B8",width: 250,height: 40,fontSize:20,color:"white"}}>
                         <option value="Most Funded">$1000</option>
-                        <option value="Most Transaction">Sort By : Most Transaction</option>
-                        <option value="Closing Soon">Sort By : Closing Soon</option>
+                        <option value="Most Transaction">Most Transaction</option>
+                        <option value="Closing Soon">Closing Soon</option>
                        
                     </select>
                     </label>

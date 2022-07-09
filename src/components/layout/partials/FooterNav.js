@@ -47,7 +47,7 @@ const FooterNav = ({
         <p to="#0" style={{paddingLeft:10}}><b>COMPANY</b></p>
           <Link to="/Privacy_Policy">Privacy Policy</Link>&nbsp;
           <Link to="#0">Terms of Service</Link>&nbsp;
-          <Link to="#0">Code of Conduct</Link>
+          <Link to="/Log">Code of Conduct</Link>
         </li></div>
       </ul>&nbsp;
      
