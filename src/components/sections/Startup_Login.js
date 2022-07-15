@@ -41,7 +41,7 @@ class Startup_Login extends React.Component {
             input["password"] = "";
             this.setState({input:input});
       
-            alert('Demo Form is submitted');
+            alert('Login is submitted');
         }
       }
       
@@ -88,6 +88,7 @@ class Startup_Login extends React.Component {
          
 render() {
     return(
+      
             <body className='bg-white'>
             <nav class="bg-White navbar-dark navbar" style={{paddingLeft:500,paddingTop:50}}>
             <div className="row col-12 d-flex justify-content-center text-white">
@@ -183,7 +184,7 @@ render() {
               class="form-control" 
               placeholder="Enter Your Email" 
               id="email" />
-            </div><br/> <div className="text-danger">{this.state.errors.email}</div></div>
+            </div><div className="text-danger" style={{fontSize:15}}>{this.state.errors.email}</div><br/> </div>
 
             <div className='row' >
                 <div className='col-md-1'></div>
@@ -197,8 +198,9 @@ render() {
               onChange={this.handleChange}
               class="form-control" 
               placeholder="Enter password" 
-              id="password" /></div> 
-             <div className="text-danger">{this.state.errors.password}</div><br/>
+              id="password"
+              maxLength={10} /></div> 
+             <div className="text-danger"style={{fontSize:15}}>{this.state.errors.password}</div><br/>
            
             </div></div>
             </div>
@@ -208,30 +210,33 @@ render() {
             <label className="form-check-label">  
             <input type="checkbox" className="form-check-input" /> 
             <div className='row'>
-            <p>Remember me<span style={{color:"#2ECC71",paddingLeft:100}}>Forgot Password</span></p>
+            <p>Remember me &nbsp;&nbsp;<span style={{color:"#2ECC71"}}>Forgot Password</span></p>
                 </div> 
           
             </label> 
             </div>
-            
-            <ButtonGroup style={{paddingLeft:80}} align="Center">
-                  <Button type="submit" value="Submit" color="primary" style={{borderRadius:8,color:"white",width:500}} wideMobile href="/StartUp_Dashboard">
+            <div className={tilesClasses} >
+            <ButtonGroup >
+                  <Button type="submit" value="Submit"  color="primary" style={{borderRadius:8,color:"white",width:500}} wideMobile href="/StartUp_Dashboard">
                     Login
                     </Button>
-                </ButtonGroup>
+                </ButtonGroup></div>
              
-                
-            <div className='row'>
-            <div className='col-md-12'style={{paddingLeft:40}}>
-            <p>------- OR --------</p>
-            </div>
-            </div>
+            <div className={tilesClasses} >
+            <ButtonGroup >
+                  <Button color="primary" style={{backgroundColor:"#f9faf9",borderRadius:8,color:"black"}}>
+                  ------- OR -------- 
+                    </Button>
+                </ButtonGroup></div>  
+            
 
-                <ButtonGroup style={{paddingLeft:80}}>
-                  <Button tag="a" color="secondary" style={{backgroundColor:"#ECF0F1",borderRadius:8,color:"black",width:500}} wideMobile href="/StartUp_Dashboard">
+            <div className={tilesClasses} >
+                <ButtonGroup>
+                  <Button  tag="a" color="primary" style={{backgroundColor:"#ECF0F1",borderRadius:8,color:"black",width:500}} wideMobile href="/Startup_Dashboard">
                     Sign in With Google
                     </Button>
-                </ButtonGroup>
+
+                </ButtonGroup></div>
             </div>  &nbsp;      
            
             </form>
@@ -245,4 +250,3 @@ render() {
 
 
 export default Startup_Login;
-

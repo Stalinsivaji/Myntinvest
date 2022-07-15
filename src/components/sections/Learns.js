@@ -67,10 +67,10 @@ const Learns = ({
                   </p>
                 </div> &nbsp;
                 <div className="row">
-                <Card style={{backgroundColor:"whitesmoke",width:500,height:180,borderRadius:15}}>
+                <Card style={{backgroundColor:"whitesmoke",width:450,height:180,borderRadius:15}}>
                 <div className="row"><div className="col-md-6" align="left" style={{marginTop:18}}> <strong>How it works</strong>
                 <p style={{fontSize:11,color:"grey"}}>Understand how MyntInvest's different Processes work to Complete a successful deal</p></div>          
-                <div className="col-md-6">
+                <div className="col-md-6" align="center">
                 <Button tag="a" color="secondary" style={{backgroundColor:"#2ECC71",borderRadius:10,marginTop:15}}  className='text-white' wideMobile href="/How_It_Works">
                 VIEW
                 </Button>
@@ -79,10 +79,10 @@ const Learns = ({
                 </Card>&nbsp;&nbsp;&nbsp;&nbsp;
 
 
-                <Card style={{backgroundColor:"whitesmoke",width:500,height:180,borderRadius:15}}>
+                <Card style={{backgroundColor:"whitesmoke",width:450,height:180,borderRadius:15}}>
                 <div className="row"><div className="col-md-6" align="left" style={{marginTop:18}}> <strong>Blogs</strong>
                 <p style={{fontSize:12,color:"grey"}}>Stay up to date with what's brewing in the Startup ecosystems</p></div>          
-                <div className="col-md-6" >
+                <div className="col-md-6" align="center">
                 <Button tag="a" color="secondary" style={{backgroundColor:"#2ECC71",borderRadius:10,marginTop:15}}  className='text-white' wideMobile href="/Blog">
                 VIEW
                 </Button>

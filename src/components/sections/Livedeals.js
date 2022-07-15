@@ -75,10 +75,10 @@ const Livedeals = ({
                           </svg>
                         </Input>
                   </div>
-                  <div className="col-md-1"></div>
+                  
                   <div className="col-md-2">
                   <label>
-                    <select style={{width: 185,height: 40,fontSize:20,color:"grey",backgroundColor:"#E9E9FF"}}>
+                    <select style={{width: 180,height: 40,fontSize:20,color:"grey",backgroundColor:"white"}}>
                         <option value="grapefruit"> Filters</option>
                         <option value="lime">Most Transaction</option>
                         <option value="coconut">Closing Soon</option>
@@ -86,10 +86,11 @@ const Livedeals = ({
                     </select>
                     </label>
                   </div>
+                  <div className='col-md-1'></div>
                
-                  <div className="col-md-4">
-                <label >Sort By &nbsp;
-                    <select style={{backgroundColor:"#E9E9FF",width: 250,height: 40,fontSize:20,color:"grey"}}><p>22</p>
+                <div className="col-md-4">
+                <label >Sort By :&nbsp;
+                    <select  style={{backgroundColor:"white",width: 250,height: 40,fontSize:20,color:"grey"}}><p>22</p>
                         <option value="Most Funded"> Most Funded</option>
                         <option value="Most Transaction">Most Transaction</option>
                         <option value="Closing Soon">Closing Soon</option>

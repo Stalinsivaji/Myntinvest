@@ -165,7 +165,7 @@ render() {
         
 
             <div className='col-md-6'style={{paddingLeft:50}}>
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit} name="Loginform" id="Loginform" method="POST">
           
             <div className='row' align="center">
             <div className='row'>&nbsp;
@@ -210,26 +210,29 @@ render() {
             <label className="form-check-label">  
             <input type="checkbox" className="form-check-input" /> 
             <div className='row'>
-            <p>Remember me&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style={{color:"#2ECC71"}}>Forgot Password</span></p>
+            <p>Remember me &nbsp;&nbsp;<span style={{color:"#2ECC71"}}>Forgot Password</span></p>
                 </div> 
           
             </label> 
             </div>
             <div className={tilesClasses} >
             <ButtonGroup >
-                  <Button type="submit" value="Submit" color="primary" style={{borderRadius:8,color:"white",width:500}} wideMobile href="/StartUp_Dashboard">
+                  <Button type="submit" value="Submit" color="primary" style={{borderRadius:8,color:"white",width:500}}wideMobile href="/StartUp_Dashboard" >
                     Login
                     </Button>
                 </ButtonGroup></div>
              
-                
             <div className={tilesClasses} >
-            <p>------- OR --------</p>
-            </div>
+            <ButtonGroup >
+                  <Button color="primary" style={{backgroundColor:"#f9faf9",borderRadius:8,color:"black"}}>
+                  ------- OR -------- 
+                    </Button>
+                </ButtonGroup></div>  
+            
 
             <div className={tilesClasses} >
                 <ButtonGroup>
-                  <Button tag="a" color="secondary" style={{backgroundColor:"#ECF0F1",borderRadius:8,color:"black",width:500}} wideMobile href="/Investor_Signup">
+                  <Button tag="a"  color="primary" style={{backgroundColor:"#ECF0F1",borderRadius:8,color:"black",width:500}} wideMobile href="/Investor_Signup">
                     Sign in With Google
                     </Button>
                     <Button tag="a" color="secondary" style={{backgroundColor:"#f9faf9",borderRadius:8,color:"#2ECC71",width:500}} wideMobile href="/Startup_Login">

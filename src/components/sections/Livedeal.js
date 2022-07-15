@@ -78,7 +78,7 @@ const Livedeal = ({
                   <div className="col-md-1"></div>
                   <div className="col-md-2">
                   <label>
-                    <select style={{width: 185,height: 40,fontSize:20,color:"grey",backgroundColor:"#E9E9FF"}}>
+                    <select style={{width: 180,height: 40,fontSize:20,color:"grey",backgroundColor:"white"}}>
                         <option value="grapefruit"> Filters</option>
                         <option value="lime">Most Transaction</option>
                         <option value="coconut">Closing Soon</option>
@@ -87,9 +87,9 @@ const Livedeal = ({
                     </label>
                   </div>
                
-                  <div className="col-md-4">
-                <label >Sort By :
-                    <select style={{backgroundColor:"#E9E9FF",width: 250,height: 40,fontSize:20,color:"grey"}}><p>22</p>
+                <div className="col-md-4">
+                <label >Sort By :&nbsp;
+                    <select  style={{backgroundColor:"white",width: 250,height: 40,fontSize:20,color:"grey"}}><p>22</p>
                         <option value="Most Funded"> Most Funded</option>
                         <option value="Most Transaction">Most Transaction</option>
                         <option value="Closing Soon">Closing Soon</option>
@@ -99,47 +99,56 @@ const Livedeal = ({
                     </div>
                  </div>&nbsp;
 
+                  
+
                  <div className={tilesClasses}>
                  <div className="col-md-2">
-                <label align="left">Sectors
-                    <select style={{backgroundColor:"#AAB7B8",width: 250,height: 40,fontSize:20,color:"white"}}>
-                        <option value="Most Funded">EdTech & Education</option>
-                        <option value="Most Transaction">Sort By : Most Transaction</option>
-                        <option value="Closing Soon">Sort By : Closing Soon</option>
+                 
+                <label>
+                <p><b>Sectors</b></p>
+                    <select style={{backgroundColor:"#AAB7B8",borderColor:"#AAB7B8",borderRadius:8,width: 250,height: 40,fontSize:20,color:"white"}}>
+                        <option align="center" value="Most Funded">EdTech & Education</option>
+                        <option align="center" value="Most Transaction">Education</option>
+                        <option align="center" value="Closing Soon">EdTech</option>
                        
                     </select>
                     </label>
                     </div>
                   <div className='col-md-1'></div>
                     <div className="col-md-2">
-                <label align="left">Revenue
-                    <select style={{backgroundColor:"#AAB7B8",width: 250,height: 40,fontSize:20,color:"white"}}>
-                        <option value="Most Funded">30k - 50k</option>
-                        <option value="Most Transaction">Sort By : Most Transaction</option>
-                        <option value="Closing Soon">Sort By : Closing Soon</option>    
+                      
+                <label>
+                <p><b>Revenue</b></p>
+                    <select style={{backgroundColor:"#AAB7B8",borderColor:"#AAB7B8",borderRadius:8,width: 250,height: 40,fontSize:20,color:"white"}}>
+                        <option align="center" value="Most Funded">30k - 50k</option>
+                        <option align="center" value="Most Transaction">50k - 100k</option>
+                        <option align="center" value="Closing Soon">100k - 500k</option>    
                     </select>
                     </label>
                     </div>
 
-                    <div className='col-md-1'></div>
-                    <div className="col-md-2">
-                <label align="left">Tech
-                    <select style={{backgroundColor:"#AAB7B8",width: 250,height: 40,fontSize:20,color:"white"}}>
-                        <option value="Most Funded">Blockchain</option>
-                        <option value="Most Transaction">Sort By : Most Transaction</option>
-                        <option value="Closing Soon">Sort By : Closing Soon</option>
+                    <div className='col-md-1'></div>&nbsp;&nbsp;
+                    <div className="col-md-2"> 
+                <label>
+                 <p><b>Tech</b></p>
+                    <select style={{backgroundColor:"#AAB7B8",borderColor:"#AAB7B8",borderRadius:8,width: 250,height: 40,fontSize:20,color:"white"}}>
+                        <option align="center" value="Most Funded">Blockchain</option>
+                        <option align="center" value="Most Transaction">Most Transaction</option>
+                        <option align="center" value="Closing Soon">Closing Soon</option>
                        
                     </select>
                     </label>
                     </div>
 
-                    <div className='col-md-1'></div>
+                    <div className='col-md-1'></div>&nbsp;&nbsp;
                     <div className="col-md-2">
-                <label align="left">Min.Investment
-                    <select style={{backgroundColor:"#AAB7B8",width: 250,height: 40,fontSize:20,color:"white"}}>
-                        <option value="Most Funded">$1000</option>
-                        <option value="Most Transaction">Most Transaction</option>
-                        <option value="Closing Soon">Closing Soon</option>
+                      
+                <label>
+                <p><b>Min.Investment</b></p>
+                    <select style={{backgroundColor:"#AAB7B8",borderColor:"#AAB7B8",borderRadius:8,width: 250,height: 40,fontSize:20,color:"white"}}>
+                        <option align="center" value="Most Funded">$1000</option>
+                        <option align="center" value="Most Transaction">$2500</option>
+                        <option align="center" value="Closing Soon">$5000</option>
                        
                     </select>
                     </label>

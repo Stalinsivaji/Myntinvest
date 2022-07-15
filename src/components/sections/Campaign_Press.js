@@ -10,31 +10,88 @@ import Image from "../elements/Image";
 import '../Css/styles.css';
 
 
-const Campaign_Press = ({
-    className,
-    topOuterDivider,
-    bottomOuterDivider,
-    topDivider,
-    bottomDivider,
-    hasBgColor,
-    invertColor,
-    pushLeft,
-    ...props
-  }) => {
+class Campaign_Press extends React.Component {
+  constructor() {
+  super();
+  this.state = {
+    input: {},
+    errors: {}
+  };
+   
+  this.handleChange = this.handleChange.bind(this);
+  this.handleSubmit = this.handleSubmit.bind(this);
+}
+   
+handleChange(event) {
+  let input = this.state.input;
+  input[event.target.name] = event.target.value;
+
+  this.setState({
+    input
+  });
+}
+   
+handleSubmit(event) {
+  event.preventDefault();
+
+  if(this.validate()){
+      console.log(this.state);
+
+      let input = {};
+      input["header01"] = "";
+      
+      
+      
+      
+      this.setState({input:input});
+
+      alert('Campaign Press Form is submitted');
+  }
+}
+
+validate(){
+    let input = this.state.input;
+    let errors = {};
+    let isValid = true;
  
-const tilesClasses = classNames(
-'tiles-wrap',
-pushLeft && 'push-left'
-);
+    if (!input["header01"]) {
+      isValid = false;
+      errors["header01"] = "Enter Your header/title here.";
+    }
+
+    if (typeof input["header01"] !== "undefined") {
+      const re = /^\S*$/;
+      if(input["header01"].length < 4 || !re.test(input["header01"])){
+          isValid = false;
+          errors["header01"] = "Enter Your header/title here.";
+      }
+    }
+
+    
+
+
+
+
+  
+    this.setState({
+      errors: errors
+    });
+
+    return isValid;
+}
+   
+render() {
+  
 
 return (
     
              
-        <div className="row" >
+        <div className="row">
   
                <div className="row">
                <div className="col-md-1"></div>
                <div className="col-md-11">
+               <form onSubmit={this.handleSubmit}>
                <div className="m-5 p-4">
                <div className="row">
                <div className="row" >
@@ -65,43 +122,53 @@ return (
               <br/>
 
              <div className="row">
-             <div clasName="col-md-12"> 
-             <h6 style={{fontSize:15}}>Header<code style={{color:"red"}}>*</code></h6><br/>
-                 <form>
-                     <div className="row">
-                     <div className="col-md-8">
-                     <div className="input-group"><input type="text" style={{height:40,backgroundColor:"#E5E8E8",fontSize:15}} className="form-control" placeholder="Enter Your header/title here" /></div>
-                     </div>
-                     </div>
-                  </form><br/>
-             </div>  
+             <div className="col-md-4">
+                       <input
+                              name="header01" 
+                              type="text" 
+                              value={this.state.input.header01}
+                              onChange={this.handleChange} 
+                              style={{width:'auto',height:40,backgroundColor:"#E5E8E8",fontSize:12}} 
+                              className="form-control" 
+                              placeholder="Enter Your header/title here" 
+                              id="header01"/>
+                      </div>
 
-             <div className="col-md-12">
-                  <h6 style={{fontSize:15}}>Body<code style={{color:"red"}}>*</code></h6>
-                  <div className="row">
-                     <div className="col-md-8"style={{width:750,height:300,backgroundColor:"white"}}>
-                     <Editor 
-                         toolbarClassName="toolbarClassName"
-                         wrapperClassName="wrapperClassName"
-                         editorClassName="editorClassName"/>
-                     </div>   
-                   </div><br/>&nbsp;&nbsp;
-                   </div><br/>&nbsp;&nbsp;
+                      <div className="text-danger" style={{fontSize:15}}>{this.state.errors.header01}</div>
+                      <br/>
+                      <br/>
+               <strong style={{fontSize:15}}>body</strong>
+               <div className="row" >
+                
+                  <div className="col-md-8"style={{width:750,height:'auto',backgroundColor:"white"}}>
+                  <Editor 
+                      toolbarClassName="toolbarClassName"
+                      wrapperClassName="wrapperClassName"
+                      editorClassName="editorClassName"
+                    /></div>
+                      
+                </div>
 
 
-                   <div className="row">
+                 <div className="row" style={{padding:10}}>
+                    
                        <div className='col-md-6'><h6 style={{fontSize:15}}>Banner Photo</h6></div>
-                       <div className='col-md-6'>
-                       <Button tag="a" color="" style={{backgroundColor:"white",borderRadius:8,color:"#B3B6B7 ",borderColor:'#E5E8E8',width:182}} wideMobile href="">
+                       <div className='col-md-4'>
+                       <Button tag="a" color="" style={{backgroundColor:"white",borderRadius:8,color:"#B3B6B7 ",borderColor:'#E5E8E8',width:'auto'}} wideMobile href="">
                        Upload Picture
                        </Button>
                        </div>
-                   </div><br/>
+                   </div>
+                   <br/>
+
+                   <br/>
                    
                    <div className="row" align="center">
-                    <div className="col-md-8">
-                    <p style={{color:"grey"}}>----------or----------</p>
+                    <div>
+                    
+                    <p style={{color:"grey"}}>-----or------</p>
                     </div>
+                    
                    </div>
 
                    <div className='row'>
@@ -130,15 +197,20 @@ return (
                   height={300}
                   /></div>
 
-                   <div className="row">
+                   <div className="row" >
+
+                    <div >
                    
                  
-                   <Button tag="a" color="secondary" className='text-white' style={{backgroundColor:"#2ECC71",borderRadius:8,width:160}} wideMobile href="/Campaign">
+                   <Button type="submit" value="Submit" color="secondary" className='text-white' style={{backgroundColor:"#2ECC71",borderRadius:8,width:160}} wideMobile href="/">
                    Publish
-                     </Button></div>
+                     </Button>
+                     </div>
+                     </div>
 
               </div>
               </div>
+              </form>
               </div>
               </div>
               </div>
@@ -151,7 +223,8 @@ return (
                
                
 
-) ;       
+) ;  
+}     
 };
 
 

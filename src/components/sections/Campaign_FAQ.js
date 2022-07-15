@@ -1,159 +1,177 @@
-import React from "react";
-import classNames from 'classnames';
-import Image from "../elements/Image";
-import Button from '../elements/Button';
-import ButtonGroup from "../elements/ButtonGroup";
-import Link from "@material-ui/core/Link";
-import Breadcrumbs from "@material-ui/core/Breadcrumbs";
+import React, {useState} from 'react';
 import '../Css/styles.css';
+import {NavLink} from "react-router-dom";
+import Button from '../elements/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ButtonGroup from '../elements/ButtonGroup';
 
 
 
-
-
-const Campaign_FAQ = ({
-    className,
-    topOuterDivider,
-    bottomOuterDivider,
-    topDivider,
-    bottomDivider,
-    hasBgColor,
-    invertColor,
-    pushLeft,
-    ...props
-  }) => {
- 
-const tilesClasses = classNames(
-'tiles-wrap',
-pushLeft && 'push-left'
-);return (
-    
-             
-        <div className="row" >
+class Campaign_FAQ extends React.Component {
+    constructor() {
+    super();
+    this.state = {
+      input: {},
+      errors: {}
+    };
+     
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+     
+  handleChange(event) {
+    let input = this.state.input;
+    input[event.target.name] = event.target.value;
   
-               <div className="row">
-               <div className="col-md-1"></div>
-               <div className="col-md-11">
-               <div className="m-5 p-4">
-               <div className="row">
-               <div className="row" >
-               <Breadcrumbs separator=">" aria-label="breadcrumb">
-                    <Link
-                    color="inherit"
-                    href="/Startup_Dashboard"
-                    style={{fontSize:12}}
-                    >
-                    Back To Dashboard
-                    </Link>
-                    
-                </Breadcrumbs>
-
-                
-              </div>              
-              </div>
-              <br/>
-              <br/>
-              
-              <div>
-              <strong style={{fontSize:35}}>FAQs (Frequently Asked Questions)</strong>
-              &nbsp;
-              &nbsp;
-              <p style={{fontSize:13}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quam nunc at nibh. Odio erat turpis sit at bibendum nunc adipiscing sed.<br/>Tincidunt enim, amet vitae nibh cursus imperdiet erat</p>
-              
-              <br/>
-              <br/>
-
-             <div className="row">
-              <h3>01</h3><hr/>
-              <br/>
-              <div className="row">
-              <h6 style={{fontSize:14}}>Question</h6>
-                 <form>
-                      <input
-                         style={{width: 380,height: 40,backgroundColor:"#E5E8E8",fontSize:12}}
-                         placeholder='Type your question here...'
-                         className="form-control"
-                         type="text" 
-                         maxlength="12"
-                        />                   
-                 </form>  
-                 </div>
-
-                 <div className="row">
-                <h6 style={{fontSize:14}}>Bio</h6>
-                <form>
-                   <input
-                      style={{width: 380,height: 200,fontSize:12,backgroundColor:"#E5E8E8"}}
-                      placeholder='Type something about your team member....'
-                      className="form-control"
-                      type="text" 
-                      maxlength="100"
-                    />
-                </form>
-                </div>
-                </div>&nbsp;
-                
-                
-                
+    this.setState({
+      input
+    });
+  }
+     
+  handleSubmit(event) {
+    event.preventDefault();
+  
+    if(this.validate()){
+        console.log(this.state);
+  
+        let input = {};
+        input["Question"] = "";
+        input["Bio"] = "";
+            
+        this.setState({input:input});
+  
+        alert('TeamInfo Form is submitted');
+    }
+  }
+  
+  validate(){
+      let input = this.state.input;
+      let errors = {};
+      let isValid = true;
+   
+      if (!input["Question"]) {
+        isValid = false;
+        errors["Question"] = "Type your question here.";
+      }
+  
+      if (typeof input["Question"] !== "undefined") {
+        const re = /^\S*$/;
+        if(input["Question"].length < 2 || !re.test(input["Question"])){
+            isValid = false;
+            errors["Question"] = "Type your question here.";
+        }
+      }
 
 
-              <div className="row">
-              <h3>02</h3><hr/>
-              <br/>
-              <div className="row">
-              <h6 style={{fontSize:14}}>Question</h6>
-                 <form>
-                      <input
-                         style={{width: 380,height: 40,backgroundColor:"#E5E8E8",fontSize:12}}
-                         placeholder='Type your question here...'
-                         className="form-control"
-                         type="text" 
-                         maxlength="12"
-                        />                   
-                 </form>  
-                 </div>
+      if (!input["Bio"]) {
+        isValid = false;
+        errors["Bio"] = "Type something about here.";
+      }
+  
+      if (typeof input["Bio"] !== "undefined") {
+        const re = /^\S*$/;
+        if(input["Bio"].length < 2 || !re.test(input["Bio"])){
+            isValid = false;
+            errors["Bio"] = "ype something about here.";
+        }
+      }
+  
+      this.setState({
+        errors: errors
+      });
+  
+      return isValid;
+  }
+     
+render() {
 
-                 <div className="row">
-                <h6 style={{fontSize:14}}>Bio</h6>
-                <form>
-                   <input
-                      style={{width: 380,height: 200,fontSize:12,backgroundColor:"#E5E8E8"}}
-                      placeholder='Type something about your team member....'
-                      className="form-control"
-                      type="text" 
-                      maxlength="100"
-                    />
-                </form>
-                </div>
-                </div>&nbsp;
+    return (
+        <>
+        <body className='' >
+            <div className='container'>
+                       
+                <div className='row' style={{height:'auto',marginTop:100}}>
+                    <div className='row'>
+                      <div className="hero-content">
+                         <nav className="navbar navbar-expand-sm bg-Secondary navbar-white " >
+                            <div className="container-fluid" style={{marginTop:-40}}>
+                                  <ul className="navbar-nav" style={{fontSize:13}}>                                  
+                                      <li className="nav-item">
+                                          <NavLink to="/Campaign" className="nav-link" style={{color:"#B1B0AD"}}>Back to Campaign</NavLink>
+                                        </li>                                 
+                                    </ul>
+                              </div>
+                            </nav>
 
-                <div className="row">
-                <ButtonGroup>
-                <Button tag="a" color="" style={{backgroundColor:"white",borderRadius:8,color:"#B3B6B7 ",borderColor:'#E5E8E8',width:182}} wideMobile href="">
-                    Add Members
-                    </Button>
-                  <Button tag="a"  style={{backgroundColor:"#2ECC71",borderRadius:8,color:"white",width:182}} wideMobile href="/Campaign">
-                    Submit
-                    </Button>
-                </ButtonGroup> 
-                </div>
+                           <div className='container'>
+                              <div className='row' style={{height:'auto'}}>
+                                    <div className='col-md-12'>
+                                        <h3>FAQs (Frequently Asked Questions)</h3>
+                                        <p style={{fontSize:13}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt libero vel elementum at cum tupis eget. Viverra ultrices lacus, lectus volutpat sociis vitae mauris<br/>porta faugiat. Nec, vitae facilisi elementum eu est vel quis platea. Diam pharetra nec malesuada mi purus erat.</p>
+                                                                   
+                                        <div className='row'>
+                                        <form onSubmit={this.handleSubmit}>
 
-              </div>
-              </div>
-              </div>
-              </div>
-              </div>
-              
+                                        <div className="col-md-12">
+                                            <h5 style={{fontSize:20}}>01</h5><hr/>
+                                            <h6>Question</h6>
+                                            <div class="input-group mb-3" style={{width:300}}>
+                                            <input 
+                                                     name='Question'
+                                                     value={this.state.input.Question}
+                                                     onChange={this.handleChange}
+                                                     type="text" 
+                                                     class="form-control" 
+                                                     style={{backgroundColor:"#E5E8E8",color:"grey",fontSize:15}}
+                                                     maxlength="150"  placeholder="Type your question here..." 
+                                                     id='Question'/>
+                                            </div>
+                                            <div className="text-danger" style={{fontSize:15}}>{this.state.errors.Question}</div>
 
-              
+                                            <h6>Bio</h6>
+                                            <div class="input-group mb-3" style={{width:300,height:200}}>
+                                            <input 
+                                                      name='Bio'
+                                                      value={this.state.input.Bio}
+                                                      onChange={this.handleChange}
+                                                      type="text" 
+                                                      class="form-control" 
+                                                      style={{backgroundColor:"#E5E8E8",color:"grey",fontSize:12}}
+                                                      maxlength="250"  
+                                                      placeholder="Type something about your team member...."
+                                                      id='Bio'/>
+                                                </div>
+                                                <div className="text-danger" style={{fontSize:15}}>{this.state.errors.Bio}</div>
+                                            </div>
 
+                                        <div className='col-md-6' align="center">
+                                        <ButtonGroup>                                          
+                                        <Button tag="a" color="" style={{backgroundColor:"white",borderRadius:8,color:"#B3B6B7 ",borderColor:'#E5E8E8',width:180}} wideMobile href="">
+                                            Add Question
+                                        </Button>
 
-              
-               
-               
-
-) ;       
+                                        <Button type="submit" value="Submit"  style={{backgroundColor:"#2ECC71",borderRadius:8,color:"white",width:160}} wideMobile href="">
+                                            Submit
+                                        </Button>
+                                        </ButtonGroup>
+                                        
+                                        </div>
+                                        </form>
+                                      </div>
+                                    </div>
+                                </div>
+                             </div>                           
+                        </div>
+                     </div>
+                </div>               
+            </div> 
+        </body>           
+    </>
+    );
+ }
 };
+
+
 
 
 

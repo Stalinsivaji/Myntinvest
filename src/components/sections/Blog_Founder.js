@@ -59,6 +59,7 @@ const Blog_Founder = ({
       <div className="container">&nbsp;
         <div className={innerClasses}>
           <SectionHeader data={sectionHeader} className="center-content" />
+              
                <div className="features-tiles-item-content">
                   <h2 className="mt-0 mb-8">
                   Founder Resources
@@ -67,6 +68,7 @@ const Blog_Founder = ({
                           &nbsp;  Learn More About Fundraising And Entrepreneurship
                   </span>
                 </div> &nbsp;
+
                 <div className={tilesClasses}>
               <Image
                       src={require('./../../assets/images/Metaverse.jpg')}
@@ -74,6 +76,7 @@ const Blog_Founder = ({
                       width={700}
                       height={400} 
                      />
+
             <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
@@ -97,8 +100,8 @@ const Blog_Founder = ({
                 </div>
               </div>
             </div>
-
           </div>
+
           <div className={tilesClasses}>
             <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
@@ -124,8 +127,6 @@ const Blog_Founder = ({
               </div>
             </div>
 
-            
-            
             <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
@@ -149,6 +150,7 @@ const Blog_Founder = ({
                 </div>
               </div>
             </div>
+
             <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
@@ -172,8 +174,8 @@ const Blog_Founder = ({
                 </div>
               </div>
             </div>
-
           </div>
+
           <div className={tilesClasses}>
              <div className="reveal-from-bottom" data-reveal-delay="600" >
                 <ButtonGroup>
@@ -181,7 +183,8 @@ const Blog_Founder = ({
                     Load More
                     </Button>
                 </ButtonGroup>
-              </div></div>
+              </div>
+            </div>
         </div>
       </div>
     </section>

@@ -64,7 +64,7 @@ const Deals_About= ({
                 </div>
                 &nbsp;
 
-          <div className={tilesClasses}>  
+          <div className="row" align="center">  
                 <div className="col-md-1">
                 </div>
                 <div className="col-md-2">

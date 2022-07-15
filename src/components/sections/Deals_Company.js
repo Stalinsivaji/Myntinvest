@@ -58,9 +58,9 @@ const Deals_Company= ({
         <div className={innerClasses}>&nbsp;
          <SectionHeader data={sectionHeader} className="center-content" />
               <div className="features-tiles-item-content">
-                  <h1 className="mt-0 mb-8" >
+                  <h2 className="mt-0 mb-8" >
                   Company Location
-                    </h1>
+                    </h2>
                 </div>
                 &nbsp;
 

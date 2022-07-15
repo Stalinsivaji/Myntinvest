@@ -17,26 +17,79 @@ import ButtonGroup from "../elements/ButtonGroup";
 
 
 
-const Solution= ({
-    className,
-    topOuterDivider,
-    bottomOuterDivider,
-    topDivider,
-    bottomDivider,
-    hasBgColor,
-    invertColor,
-    pushLeft,
-    ...props
-  }) => {
+class Solution extends React.Component {
+    constructor() {
+    super();
+    this.state = {
+      input: {},
+      errors: {}
+    };
+     
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+     
+  handleChange(event) {
+    let input = this.state.input;
+    input[event.target.name] = event.target.value;
+  
+    this.setState({
+      input
+    });
+  }
+     
+  handleSubmit(event) {
+    event.preventDefault();
+  
+    if(this.validate()){
+        console.log(this.state);
+  
+        let input = {};
+        input["header2"] = "";
+        
+        
+        
+        
+        this.setState({input:input});
+  
+        alert('Solution Form is submitted');
+    }
+  }
+  
+  validate(){
+      let input = this.state.input;
+      let errors = {};
+      let isValid = true;
+   
+      if (!input["header2"]) {
+        isValid = false;
+        errors["header2"] = "Enter Your header/title here.";
+      }
+  
+      if (typeof input["header2"] !== "undefined") {
+        const re = /^\S*$/;
+        if(input["header2"].length < 4 || !re.test(input["header2"])){
+            isValid = false;
+            errors["header2"] = "Enter Your header/title here.";
+        }
+      }
+
+      
+
+
+
+
 
     
-
-    
- 
-const tilesClasses = classNames(
-'tiles-wrap',
-pushLeft && 'push-left'
-);return (
+      this.setState({
+        errors: errors
+      });
+  
+      return isValid;
+  }
+     
+ render() {
+return (
 
     <body>
     
@@ -46,6 +99,7 @@ pushLeft && 'push-left'
                <div className="row">
                <div className="col-md-1"></div>
                <div className="col-md-11">
+               <form onSubmit={this.handleSubmit}>
                <div className="m-5 p-4">
                <div className="row">
                <div className="row" >
@@ -104,27 +158,36 @@ pushLeft && 'push-left'
               <br/>
               <strong style={{fontSize:15}}>Header</strong><br/>
                  
-              <form>
-                <div className="row">
+              <div className="row">
                    
-                  <div className="col-md-8">
-                  <div className="input-group"><input type="text" style={{height:40,backgroundColor:"#E5E8E8",fontSize:12}} className="form-control" placeholder="Enter Your header/title here" /></div>
-                      </div>
-                          
+                      <div className="col-md-4">
+                          <input
+                              name="header2" 
+                              type="text" 
+                              value={this.state.input.header2}
+                              onChange={this.handleChange}
+                              style={{width:'auto',height:40,backgroundColor:"#E5E8E8",fontSize:12}} 
+                              className="form-control" 
+                              placeholder="Enter Your header/title here"
+                              length="50" 
+                              id="header2"/>
                          </div>
-                    
-                </form>
+                         <div className="text-danger" style={{fontSize:15}}>{this.state.errors.header2}</div>
+                          
+                    </div>
                        
                <br/>
                <strong style={{fontSize:15}}>body</strong>
                <div className="row" >
                 
-                  <div className="col-md-8"style={{width:750,height:300,backgroundColor:"white"}}>
+                  <div className="col-md-8"style={{width:750,height:'auto',backgroundColor:"white"}}>
                   <Editor 
                       toolbarClassName="toolbarClassName"
                       wrapperClassName="wrapperClassName"
                       editorClassName="editorClassName"
+                     
                     /></div>
+                    <div className="text-danger" style={{fontSize:15}}>{this.state.errors.summar}</div>
                       
                 </div>
                 
@@ -143,7 +206,7 @@ pushLeft && 'push-left'
                 <div className='row'>
                     <div className='col-md-3'><Image   src={require('./../../assets/images/hand001.jpg')}alt="Features tile icon 01" style={{width:300,height:150}} /></div>
                     <div className='col-md-3'><Image   src={require('./../../assets/images/hand02.jpg')}alt="Features tile icon 01"  style={{width:300,height:150}}  /></div>
-                    <div className='col-md-3'><Image   src={require('./../../assets/images/hand3.avif')}alt="Features tile icon 01"  style={{width:300,height:150}} /></div>
+                    <div className='col-md-3'><Image   src={require('./../../assets/images/h1.jpg')}alt="Features tile icon 01"  style={{width:300,height:150}} /></div>
 
 
                 </div>
@@ -158,7 +221,7 @@ pushLeft && 'push-left'
                 <Button tag="a" color="" style={{backgroundColor:"white",borderRadius:8,color:"#B3B6B7 ",borderColor:'#E5E8E8',width:160}} wideMobile href="">
                     Add Members
                     </Button>&nbsp;&nbsp;
-                  <Button tag="a"  style={{backgroundColor:"#2ECC71",borderRadius:8,color:"white",width:160}} wideMobile href="">
+                  <Button type="submit" value="Submit"  style={{backgroundColor:"#2ECC71",borderRadius:8,color:"white",width:160}} wideMobile href="">
                     Submit
                     </Button></ButtonGroup>
                 </div>
@@ -179,6 +242,7 @@ pushLeft && 'push-left'
 
 
               </div>
+              </form>
               </div>
               </div>
               </div>
@@ -194,7 +258,10 @@ pushLeft && 'push-left'
                
                
 
-) ;       
+) ;  
+
+ }
+     
 };
 
 

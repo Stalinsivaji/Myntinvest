@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { Component } from 'react';
 import '../Css/styles.css';
 import {NavLink,Link} from "react-router-dom";
 import Image from '../elements/Image';
@@ -9,22 +9,50 @@ import Button from '../elements/Button';
 
   
 
-
-const Investors_Verification= () => {
-    const [otp, setOtp] = useState(new Array(4).fill(""));
-
-    const handleChange = (element, index) => {
-        if (isNaN(element.value)) return false;
-
-        setOtp([...otp.map((d, idx) => (idx === index ? element.value : d))]);
-
-        //Focus next input
-        if (element.nextSibling) {
-            element.nextSibling.focus();
+class Investors_Verification extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { value: '', otp1: "", otp2: "", otp3: "", otp4: "",  disable: true };
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    
+      }
+    
+      handleChange(value1, event) {
+    
+        this.setState({ [value1]: event.target.value });
+      }
+    
+      handleSubmit(event) {
+    
+        const data = new FormData(event.target);
+        console.log(this.state);
+        event.preventDefault();
+      }
+    
+      inputfocus = (elmnt) => {
+        if (elmnt.key === "Delete" || elmnt.key === "Backspace") {
+          const next = elmnt.target.tabIndex - 2;
+          if (next > -1) {
+    
+            elmnt.target.form.elements[next].focus()
+          }
         }
-    };
+        else {
+          console.log("next");
+         
+            const next = elmnt.target.tabIndex;
+            if (next < 4) {
+              elmnt.target.form.elements[next].focus()
+            }
+        }
+      
 
-    return (
+      }
+      
+          
+render() {
+return (
         <>
         <body className='bg-white' >
             <div className='container'>
@@ -49,47 +77,80 @@ const Investors_Verification= () => {
                                     <div className='col-md-12'>
                                         <h3>Complete Your Profile</h3>
                                         <p style={{fontSize:13}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt libero vel elementum at cum tupis eget. Viverra ultrices lacus, lectus volutpat sociis vitae mauris<br/>porta faugiat. Nec, vitae facilisi elementum eu est vel quis platea. Diam pharetra nec malesuada mi purus erat.</p>
-                                       <div className='row'> 
-                                        <div className='col-md-2' align="left">
+                                       <div className='row' align="left"> 
+                                        <div className='col-md-2'>
                                         <a href=''><Image   src={require('./../../assets/images/kyc1.png')}alt="Features tile icon 01"  width={50} height={50}  /><p style={{padding:10,fontSize:15}}>KYC</p></a>
                                         </div>
                                         
-                                        <div className='col-md-2 ' align="left">
-                                        <a href='' ><Image   src={require('./../../assets/images/payment.png')}alt="Features tile icon 01"  width={50} height={50}  /><p style={{padding:10,marginLeft:-30,fontSize:15}}>Payment Details</p></a>
+                                        <div className='col-md-2 '>
+                                        <a href='' ><Image   src={require('./../../assets/images/payment.png')}alt="Features tile icon 01"  width={50} height={50}  /><p style={{padding:10,fontSize:15}}>Payment Details</p></a>
                                         </div>
                                         </div>
                                         
                                         
                                         <div className='row'>
+                                        <form onSubmit={this.handleSubmit}>  
                                         <div className="col-md-12">
-                                            <h5 style={{fontSize:20}}>Verify Mobile Number</h5>
+                                            <h5>Verify Mobile Number</h5>
 
-                                          <p style={{fontSize:17}}>OTP Entered {otp.join("")}</p>
-                                            {otp.map((data, index) => {
-                                              return (
-                                                 <input
-                                                     style={{width: 100,height: 40,color:"grey"}}
-                                                     type="text"
-                                                     name="otp"
-                                                     maxLength="1"
-                                                     key={index}
-                                                     value={data}
-                                                     onChange={e => handleChange(e.target, index)}
-                                                     onFocus={e => e.target.select()}
-                                                    />
-                                                );
-                                            })}
+                                           
+                                            <div className="otpContainer" >
 
-                                          
-                                         
-                                            
+                                            <input
+                                                name="otp1"
+                                                type="text"
+                                                style={{width:70}}
+                                                autoComplete="off"
+                                                className="otpInput"
+                                                value={this.state.otp1}
+                                                onKeyPress={this.keyPressed}
+                                                onChange={e => this.handleChange("otp1", e)}
+                                                tabIndex="1" maxLength="1" onKeyUp={e => this.inputfocus(e)}
+
+                                            />
+                                            <input
+                                                name="otp2"
+                                                type="text"
+                                                style={{width:70}}
+                                                autoComplete="off"
+                                                className="otpInput"
+                                                value={this.state.otp2}
+                                                onChange={e => this.handleChange("otp2", e)}
+                                                tabIndex="2" maxLength="1" onKeyUp={e => this.inputfocus(e)}
+
+                                            />
+                                            <input
+                                                name="otp3"
+                                                type="text"
+                                                style={{width:70}}
+                                                autoComplete="off"
+                                                className="otpInput"
+                                                value={this.state.otp3}
+                                                onChange={e => this.handleChange("otp3", e)}
+                                                tabIndex="3" maxLength="1" onKeyUp={e => this.inputfocus(e)}
+
+                                            />
+                                            <input
+                                                name="otp4"
+                                                type="text"
+                                                style={{width:70}}
+                                                autoComplete="off"
+                                                className="otpInput"
+                                                value={this.state.otp4}
+                                                onChange={e => this.handleChange("otp4", e)}
+                                                tabIndex="4" maxLength="1" onKeyUp={e => this.inputfocus(e)}
+                                            />
                                             </div>
-                                    <div className='col-md-7' align="center" style={{marginTop:20}}>
-                                        <Button tag="a" color="primary" style={{borderRadius:8,color:"white"}} wideMobile href="/Pancard_Details">
+                                           
+                                           
+                                          </div>
+                                    <div className='col-md-7' align="left" style={{marginTop:20}}>
+                                        <Button type="submit" value="button" id="Button" color="primary" style={{borderRadius:8,color:"white"}} wideMobile href="/Pancard_Details">
                                            Verify & Continue
                                          </Button>
                                          
                                         </div>
+                                        </form>  
                                         </div>
 
                 
@@ -148,6 +209,7 @@ const Investors_Verification= () => {
             
         </>
     );
+}
 };
 
 

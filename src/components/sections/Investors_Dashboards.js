@@ -32,7 +32,11 @@ const Investors_Dashboards = ({
 const tilesClasses = classNames(
 'tiles-wrap',
 pushLeft && 'push-left'
-);return (
+);
+
+
+
+return (
 
     <body>
     
@@ -71,25 +75,30 @@ pushLeft && 'push-left'
 
               <br/>
               <div className="row">
-              
-                      <Card style={{backgroundColor:"#E9F7EF ",width:360,height:120}}>
-                            <p style={{fontSize:12,padding:15}}>Total Investment value</p>
-                            <strong style={{fontSize:25,padding:15,}}>$21.,500.00</strong>
-                      </Card>&nbsp;&nbsp;&nbsp;&nbsp;
+                     <Card style={{backgroundColor:"#E9F7EF",width:350,height:150,borderRadius:15,marginTop:10}}>
+                        <div className="row">
+                             <div className="col-md-12" align="left" style={{paddingTop:18}}> <p style={{fontSize:12}}>Total Investment value</p>
+                                <strong style={{color:"black"}}>$21.,500.00</strong>
+                              </div>          
+                         
+                        </div>
+                        </Card>&nbsp;
 
-                     <Card style={{backgroundColor:"#FDF2E9",width:360,height:120,alignItems:''}}>
-                        <p style={{fontSize:12,padding:15}}>Startups Invested</p>
-                        <strong style={{fontSize:25,padding:15,marginTop:-40}}>25</strong>
-                      </Card>&nbsp;&nbsp;&nbsp;&nbsp;
+                        
+                        <Card style={{backgroundColor:"#FDF2E9",width:360,height:150,borderRadius:15,marginTop:10}}>
+                        <div className="row"><div className="col-md-12" align="left" style={{paddingTop:18}}> <p style={{fontSize:12}}>Startups Invested</p>
+                        <strong style={{color:"black"}}>25</strong></div>          
+                        </div>
+                        </Card>&nbsp;
 
-                      <Card style={{backgroundColor:"#F2F3F4 ",width:360,height:120,alignItems:''}}>
-                         <p style={{fontSize:12,alignItems:'center',marginTop:40}} className='text-center' >View All</p>  
-                         <p className='text-center' style={{fontSize:25,padding:15,marginTop:-40}}>Investment</p>
-                      </Card>
-                
-                
+
+                        <Card style={{backgroundColor:"#F2F3F4",width:260,height:150,borderRadius:15,marginTop:10}}>
+                        <div className="row">
+                          <div className="col-md-12" align="center" style={{paddingTop:18}}> <p style={{fontSize:12}}>View All</p>
+                        <strong style={{color:"black"}}>Investment</strong></div>          
+                        </div>
+                        </Card>
               </div>
-
 
               <br/>
               <br/>
@@ -101,7 +110,7 @@ pushLeft && 'push-left'
 
               <br/>
               <div className="row">
-                     <Card style={{backgroundColor:"#FDF2E9",width:400,height:180,borderRadius:15}}>
+                     <Card style={{backgroundColor:"#FDF2E9",width:450,height:200,borderRadius:15}}>
                         <div className="row">
                              <div className="col-md-7" align="left" style={{paddingTop:18}}> <strong>KYC</strong>
                                 <p style={{fontSize:12,color:"grey"}}>Complete your online KYC to start investing keep your PAN card handy!</p>
@@ -115,7 +124,7 @@ pushLeft && 'push-left'
                         </Card>&nbsp;&nbsp;&nbsp;&nbsp;
 
                         
-                        <Card style={{backgroundColor:"whitesmoke",width:'auto',height:180,borderRadius:15}}>
+                        <Card style={{backgroundColor:"whitesmoke",width:450,height:200,borderRadius:15}}>
                         <div className="row"><div className="col-md-6" align="left" style={{paddingTop:18}}> <strong>Payment Details</strong>
                         <p style={{fontSize:12,color:"grey"}}>Complete your Payment Detailse</p></div>          
                         <div className="col-md-6" align="center">
@@ -135,8 +144,8 @@ pushLeft && 'push-left'
 
                         <br/>
                         <br/>
-                        <div className="row">
-                               <Card  style={{backgroundColor:"white",width:'auto'}}>
+                        <div className={tilesClasses}>
+                               <Card  style={{backgroundColor:"white",width:'auto',height:'auto'}}>
                                   <CardHeader
                                           avatar={ <Image
                                              src={require('./../../assets/images/inv1.jpg')}
@@ -147,14 +156,14 @@ pushLeft && 'push-left'
                                              subheader="2 months ago"
         
                                        />&nbsp;
-                                      <span style={{color:"grey",fontSize:13}}>Recommendation oj jeff Brown in Day One newsletter. The concept is so good that it's obvious to me that this is a very good investment.Go Team!!</span>
+                                      <p style={{color:"grey",fontSize:12}} align='center'>&nbsp;Recommendation oj jeff Brown in Day One newsletter. The concept is so good that it's obvious to me that this is a very good investment.Go Team!!&nbsp;</p>
                                      </Card>
                            </div>
 
                            <br/>
                            <br/>
-                           <div className="row">
-                              <Card  style={{backgroundColor:"white",width:'auto'}}>
+                           <div className={tilesClasses}>
+                              <Card  style={{backgroundColor:"white",width:'auto',height:'auto'}}>
                                    <CardHeader
                                       avatar={ <Image
                                         src={require('./../../assets/images/inv2.webp')}
@@ -165,7 +174,7 @@ pushLeft && 'push-left'
                                       subheader="2 months ago"
         
                                      />&nbsp;
-                                    <span style={{color:"grey",fontSize:13}}>Recommendation oj jeff Brown in Day One newsletter. The concept is so good that it's obvious to me that this is a very good investment.Go Team!!</span>
+                                    <p style={{color:"grey",fontSize:12}} align='center'>&nbsp;Recommendation oj jeff Brown in Day One newsletter. The concept is so good that it's obvious to me that this is a very good investment.Go Team!!&nbsp;</p>
                                  </Card>
                              </div>
 

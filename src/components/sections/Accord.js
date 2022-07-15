@@ -80,148 +80,148 @@ const propTypes = {
                 <div className="text-lg text-color-dark fw-600 tt-u mb-8">
                   Frequently Asked <span style={{color:"#23b347"}}>Questions</span>
                   </div>
-        <Accordion >
-            <AccordionItem >
-                <AccordionItemHeading>
-                    <AccordionItemButton >
-                        What is MynInvest?
-                    </AccordionItemButton>
-                </AccordionItemHeading>
-                <AccordionItemPanel>
-                    <p>
-                      Additionally,the SEC limits the maximum amount you can invest
-                      across all startup using the Reg CF legel framework based on your
-                      finalcial situation.
-                    </p>
-                </AccordionItemPanel>
-            </AccordionItem>
-            <AccordionItem>
-                <AccordionItemHeading>
-                    <AccordionItemButton>
-                        How can I invest?
-                    </AccordionItemButton>
-                </AccordionItemHeading>
-                <AccordionItemPanel>
-                    <p>
-                       As part of our commitment to broadening investing access,Republic
-                       allows investments starting at $10- the lowest in the industry.
-                    </p>
-                    <p>
-                     Ultimately,every startup fundraising on Republic sets its own
-                     minimum investments,often starting at $25 or $100.
-                    </p>
-                    <p>
-                      Additionally,the SEC limits the maximum amount you can invest
-                      across all startup using the Reg CF legel framework based on your
-                      finalcial situation.
-                    </p>
-                </AccordionItemPanel>
-            </AccordionItem>
-            <AccordionItem>
-                <AccordionItemHeading>
-                    <AccordionItemButton>
-                        What is MyntInvest?
-                    </AccordionItemButton>
-                </AccordionItemHeading>
-                <AccordionItemPanel>
-                    <p>
-                      Additionally,the SEC limits the maximum amount you can invest
-                      across all startup using the Reg CF legel framework based on your
-                      finalcial situation.
-                    </p>
-                </AccordionItemPanel>
-            </AccordionItem>
-            <AccordionItem>
-                <AccordionItemHeading>
-                    <AccordionItemButton>
-                        What is MyntInvest?
-                    </AccordionItemButton>
-                </AccordionItemHeading>
-                <AccordionItemPanel>
-                    <p>
-                      Additionally,the SEC limits the maximum amount you can invest
-                      across all startup using the Reg CF legel framework based on your
-                      finalcial situation.
-                    </p>
-                </AccordionItemPanel>
-            </AccordionItem>
-         </Accordion>
-        </div>
+                  <Accordion >
+                      <AccordionItem >
+                          <AccordionItemHeading>
+                              <AccordionItemButton >
+                                  What is MynInvest?
+                              </AccordionItemButton>
+                          </AccordionItemHeading>
+                          <AccordionItemPanel>
+                              <p>
+                                Additionally,the SEC limits the maximum amount you can invest
+                                across all startup using the Reg CF legel framework based on your
+                                finalcial situation.
+                              </p>
+                          </AccordionItemPanel>
+                      </AccordionItem>
+                      <AccordionItem>
+                          <AccordionItemHeading>
+                              <AccordionItemButton>
+                                  How can I invest?
+                              </AccordionItemButton>
+                          </AccordionItemHeading>
+                          <AccordionItemPanel>
+                              <p>
+                                As part of our commitment to broadening investing access,Republic
+                                allows investments starting at $10- the lowest in the industry.
+                              </p>
+                              <p>
+                              Ultimately,every startup fundraising on Republic sets its own
+                              minimum investments,often starting at $25 or $100.
+                              </p>
+                              <p>
+                                Additionally,the SEC limits the maximum amount you can invest
+                                across all startup using the Reg CF legel framework based on your
+                                finalcial situation.
+                              </p>
+                          </AccordionItemPanel>
+                      </AccordionItem>
+                      <AccordionItem>
+                          <AccordionItemHeading>
+                              <AccordionItemButton>
+                                  What is MyntInvest?
+                              </AccordionItemButton>
+                          </AccordionItemHeading>
+                          <AccordionItemPanel>
+                              <p>
+                                Additionally,the SEC limits the maximum amount you can invest
+                                across all startup using the Reg CF legel framework based on your
+                                finalcial situation.
+                              </p>
+                          </AccordionItemPanel>
+                      </AccordionItem>
+                      <AccordionItem>
+                          <AccordionItemHeading>
+                              <AccordionItemButton>
+                                  What is MyntInvest?
+                              </AccordionItemButton>
+                          </AccordionItemHeading>
+                          <AccordionItemPanel>
+                              <p>
+                                Additionally,the SEC limits the maximum amount you can invest
+                                across all startup using the Reg CF legel framework based on your
+                                finalcial situation.
+                              </p>
+                          </AccordionItemPanel>
+                      </AccordionItem>
+                  </Accordion>
+                  </div>
         
         <div className="split-item-content center-content-mobile reveal-from-left"  data-reveal-container=".split-item">
                 <div className="text-lg text-color-dark fw-600 tt-u mb-8">&nbsp;</div>
-        <Accordion >
-            <AccordionItem >
-                <AccordionItemHeading>
-                    <AccordionItemButton >
-                        What is MynInvest?
-                    </AccordionItemButton>
-                </AccordionItemHeading>
-                <AccordionItemPanel>
-                    <p>
-                      Additionally,the SEC limits the maximum amount you can invest
-                      across all startup using the Reg CF legel framework based on your
-                      finalcial situation.
-                    </p>
-                </AccordionItemPanel>
-            </AccordionItem>
-            <AccordionItem>
-                <AccordionItemHeading>
-                    <AccordionItemButton>
-                        What is  MyntInvest?
-                    </AccordionItemButton>
-                </AccordionItemHeading>
-                <AccordionItemPanel>
-                    <p>
-                       As part of our commitment to broadening investing access,Republic
-                       allows investments starting at $10- the lowest in the industry.
-                    </p>
-                    <p>
-                     Ultimately,every startup fundraising on Republic sets its own
-                     minimum investments,often starting at $25 or $100.
-                    </p>
-                    <p>
-                      Additionally,the SEC limits the maximum amount you can invest
-                      across all startup using the Reg CF legel framework based on your
-                      finalcial situation.
-                    </p>
-                </AccordionItemPanel>
-            </AccordionItem>
-            <AccordionItem>
-                <AccordionItemHeading>
-                    <AccordionItemButton>
-                        What is MyntInvest?
-                    </AccordionItemButton>
-                </AccordionItemHeading>
-                <AccordionItemPanel>
-                    <p>
-                      Additionally,the SEC limits the maximum amount you can invest
-                      across all startup using the Reg CF legel framework based on your
-                      finalcial situation.
-                    </p>
-                </AccordionItemPanel>
-            </AccordionItem>
-            <AccordionItem>
-                <AccordionItemHeading>
-                    <AccordionItemButton>
-                        What is MyntInvest?
-                    </AccordionItemButton>
-                </AccordionItemHeading>
-                <AccordionItemPanel>
-                    <p>
-                      Additionally,the SEC limits the maximum amount you can invest
-                      across all startup using the Reg CF legel framework based on your
-                      finalcial situation.
-                    </p>
-                </AccordionItemPanel>
-            </AccordionItem>
-         </Accordion>
+                <Accordion >
+                    <AccordionItem >
+                        <AccordionItemHeading>
+                            <AccordionItemButton >
+                                What is MynInvest?
+                            </AccordionItemButton>
+                        </AccordionItemHeading>
+                        <AccordionItemPanel>
+                            <p>
+                              Additionally,the SEC limits the maximum amount you can invest
+                              across all startup using the Reg CF legel framework based on your
+                              finalcial situation.
+                            </p>
+                        </AccordionItemPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                        <AccordionItemHeading>
+                            <AccordionItemButton>
+                                What is  MyntInvest?
+                            </AccordionItemButton>
+                        </AccordionItemHeading>
+                        <AccordionItemPanel>
+                            <p>
+                              As part of our commitment to broadening investing access,Republic
+                              allows investments starting at $10- the lowest in the industry.
+                            </p>
+                            <p>
+                            Ultimately,every startup fundraising on Republic sets its own
+                            minimum investments,often starting at $25 or $100.
+                            </p>
+                            <p>
+                              Additionally,the SEC limits the maximum amount you can invest
+                              across all startup using the Reg CF legel framework based on your
+                              finalcial situation.
+                            </p>
+                        </AccordionItemPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                        <AccordionItemHeading>
+                            <AccordionItemButton>
+                                What is MyntInvest?
+                            </AccordionItemButton>
+                        </AccordionItemHeading>
+                        <AccordionItemPanel>
+                            <p>
+                              Additionally,the SEC limits the maximum amount you can invest
+                              across all startup using the Reg CF legel framework based on your
+                              finalcial situation.
+                            </p>
+                        </AccordionItemPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                        <AccordionItemHeading>
+                            <AccordionItemButton>
+                                What is MyntInvest?
+                            </AccordionItemButton>
+                        </AccordionItemHeading>
+                        <AccordionItemPanel>
+                            <p>
+                              Additionally,the SEC limits the maximum amount you can invest
+                              across all startup using the Reg CF legel framework based on your
+                              finalcial situation.
+                            </p>
+                        </AccordionItemPanel>
+                    </AccordionItem>
+                </Accordion>
+            </div>
+         </div>
         </div>
-       </div>
       </div>
-      </div>
-      </div>
-    </section>
+    </div>
+  </section>
 );
 }
 

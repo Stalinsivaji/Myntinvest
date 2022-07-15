@@ -11,7 +11,7 @@ import Button from '../elements/Button';
   
 
 
- function Investors_Details() {
+function Investors_Details() {
 
     const [value,setValue] = useState();
        
@@ -49,14 +49,16 @@ import Button from '../elements/Button';
                                         </div>
                                         
                                         <div className='col-md-2 ' >
-                                        <a href='' ><Image   src={require('./../../assets/images/payment.png')}alt="Features tile icon 01"  width={50} height={50}  /><p style={{padding:10,marginLeft:-30,fontSize:15}}>Payment Details</p></a>
+                                        <a href='' ><Image   src={require('./../../assets/images/payment.png')}alt="Features tile icon 01"  width={50} height={50}  /><p style={{padding:10,fontSize:15}}>Payment Details</p></a>
                                         </div>
                                         </div>
-                                        <div>
-                                            <h5>Verify Mobile Number</h5>
-                                            &nbsp;
-                                            <p style={{fontSize:15}}>Mobile Number</p>
-                                              <PhoneInput
+                                        <div className='row' >
+                        
+                                      <div className="col-md-12">
+                                      <h5 align="left" >Verify Mobile Number</h5>
+                                      <p style={{fontSize:15}}>Mobile Number</p>   
+                                      <div class="form-group">
+                                      <PhoneInput
                                                  
                                                  className='phone'
                                                  placeholder = "Mobile Number"
@@ -65,9 +67,11 @@ import Button from '../elements/Button';
                                                  style={{width:400,backgroundColor:"#E5E8E8",color:"grey"}}
                                         
                                                  />
-                                                {value}
-                                                <br/>
-                                                </div>
+                                                {value}</div> 
+                                      <div className="text-danger"></div><br/>
+                                    
+                                      </div></div>
+                                       
                                     <div className='col-md-7' align="center">
                                         <Button tag="a" className="text-white" style={{backgroundColor:"#2ECC71",borderRadius:5,color:"grey",width:200}} wideMobile href="/Investors_Verification">
                                          SEND OTP
@@ -95,24 +99,7 @@ import Button from '../elements/Button';
 
                      </div>
 
-                </div>     
-
-
-                        
-
-                        
-                
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+                </div>       
             </div> 
 
                     

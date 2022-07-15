@@ -216,13 +216,14 @@ class Registration extends React.Component {
             </div>
         
             <div className='col-md-6' align="center" >
-            <form onSubmit={this.handleSubmit} style={{paddingLeft:0,marginTop:50}}>   
+              
+            <form name="Signupform" id="Signupform" method="POST" onSubmit={this.handleSubmit} style={{paddingLeft:0,marginTop:50}}>   
            
              
             <div className='row' align="center">
-            <div className="row"style={{paddingLeft:50}} >
             <p style={{color:"grey"}} align="right">Already a member?<span style={{color:"#2ECC71",fontSize:15}}>&nbsp;Sign in</span></p> &nbsp; 
-            <div className="col-md-5" align="left">
+            <div className="row"style={{paddingLeft:50}} >
+             <div className="col-md-6" align="left">
             <label for="firstname"></label>  
             <b>First Name</b><div>
             <input 
@@ -238,7 +239,7 @@ class Registration extends React.Component {
               <div className="text-danger" style={{fontSize:15}}>{this.state.errors.firstname}</div>
             </div>
 
-            <div className="col-md-5" align="left">   
+            <div className="col-md-6" align="left">   
             <label for="lastname"></label>     
              <b>Last Name</b><div>
              <input 
@@ -255,7 +256,7 @@ class Registration extends React.Component {
             </div>
 
             <div className="row">
-            <div className="col-md-10" align="left"style={{paddingLeft:50}}>
+            <div className="col-md-12" align="left"style={{paddingLeft:50}}>
             <b>Email</b>  
             <label for="email"></label>
             <input 
@@ -273,7 +274,7 @@ class Registration extends React.Component {
             </div>
 
             <div className="row">
-            <div className="col-md-10" align="left"style={{paddingLeft:50}}>
+            <div className="col-md-12" align="left"style={{paddingLeft:50}}>
             <b>School</b>
             <label for="schoolname"></label>
             <div className="form-group">
@@ -294,7 +295,7 @@ class Registration extends React.Component {
             </div>
 
             <div className="row"style={{paddingLeft:50}}>
-            <div className="col-md-5"align="left">
+            <div className="col-md-6"align="left">
             <label for="password"></label>    
             <b>Password</b><div>  
             <input 
@@ -310,7 +311,7 @@ class Registration extends React.Component {
              <div className="text-danger" style={{fontSize:15}}>{this.state.errors.password}</div>
             </div>
 
-            <div className="col-md-5"align="left"> 
+            <div className="col-md-6"align="left"> 
             <label for="password"></label>       
              <b>ConfirmPassword</b><div>
              <input 
@@ -339,25 +340,31 @@ class Registration extends React.Component {
           
             </label> 
             </div>
-            <div className='row'align="Center">
-                <div className='col-md-12'>
-            <ButtonGroup align="Center">
+            <div className='row'>
+                <div className={tilesClasses}>
+            <ButtonGroup >
                   <Button  type="submit" value="Submit" color="primary" style={{borderRadius:8,color:"white",width:500}} wideMobile href="//Investor_Signup">
                     Sign Up
                     </Button>
                 </ButtonGroup></div>
 
-            <div className='row' style={{paddingRight:80}}>
-            <p>------- OR --------</p>
-            </div>
-          
-            
-            <div>
+            <div className={tilesClasses}>
+            <ButtonGroup >
+                  <Button color="primary" style={{backgroundColor:"#f9faf9",borderRadius:8,color:"black"}}>
+                  ------- OR -------- 
+                    </Button>
+                </ButtonGroup>
+                </div>
+           
+              <div className={tilesClasses}>
                 <ButtonGroup>
                   <Button tag="a" color="secondary" style={{backgroundColor:"#ECF0F1",borderRadius:8,color:"black",width:500}} wideMobile href="/Login">
                     Sign up With Google
                     </Button>
-                </ButtonGroup></div></div>
+                </ButtonGroup>
+                </div>
+                
+                </div>
             </div>  &nbsp;  
                     
               

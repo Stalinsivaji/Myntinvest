@@ -95,12 +95,12 @@ pushLeft && 'push-left'
                   </div>
                   <div className="col-md-4"></div>
                   <div className="col-md-4">
-                <label> 
-                    <select style={{width: 300,height: 40,fontSize:20,color:"grey"}}>
-                        <option value="grapefruit">Sort By: Most Funded</option>
-                        <option value="lime">Lime</option>
-                        <option value="coconut">Coconut</option>
-                        <option value="mango">Mango</option>
+                  <label >Sort By :&nbsp;
+                    <select  style={{backgroundColor:"white",width: 250,height: 40,fontSize:20,color:"grey"}}><p>22</p>
+                        <option value="Most Funded"> Most Funded</option>
+                        <option value="Most Transaction">Most Transaction</option>
+                        <option value="Closing Soon">Closing Soon</option>
+                       
                     </select>
                     </label>
                     </div>
@@ -108,9 +108,10 @@ pushLeft && 'push-left'
 
 
                  <br/>
-               
-              <div className="table-responsive">
-                <table className="table col-md-12">
+               <div className="row">
+                <div className="col-md-12">
+              <div className="table-responsive-xxl" >
+                <table className="table">
                   <thead>
                     <tr>
                       <th className="">Company</th>
@@ -231,6 +232,8 @@ pushLeft && 'push-left'
                   
                   </tbody>
                 </table>
+                </div>  
+              </div>
               </div>
            
 

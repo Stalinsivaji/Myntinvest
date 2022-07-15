@@ -27,12 +27,12 @@ pushLeft && 'push-left'
              
         <div className="row text-center">
   
-               <div className="row">
+               <div className={tilesClasses}>
                <div className="col-md-1"></div>
                <div className="col-md-11">
                <div className="m-5 p-4">
-               <div className="row">
-                <div className="col-md-12">
+               <div className={tilesClasses} >
+                <div className="col-md-12" style={{paddingLeft:50}} >
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb arr-right">
                       <li class="breadcrumb-item text-sm" aria-current="page" style={{color:"Grey"}}>Startup</li>
@@ -44,57 +44,56 @@ pushLeft && 'push-left'
                 </div>
                  
                 <div className="row">
-                 <Card style={{backgroundColor:"#FDF2E9",width:500,height:180,borderRadius:15}}>
-                <div className="row"><div className="col-md-6" align="left" style={{marginTop:18}}> <strong>Bannner Video/Photo</strong>
-                <p style={{fontSize:12,color:"grey"}}>Upload or embed a video</p></div>          
-                <div className="col-md-6" >
-                <Button tag="a" color="secondary"style={{backgroundColor:"#2ECC71",borderRadius:10,marginTop:10}} wideMobile href="/Campaign_Banner" className='text-white'>
+                <Card style={{backgroundColor:"#FDF2E9",width:450,height:200,borderRadius:15}}>
+                <div className="row"><div className="col-md-6" align="" style={{marginTop:18}}> <strong>Bannner Video/Photo</strong>
+                <p style={{fontSize:11,color:"grey"}} align='center'>Upload or embed a video</p></div>          
+                <div className="col-md-4" align="center">
+                <Button tag="a" color="secondary" style={{backgroundColor:"#2ECC71",borderRadius:10,marginTop:10}}  className='text-white' wideMobile href="/Campaign_Banner">
                 COMPLETED
-                </Button>&nbsp;
+                </Button>
                 </div> 
                 </div>
-                </Card>&nbsp;&nbsp;
+                </Card>&nbsp;&nbsp;&nbsp;&nbsp;
 
-                <Card style={{backgroundColor:"whitesmoke",width:500,height:180,borderRadius:15}}>
-                <div className="row"><div className="col-md-6" align="left" style={{marginTop:18}}> <strong>Investors</strong>
+
+                <Card style={{backgroundColor:"whitesmoke",width:450,height:200,borderRadius:15}}>
+                <div className="row"><div className="col-md-6" align="" style={{marginTop:18}}> <strong>Investors</strong>
                 <p style={{fontSize:12,color:"grey"}}>Tell us who are the Top investor are</p></div>          
-                <div className="col-md-6" >
-                <Button tag="a" color="secondary" style={{backgroundColor:"#2ECC71",borderRadius:10,marginTop:10}}  className='text-white'wideMobile href="/Campaign_Investors">
+                <div className="col-md-4" align="center">
+                <Button tag="a" color="secondary" style={{backgroundColor:"#2ECC71",borderRadius:10,marginTop:15}}  className='text-white' wideMobile href="/Campaign_Investors">
                 COMPLETED
                 </Button>
                 </div> 
                 </div>
                 </Card>
-                </div>&nbsp;
+                 </div>
 
 
-
-                <div className="row" style={{marginTop:50}}>
-                <Card style={{backgroundColor:"whitesmoke",width:500,height:180,borderRadius:15}}>
-                <div className="row"><div className="col-md-6" align="left" style={{marginTop:18}}> <strong>FAQs</strong>
-                <p style={{fontSize:11,color:"grey"}}>Help investors understand your weven better</p></div>          
-                <div className="col-md-6" >
-                <Button tag="a" color="secondary" style={{backgroundColor:"red",borderRadius:10,marginTop:10}}  className='text-white' href="/Campaign_FAQ">
+                 <div className="row" style={{marginTop:50}}>
+                <Card style={{backgroundColor:"whitesmoke",width:450,height:200,borderRadius:15}}>
+                <div className="row"><div className="col-md-6" align="" style={{marginTop:18}}> <strong>FAQs</strong>
+                <p style={{fontSize:12,color:"grey"}}>Help investors understand your weven better</p></div>          
+                <div className="col-md-4" align="center">
+                <Button tag="a" color="secondary" style={{backgroundColor:"#2ECC71",borderRadius:10,marginTop:15}}  className='text-white' wideMobile href="/Campaign_FAQ">
                 PENDING
                 </Button>
                 </div> 
                 </div>
-                </Card>&nbsp;&nbsp;
+                </Card>&nbsp;&nbsp;&nbsp;&nbsp;
 
 
-                <Card style={{backgroundColor:"whitesmoke",width:500,height:180,borderRadius:15}}>
-                <div className="row"><div className="col-md-6" align="left" style={{marginTop:18}}> <strong>Press</strong>
+                <Card style={{backgroundColor:"whitesmoke",width:450,height:200,borderRadius:15}}>
+                <div className="row"><div className="col-md-6" align="" style={{marginTop:18}}> <strong>Press</strong>
                 <p style={{fontSize:12,color:"grey"}}>Show your reach!</p></div>          
-                <div className="col-md-6" >
-                <Button tag="a" color="secondary" style={{backgroundColor:"violet",borderRadius:10,marginTop:10}}  className='text-white' href="/Campaign_Press">
+                <div className="col-md-6" align="center">
+                <Button tag="a" color="secondary" style={{backgroundColor:"violet",borderRadius:10,marginTop:15}}  className='text-white' wideMobile href="/Campaign_Press">
                 OPTIONAL
                 </Button>
                 </div> 
                 </div>
                 </Card>
-                </div>
+                 </div>
 
-               
 
                 </div>
                 </div>
@@ -111,3 +110,4 @@ pushLeft && 'push-left'
 
 
 export default Campaign;
+

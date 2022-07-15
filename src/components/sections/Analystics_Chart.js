@@ -74,16 +74,16 @@ const propTypes = {
                     </ol>
                   </nav>
                 </div>
-          <div className={innerClasses}>&nbsp;
-         
+        <div className={innerClasses}>&nbsp;
            <SectionHeader data={sectionHeader} className="center-content" />
 
-                   <Accordion >
+          <Accordion >
+
             <AccordionItem >
                 <AccordionItemHeading>
                 <AccordionItemButton style={{backgroundColor:"#f9faf9"}}>
                 <b style={{color:'#23b347'}}>Total Revenue(TR)</b>
-                    </AccordionItemButton>
+                </AccordionItemButton>
                 </AccordionItemHeading>
                 <AccordionItemPanel>
                 <p style={{color:'grey'}}>
@@ -109,6 +109,7 @@ const propTypes = {
                             </div>
                 </AccordionItemPanel>
             </AccordionItem>
+
             <AccordionItem>
                 <AccordionItemHeading>
                     <AccordionItemButton  style={{backgroundColor:"#f9faf9"}}>
@@ -123,6 +124,7 @@ const propTypes = {
                             </p>
                 </AccordionItemPanel>
             </AccordionItem>
+
             <AccordionItem>
                 <AccordionItemHeading>
                     <AccordionItemButton style={{backgroundColor:"#f9faf9"}}>
@@ -137,6 +139,7 @@ const propTypes = {
                     </p>
                 </AccordionItemPanel>
             </AccordionItem>
+
             <AccordionItem>
                 <AccordionItemHeading>
                 <AccordionItemButton style={{backgroundColor:"#f9faf9"}}>
@@ -151,6 +154,7 @@ const propTypes = {
                     </p>
                 </AccordionItemPanel>
             </AccordionItem>
+
             <AccordionItem >
                         <AccordionItemHeading >
                         <AccordionItemButton style={{backgroundColor:"#f9faf9"}}>

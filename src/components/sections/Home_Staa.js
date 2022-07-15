@@ -77,3 +77,4 @@ Home_Staa.propTypes = propTypes;
 Home_Staa.defaultProps = defaultProps;
 
 export default Home_Staa;
+

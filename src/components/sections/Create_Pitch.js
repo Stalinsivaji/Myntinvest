@@ -17,26 +17,93 @@ import ButtonGroup from "../elements/ButtonGroup";
 
 
 
-const Create_Pitch = ({
-    className,
-    topOuterDivider,
-    bottomOuterDivider,
-    topDivider,
-    bottomDivider,
-    hasBgColor,
-    invertColor,
-    pushLeft,
-    ...props
-  }) => {
+class Create_Pitch extends React.Component {
+    constructor() {
+    super();
+    this.state = {
+      input: {},
+      errors: {}
+    };
+     
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+     
+  handleChange(event) {
+    let input = this.state.input;
+    input[event.target.name] = event.target.value;
+  
+    this.setState({
+      input
+    });
+  }
+     
+  handleSubmit(event) {
+    event.preventDefault();
+  
+    if(this.validate()){
+        console.log(this.state);
+  
+        let input = {};
+        input["header"] = "";
+        input["summarnote"] = "";
+        
+        
+        
+        this.setState({input:input});
+  
+        alert('Teaminfo Form is submitted');
+    }
+  }
+  
+  validate(){
+      let input = this.state.input;
+      let errors = {};
+      let isValid = true;
+   
+      if (!input["header"]) {
+        isValid = false;
+        errors["header"] = "Enter Your header/title here.";
+      }
+  
+      if (typeof input["header"] !== "undefined") {
+        const re = /^\S*$/;
+        if(input["header"].length < 4 || !re.test(input["header"])){
+            isValid = false;
+            errors["header"] = "Enter Your header/title here.";
+        }
+      }
+
+      if (!input["summarnote"]) {
+        isValid = false;
+        errors["summarnote"] = "Enter body.";
+      }
+  
+      if (typeof input["summarnote"] !== "undefined") {
+        const re = /^\S*$/;
+        if(input["summarnote"].length < 3 || !re.test(input["summarnote"])){
+            isValid = false;
+            errors["summarnote"] = "Enter body.";
+        }
+      }
+
+
+
+
 
     
-
+      this.setState({
+        errors: errors
+      });
+  
+      return isValid;
+  }
+     
+ render() {
     
  
-const tilesClasses = classNames(
-'tiles-wrap',
-pushLeft && 'push-left'
-);return (
+
+return (
 
     <body>
     
@@ -46,6 +113,7 @@ pushLeft && 'push-left'
                <div className="row">
                <div className="col-md-1"></div>
                <div className="col-md-11">
+               <form onSubmit={this.handleSubmit}>
                <div className="m-5 p-4">
                <div className="row">
                <div className="row" >
@@ -104,30 +172,49 @@ pushLeft && 'push-left'
               <br/>
               <strong style={{fontSize:15}}>Header</strong><br/>
                  
-              <form>
+              
+              
                 <div className="row">
                    
-                  <div className="col-md-8">
-                  <div className="input-group"><input type="text" style={{height:40,backgroundColor:"#E5E8E8",fontSize:12}} className="form-control" placeholder="Enter Your header/title here" /></div>
-                      </div>
-                          
+                      <div className="col-md-4">
+                          <input
+                              name="header" 
+                              type="text" 
+                              value={this.state.input.header}
+                              onChange={this.handleChange}
+                              style={{width:'auto',height:40,backgroundColor:"#E5E8E8",fontSize:12}} 
+                              className="form-control" 
+                              placeholder="Enter Your header/title here"
+                              length="50" 
+                              id="header"/>
                          </div>
+                         <div className="text-danger" style={{fontSize:15}}>{this.state.errors.header}</div>
+                          
+                    </div>
                     
-                </form>
+                
                        
                <br/>
                <strong style={{fontSize:15}}>body</strong>
                <div className="row" >
                 
-                  <div className="col-md-8"style={{width:750,height:300,backgroundColor:"white"}}>
+                  <div className="col-md-8"style={{width:750,height:'auto',backgroundColor:"white"}}>
                   <Editor 
                       toolbarClassName="toolbarClassName"
                       wrapperClassName="wrapperClassName"
                       editorClassName="editorClassName"
+                     name="summarnote"
+                      value={this.state.input.summarnote}
+                      onChange={this.handleChange}
+                      id="summarnote"
+ 
                     /></div>
+                    <div className="text-danger" style={{fontSize:15}}>{this.state.errors.summarnote}</div>
                       
                 </div>
-                
+
+                <br/>
+                <br/>
                 <br/>&nbsp;&nbsp;
                 <div className="row">
                     <div className='col-md-6'><strong style={{fontSize:15}}>Images</strong></div>
@@ -143,7 +230,7 @@ pushLeft && 'push-left'
                 <div className='row'>
                     <div className='col-md-3'><Image   src={require('./../../assets/images/hand001.jpg')}alt="Features tile icon 01" style={{width:300,height:150}} /></div>
                     <div className='col-md-3'><Image   src={require('./../../assets/images/hand02.jpg')}alt="Features tile icon 01"  style={{width:300,height:150}}  /></div>
-                    <div className='col-md-3'><Image   src={require('./../../assets/images/hand3.avif')}alt="Features tile icon 01"  style={{width:300,height:150}} /></div>
+                    <div className='col-md-3'><Image   src={require('./../../assets/images/h1.jpg')}alt="Features tile icon 01"  style={{width:300,height:150}} /></div>
 
 
                 </div>
@@ -158,11 +245,16 @@ pushLeft && 'push-left'
                 <Button tag="a" color="" style={{backgroundColor:"white",borderRadius:8,color:"#B3B6B7 ",borderColor:'#E5E8E8',width:160}} wideMobile href="">
                     Add Members
                     </Button>&nbsp;&nbsp;
-                  <Button tag="a"  style={{backgroundColor:"#2ECC71",borderRadius:8,color:"white",width:160}} wideMobile href="">
+                  <Button type="submit" value="Submit"  style={{backgroundColor:"#2ECC71",borderRadius:8,color:"white",width:160}}>
                     Submit
                     </Button></ButtonGroup>
                 </div>
                     </div>
+
+                    
+                    
+
+
 
 
 
@@ -171,16 +263,24 @@ pushLeft && 'push-left'
                 <Button tag="a" color="secondary" className='text-white' style={{backgroundColor:"#2ECC71",borderRadius:8,width:160}} wideMobile href="/Solution">
                 Next
                   </Button>
+
+
+                  
+                  
               
 
 
 
 
 
-
+              
               </div>
+              </form>
+              
               </div>
+              
               </div>
+              
               </div>
 
 
@@ -196,6 +296,7 @@ pushLeft && 'push-left'
                
 
 ) ;       
+ }
 };
 
 

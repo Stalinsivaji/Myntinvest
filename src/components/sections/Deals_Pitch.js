@@ -123,10 +123,10 @@ const Deals_Pitch = ({
                <div className="m-5 p-4">
        
              
-               <div className="row">
+               <div className="row" >
                <h2 className="alert-alert" id="Overview" align="Left">Overview</h2>
-               <p align="Left">Realm Metaverse Real Estate's (Realm) business objective and strategy is to achieve attractive risk-adjusted returns primarily through the acquisition,management,development and sale of digital parcels in blockchain-based Metaverses in the form of non-fungible tokens("NFTs")</p>
-               <p align="Left">Realm is focused on acquiring,managing,developing, and selling digital parcels across various crypto-based Metaverses.By employing a unique combination of experience and knowledge in the real estate,development and digital assets management industries,Realm will seek to generate an attractive return on investment,while contributing to the growth,prosperity,and communities in these virtual worlds.</p>
+               <p align="Left" style={{fontSize:17}}>Realm Metaverse Real Estate's (Realm) business objective and strategy is to achieve attractive risk-adjusted returns primarily through the acquisition,management,development and sale of digital parcels in blockchain-based Metaverses in the form of non-fungible tokens("NFTs")</p>
+               <p align="Left" style={{fontSize:17}}>Realm is focused on acquiring,managing,developing, and selling digital parcels across various crypto-based Metaverses.By employing a unique combination of experience and knowledge in the real estate,development and digital assets management industries,Realm will seek to generate an attractive return on investment,while contributing to the growth,prosperity,and communities in these virtual worlds.</p>
                </div>   
                </div>
                </div>
