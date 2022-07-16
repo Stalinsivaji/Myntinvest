@@ -55,7 +55,7 @@ const propTypes = {
   
     const sectionHeader = {
       title: '',
-      paragraph: 'We Created A Streamlined,Startup-Friendly Process That Makes Running An Investment Campaign Easy And Affordable.'
+      paragraph: ''
     };
 
     return (
@@ -65,72 +65,82 @@ const propTypes = {
       >
         <div className="container" >
           <div className={innerClasses}>&nbsp;
-          <h2 align="Center"><span style={{color:"#2ECC71"}}>Easy </span>Process</h2>&nbsp;
+          <h2 style={{color:"#2ECC71"}} align="Center"><span style={{color:"Black"}}>How do I</span> invest?  </h2>&nbsp;
            <SectionHeader data={sectionHeader} className="center-content" />
 
                    <Accordion >
             <AccordionItem >
                 <AccordionItemHeading>
                 <AccordionItemButton >
-                     01&nbsp;&nbsp;Apply Application First!
+                     01&nbsp;&nbsp;	Profile Creation
                     </AccordionItemButton>
                 </AccordionItemHeading>
                 <AccordionItemPanel>
                     <p>
-                      Additionally,the SEC limits the maximum amount you can invest
-                      across all startup using the Reg CF legel framework based on your
-                      finalcial situation.
+                    Click on the Sign Up button and kickstart your startup investment journey in minutes
                     </p>
                 </AccordionItemPanel>
             </AccordionItem>
             <AccordionItem>
                 <AccordionItemHeading>
                     <AccordionItemButton>
-                        02&nbsp;&nbsp; Camgain agreement is signed!(Onboarding 3-6 weeks)
+                        02&nbsp;&nbsp; 	KYC & Risks Involved 
                     </AccordionItemButton>
                 </AccordionItemHeading>
                 <AccordionItemPanel>
                     <p>
-                       As part of our commitment to broadening investing access,Republic
-                       allows investments starting at $10- the lowest in the industry.
-                    </p>
-                    <p>
-                     Ultimately,every startup fundraising on Republic sets its own
-                     minimum investments,often starting at $25 or $100.
-                    </p>
-                    <p>
-                      Additionally,the SEC limits the maximum amount you can invest
-                      across all startup using the Reg CF legel framework based on your
-                      finalcial situation.
+                    Complete a quick KYC and acknowledge the risks involved to ensure that you are aware of the risk startup investment entails.
                     </p>
                 </AccordionItemPanel>
             </AccordionItem>
+
             <AccordionItem>
                 <AccordionItemHeading>
                     <AccordionItemButton>
-                       03&nbsp;&nbsp;Form C filed & Campaign launches (Campign liv 2.5 - 3.5 months)
+                       03&nbsp;&nbsp;	Understand the deal well 
                     </AccordionItemButton>
                 </AccordionItemHeading>
                 <AccordionItemPanel>
                     <p>
-                      Additionally,the SEC limits the maximum amount you can invest
-                      across all startup using the Reg CF legel framework based on your
-                      finalcial situation.
+                    Browse through startups with open fundraising campaigns/ upcoming campaigns. In the high-speed, ever-changing world of startups making your first investment can be a daunting task. We’d like to make that journey easier for you by helping you understand the risks, legal pitch, and terms of the investment beforehand.
                     </p>
                 </AccordionItemPanel>
             </AccordionItem>
+
             <AccordionItem>
                 <AccordionItemHeading>
                     <AccordionItemButton>
-                       04&nbsp;&nbsp;Campaign closes (Alumni community Until exit)
+                       04&nbsp;&nbsp;Hit the Invest Now Button 
                     </AccordionItemButton>
                 </AccordionItemHeading>
                 <AccordionItemPanel>
                     <p>
-                      Additionally,the SEC limits the maximum amount you can invest
-                      across all startup using the Reg CF legel framework based on your
-                      finalcial situation.
+                    Choose your amount, payment method and agree to the Terms and Conditions to complete your investment. Keep in mind, that you are mandated to complete your e-KYC, sign the consent agreement and verify your bank details before you invest
                     </p>
+                </AccordionItemPanel>
+            </AccordionItem>
+
+            <AccordionItem>
+                <AccordionItemHeading>
+                    <AccordionItemButton>
+                       05&nbsp;&nbsp;Sign your SAFE
+                    </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel>
+                    <p>
+                    Once you’ve invested, the startup will e-sign the M-SAFE agreement within 2 business days, which will be made available to you on your MxI dashboard. Click on the E-sign M-SAFE button which will direct you to our Aadhar e-signing partner’s website. You will need your Aadhar and the registered mobile number in order to complete the signing process. All M-SAFE documents are required to be e-signed within 7 working days from the date it shows up in your dashboard.</p>
+                </AccordionItemPanel>
+            </AccordionItem>
+
+            <AccordionItem>
+                <AccordionItemHeading>
+                    <AccordionItemButton>
+                       06&nbsp;&nbsp;	Process Post investment 
+                    </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel>
+                    <p>
+                    The startup founder signs and your security certificates are issued. You can expect the entire process to be completed in 20 days. </p>
                 </AccordionItemPanel>
             </AccordionItem>
          </Accordion>

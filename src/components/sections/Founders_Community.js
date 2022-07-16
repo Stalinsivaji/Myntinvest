@@ -5,8 +5,6 @@ import { SectionProps } from '../../utils/SectionProps';
 import Button from '../elements/Button';
 import ButtonGroup from '../elements/ButtonGroup';
 import Image from '../elements/Image';
-import Carousel from 'react-bootstrap/Carousel';
-
 const propTypes = {
   ...SectionProps.types,
   split: PropTypes.bool
@@ -17,7 +15,7 @@ const defaultProps = {
   split: false
 }
 
-const Private_Deals_Automate= ({
+const Founders_Community= ({
   className,
   topOuterDivider,
   bottomOuterDivider,
@@ -56,70 +54,24 @@ const Private_Deals_Automate= ({
         >
           <div className="cta-slogan">
             <h1 className="m-0" >
-            Automate Your<br/><span style={{color:"#2ECC71"}}>Fundraising</span> process</h1><br/>
-              <span>Invite Investors And Fundraising Digitally So That You Can<br/>Focus On Building Your Busniess </span>
+              Convert your<br/><span style={{color:"#2ECC71"}}>Community</span> Into Capital</h1><br/>
+              <span>Build your business and leave the fundraising to the experts.<br/> Leverage the community and use it to grow your customer base.  </span>
              &nbsp;
               <div className="reveal-from-bottom" data-reveal-delay="600" style={{paddingTop:30}} >
                 <ButtonGroup>
                   <Button tag="a" color="primary" style={{borderRadius:8,color:"white"}} wideMobile href="">
-                    Apply to Raise
+                  APPLY TO RAISE 
                     </Button>
                 </ButtonGroup>
               </div>
           </div>
           <div className="cta-action"> 
-          <Carousel>
-      
-      <Carousel.Item>
-        <img
-          className="d-block w-55"
-          src={require('./../../assets/images/Deals1.png')}
+          <Image
+                      src={require('./../../assets/images/Founders.png')}
                       alt="Features tile icon 01"
-                      
-        />
-
-        <Carousel.Caption>
-          
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-55"
-          src={require('./../../assets/images/Deals2.png')}
-                      alt="Features tile icon 01"
-                      
-        />
-
-        <Carousel.Caption>
-          
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-55"
-          src={require('./../../assets/images/Deals3.png')}
-                      alt="Features tile icon 01"
-
-                      />
-                     
-
-        <Carousel.Caption>
-          
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-55"
-          src={require('./../../assets/images/Deals4.png')}
-                      alt="Features tile icon 01"
-                     
-        />
-
-        <Carousel.Caption>
-          
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+                      width={300}
+                      height={300}
+                     />
           </div>
         </div>
       </div>
@@ -127,7 +79,7 @@ const Private_Deals_Automate= ({
   );
 }
 
-Private_Deals_Automate.propTypes = propTypes;
-Private_Deals_Automate.defaultProps = defaultProps;
+Founders_Community.propTypes = propTypes;
+Founders_Community.defaultProps = defaultProps;
 
-export default Private_Deals_Automate;
+export default Founders_Community;

@@ -23,6 +23,7 @@ import FAQ from './components/sections/FAQ'
 import Learn from './views/Learn';
 import How_It_Works from './components/sections/How_It_Works';
 import Private_Deals from './views/Private_Deals';
+
 //Investors
 import Investor_Signup from './components/sections/Investor_Signup';
 import Investors_Terms from './components/sections/Investors_Terms';
@@ -62,7 +63,8 @@ import Campaign_Banner from './components/sections/Campaign_Banner';
 import Campaign_FAQ from './components/sections/Campaign_FAQ';
 import Campaign_Press from './components/sections/Campaign_Press';
 
-
+import Risks from './components/sections/Risks'
+import Terms_Condition from './components/sections/Terms_Condition'
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
 
@@ -99,6 +101,8 @@ const App = () => {
           <AppRoute exact path="/Learn" component={Learn} layout={LayoutDefault} />
           <AppRoute exact path="/How_It_Works" component={How_It_Works} layout={LayoutDefault} />
           <AppRoute exact path="/Private_Deals" component={Private_Deals} layout={LayoutDefault} />
+          <AppRoute exact path="/Risks" component={Risks} layout={LayoutDefault} /> 
+          <AppRoute exact path="/Terms_Condition" component={Terms_Condition} layout={LayoutDefault} /> 
 
           <AppRoute exact path="/Login" component={Login} layout={LayoutDefault} />
           <AppRoute exact path="/Investor_Signup" component={Investor_Signup} layout={LayoutDefault} />

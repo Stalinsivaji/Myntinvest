@@ -19,42 +19,29 @@ const FooterNav = ({
       {...props}
       className={classes}
     >
-      <ul className="list-reset" style={{paddingRight:20,paddingTop:100}}>
+      <ul className="list-reset" >
         
         <div style={{paddingLeft:15}} align="left"><li>
-          <p to="#0" style={{paddingLeft:10}}><b>RESOURCES</b></p>
-          <Link to="/Blog">Blog</Link>&nbsp;
-          <Link to="#">Support</Link>&nbsp;
-          <Link to="#0">Newsletter</Link>
+          <p to="#0" style={{paddingLeft:10}}><b>INVESTORS </b></p>
+          <Link to="/Deals">Deals</Link>&nbsp;
+          <Link to="/Learn">MXi Cafe </Link>&nbsp;
+          <Link to="/How_It_Works">How it works?</Link>
         </li></div>&nbsp;
 
-        <div style={{paddingLeft:15,paddingTop:40}} align="left"><li>
-        <p to="#0" style={{paddingLeft:10}}><b>INVESTORS</b></p>
-          <Link to="/How_It_Works">How it Works</Link>&nbsp;
-          <Link to="#0">Invest</Link>&nbsp;
-          <Link to="#0">Risk</Link>&nbsp;
-          <Link to="/FAQ">FAQ</Link>
+        <div style={{paddingLeft:15,paddingTop:20}} align="left"><li>
+        <p to="#0" style={{paddingLeft:10}}><b>STARTUPS </b></p>
+          <Link to="/Login">Login</Link>&nbsp;
+          <Link to="#0">Raise</Link>&nbsp;
+          <Link to="/FAQ">FAQs</Link>&nbsp;
         </li></div>&nbsp;
 
         <div style={{paddingLeft:28,paddingBottom:5}} align="left"><li>
-        <p to="#0" style={{paddingLeft:10}}><b>STARTUPS</b></p>
-          <Link to="/Login">Log In</Link>&nbsp;
-          <Link to="#0">Why Raise</Link>&nbsp;
-          <Link to="/Learn">Learn</Link>
+        <p to="#0" style={{paddingLeft:10}}><b>LEGAL/CONTACT</b></p>
+          <Link to="/Risks">Risks Of Investment</Link>&nbsp;
+          <Link to="/Privacy_Policy">Privacy Policy </Link>&nbsp;
+          <Link to="/Terms_Condition">Terms & Conditions  </Link>
         </li></div>&nbsp;
-
-         <div style={{paddingLeft:10,paddingBottom:5}} align="left"><li>
-        <p to="#0" style={{paddingLeft:10}}><b>COMPANY</b></p>
-          <Link to="/Privacy_Policy">Privacy Policy</Link>&nbsp;
-          <Link to="#0">Terms of Service</Link>&nbsp;
-          <Link to="/Upload">Code of Conduct</Link>
-        </li></div>
       </ul>&nbsp;
-     
-      <div className='Container' align='center'>
-        <Button color="primary" style={{backgroundColor:"#23b347",borderRadius:8,color:"white"}}>New</Button>&nbsp;
-        Refer a startup,get <strong>$2,500</strong>
-      </div>
     </nav>
   );
 }

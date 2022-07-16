@@ -17,58 +17,65 @@ const Privacy= () => {
                   <ol class="breadcrumb arr-right">
                     <li class="breadcrumb-item text-sm" aria-current="page" style={{color:"Grey"}}>Company</li>
                     <li class="breadcrumb-item text-sm active" aria-current="page" style={{color:'#23b347'}}>Privacy Policy</li>
-                    <li class="breadcrumb-item text-sm text-dark active"><a class="opacity-5 text-dark" href="/">Terms Of Service</a></li>
-                    <li class="breadcrumb-item text-sm text-dark active"><a class="opacity-5 text-dark" href="/">Code Of Conduct</a></li>
+                    <li class="breadcrumb-item text-sm text-dark active"><a class="opacity-5 text-dark" href="/Terms_Condition">Terms & Condition</a></li>
                   </ol>
                 </nav>
               </div>
                 
              
                <h2 className="alert-alert" id="Highlights" align="Left">MynInvest Privacy Policy</h2>
-               <p style={{color:"grey"}} align="left">This Privacy Policy was last updated on January 11,2021</p>
-                <p align="left">This Privacy policy("Privacy Policy")describes how,OpenDeal Inc,and its subsidiary openDeal Portal LLC dba Republic(together "Republic","we","us", and"our"),collect,use
-                and disclose any personal information provided to us through our Website, mobile application,and other online sevices(collectively, the "services")and when you otherwise
-                interact with us,such as through our customer service channels. A "User" or "You" refers to anyone who accesses,browses,or in any way uses the Services.Byusing the
-                Services,you acknowledge and consent to our practices described below.Your use of the Services and this Privacy Policy are subject to and governed by our Republic Portal
-                Terms of Service.</p>
+                <p align="left">The privacy policy (“Privacy Policy”) governs the use of the website of the MXi platform [https://www.MeteorXinvest.com/] (“Website”, “we”, “us”) and the services (“Services”) being provided on the Website. This Privacy Policy has been duly framed in accordance with the Information Technology Act, 2000 (“Act”) and the Rules made thereunder to ensure maximum protection to the information provided by its users (“you”). By using the Website, you agree to abide by the terms and conditions pertaining to collection, retention, and use of information set forth in this Privacy Policy. If you do not agree to the Privacy Policy, you may exit and cease to use the Website. This Privacy Policy is incorporated in the Terms and Conditions of the MXi platform and any other agreement, in which there is a specific clause incorporating the Privacy Policy in such agreement. In the event of a conflict between the terms of such agreements and the Privacy Policy, the terms of such agreements will prevail and govern so long as they relate to matters specifically referenced herein and this Privacy Policy will apply with respect to all other matters.</p>
                 <p align="left">We are commited to protecting your privacy and preserving your trust.Please Carefully review this Privacy Policy</p>
-                 <h4 align="left">Persona Information We Collect and Process</h4>
-                 <p align="left">We collect and determine the purposes and means of the processing of certainin formation that may personally identify you ("Personal Information") when you use our Services, like when you signup for an account,make an investment, or 
-                  otherwise interact with or communicate with us. We may also receive,and process Personal Information controlled and stored by third parties with your consent </p>
-                 <p align="left">Personal Information we collect includes, among otherthings, your:</p>
-                 <p align="left">Identity data such as your full name, date of birth, gender,social security numbers,an do their data on government-issued identification documents.</p>
-                 <p align="left">Contact data such as your email address,mailing address,and telephone numbers.</p>
-                 <p align="left">Financial data such as your bank account information, card payment details,credit reports and information about your income and net worth ("Financial Data") .</p>
-                 <p align="left">Profile data such as your user name and password,investments made by you, your investment experience, your educational and or professional history, your employment status,your marital status,your invest or quiz results,and your interests, preferences, and feedback.</p>
-                 <p align="left">Usage information such as information about how you access and use our Services,your actions on the Services,including your inter actions with others on the Services,photos or media you upload to the Services,comments and posts you make in our public discussion forums,and other content you may provide.</p>
-                 <p align="left">Technical Data such as IP (internet protocol) address, ISP(internet service provider),the web browser used to access the Services, the time the Services were accessed,which webpages were visited,operating system and platform,a mobile device-type identifier, and other technology on the devices you use to access our Services("Technical Data").We may also access your photo and cameral roll and Apple Face ID through our mobile application with your permission.</p>
-                 <p align="left">Additional information such as information that you submit via job applications, customer support,or other similar means and any other information you provide to Republic.</p>
-                 <p align="left">In order to invest using the Services, you will need to register a user account. When you registera user account, we will collect certain Financial Data from you.Please note that we do not store Financial Data such as your bank account information and credit card details, but we do store otherFinancial Data, such as net-worth and income representations.If you choose to add an investment entity to your account, we will also collect information about that entity,such as the date of formation,tax identification number and state or country of formation, in addition to the Personal Information listed above.</p>
-                 <p align="left">The decision to provide Personal Information is optional when using the Services; however,if you decide not to register an account or provide the necessary Personal Information or Financial Data to validate your account or fulfill your obligations when using the Services,you may not be able to use certain features our website or the Services, as further explained in our Republic Portal Terms of Service.</p>
-                 <p align="left">Even if you do not registera user account, we may collect Technical Data from you.Technical data may allow us to determine more specific  information about you,such as the operating system of the device used to access the Services and your approximate location. We also use third-party analytics services to provide us with a clearer picture of how you use the Services, such as where you click on our website, non-sensitive text entered in to our web site,and mouse movements.</p>
-                 <h4 align="left">Third-Party Sites</h4>
-                 <p align="left">We process Personal Information provided to us from third-party sites when you register on our website or link your user account to third-party sites such as Twitter,Facebook, Apple or banking institutions. Examples of Personal Informationa third - party site may control and, with your consent,share with Republic include your name,your email address,your phone number, your mailing address, yourg overnment issued identification document,your tax identification number,and your Financial Data.</p>
-                 <p align="left">This Personal Information is not held on Republic's systems but is stored by and controlled by the third-party site in accordance with the terms and condition so their relevant policies. We are not responsible for the maintenance or security of Personal Information stored and controlled by any third-party sites. For information on how a third-party site manages the information your share with that third-party site,pleasere ad that third-party site's privacy policy and terms of use.</p>
-                 <p align="left">You  may be able to revoke our access to your account on the third-party sites by updating the appropriate settings in the account preferences of there spective third-party sites. You understand that certain Services may not be available to you if you choose to remove our access to your account with the third-party sites.</p>
-                 <h4 align="left">Cookies and Other Identifiers</h4>
-                 <p align="left">Similar to many digital platforms ,we collect certain in formation through cookies, web beaconsan do ther identifiers when you use our Services in order to provide, improve, protect, and promote our Services.</p>
-                 <p align="left">Cookies are small text files containing strings of alphanumeric characters that may uniquely identify your browser and let us help you login faster and enhance your navigation through our website. A cookie may also convey in formation to us about how you use the Services(e.g.,the pages you view, the links you click, how frequently you access the Services, and other actions you take on the Services), allow us to track your us age of  The Services overtime, and help us remember information about your visit.You can set your browser to not accept cookies,but this may limit your ability to use the Services.</p>
-                 <p align="left">Our website uses the following types of cookies:</p>
-                 <ul>
-                     <li align="left" >Essential Cookies: These cookies are necessary to provide you with the Services available through our website.</li>
-                     <li align="left">Performance and Functionality Cookies: These cookies are used to enhance the performance and functionality of our website.</li>
-                     <li align="left" >Analytics and Customization Cookies: These cookies collect information that is used either in aggregate form to help us understand how our website is being used or how effective our marketing campaignsare, or customize our website for you .</li>
-                     <li align="left" >Advertising Cookies: These cookies are used to make advertising messages more relevant to you. They perform functions like preventing the same ad from continuously reappearing, ensuring that ads are properly displayed for advertisers, and in some casess electing advertisements that are based on your interest.</li>
-                     <li align="left">Social Networking Cookies: These cookies are used to enable you to share page sand content that you find interesting on our website through third party social networking and other websites. These cookies may also be used for advertising purposes.</li>
-                     <li align="left">This Privacy Policy does not cover the collection of information by cookies or other methods by third-parties.Please see How to Remove Cookie Tracking below for detail son how to disable cookie tracking.</li> 
-                 </ul>
-                 <h4 align="left">How to Contact Us</h4>
-                 <p align="left">If you have any questions about our practices or this Privacy Policy,please contact us at <span style={{color:"#2ECC71"}}>privacy@myntinvest.co</span> or at:</p>
-                 <p align="left">MynInvest</p>
-                 <p align="left">149 E 23rd St #2001</p>
-                 <p align="left">New York,Ny 10010</p>
-                 <p align="left">Attn:Privacy Compliance</p>
-                 </div>
+                 
+                 <h4 align="left">Our role in the protection of User Information</h4>
+                 <p align="left">Our role in the protection of User Information.Upon landing on the Website, as a rule, we do not collect any information from you. However, we collect, retain and process the information provided by you through e-mail or filing of forms on the Website including but not limited to Information such as your name, address, contact details, email id, details of the organization on behalf of whom you are acting (if applicable) and financial information such as bank account or credit card or debit card or other payment instruments, identity proof, etc.</p>
+                
+                <h4 align="left">Personal Information</h4>
+                <p align="left">Further, we collect, store, and process such other information including but not limited to your Authentication Token, communication made by you, information posted by you on the chat rooms, and any modifications made to the information provided by you </p>
+           
+                <h4 align="left">Other Information</h4>
+                <p align="left">We may also collect certain automatically generated information including the IP address, date and time of visiting the Website, online activity. We may engage third-party services to monitor and collect such information that will enable us to verify your credentials, maintain reasonable security practices, enable the inclusion of better Services, fulfill your requests and enhance your user experience. Further, we may also collect cookies (a piece of software code that the Website automatically sends to your browser when you access the Website) that enable us to provide you a better user experience. We do not link the information we store on the cookies to any personally identifiable information submitted by you. Also, some of the business partners’ i.e. third parties operating in association with the Website have cookies on our Website. The use of cookies by them is subject to the privacy policy and other terms and conditions governing their website</p>
+                 
+                 <h4 align="left">Automatically Generated Information</h4>
+                 <p align="left">Personal Information, Other Information, and Automatically Generated Information shall together be referred to as</p>
+                 
+                 <h4 align="left">User Information</h4>
+                 <p align="left">The User Information provided by you may be used by us and provided to third party websites, affiliates, consultants, employees in order to manage, collect, store, process the User Information in order to improve the quality, design, functionality, and content of the Website and to any governmental authority under applicable law.</p>
+                 <p align="left">The User Information provided by you shall be used to communicate with us through newsletters, updates, notifications, and other forms of communication. Further, we may telephonically contact you to collect or verify the information provided by you. The communication with you might be recorded but will be kept confidential otherwise when asked to disclose to any governmental authority under applicable law.</p>
+                 <p align="left">The User Information shall be used for purposes only in relation to the Website and not for any other purposes. The User Information shall be retained till the termination of your membership/listing on the MXi platform or up to such other period as may be considered necessary by us for the purpose of operating the Website.</p>
+                 <p align="left">You shall have the right to view the information provided by you and also to update the information and keep us informed of any such change in case the information provided is deficient or inaccurate.</p>
+                 <p align="left">You undertake that the Personal Information and Other Information provided by you is true and accurate to the best of your knowledge. You agree and understand that we shall not be liable for the authenticity of the Personal Information and Other Information provided by you.
+                 You shall provide us with all the information requested from you on the Website or through any other mode of communication. You are not legally obligated to provide us with all the information. However, the complete functionality of the Website shall not be rendered possible if you fail to provide us with the certain necessary information for the purpose of the Services of the Website. Without prejudice to the aforesaid, you shall have an option too, while availing the Services otherwise, withdraw your consent to allow us to use the Personal Information provided by you and intimate us of the same in writing.
+                 </p>
+
+                 <h4 align="left">Disclosure of User Information</h4>
+                 <p align="left">Any Personal Information provided by you shall be made available to only our affiliates, third parties, employees, consultants, screening committee members, mentors, or other officers that are connected with or in relation to the Services of the Website. Such third parties shall not disclose the User Information disclosed to it further other than under such circumstances where disclosure is permissible by us under the terms and conditions of the Privacy policy.</p>
+                 <p align="left">Other than as set out above, we shall not disclose the User Information to any third-party without your written consent provided that such information may be disclosed to governmental agencies or bodies as required under applicable law or to exercise legal rights or defend legal claims or protect the safety of other users or public or our rights.</p>
+                
+                <h4 align="left">Links to third-party websites</h4>
+                <p align="left">The Website contains links to third-party websites. We are not responsible for any content on such third-party websites and we shall not be liable for any breach of the privacy policy by such websites. You undertake to read and understand the privacy policy of such third-party websites. For the avoidance of doubt, our Privacy Policy only governs the User Information collected, received, possessed, stored, dealt, with, or handled for the purposes of Services on our Website.</p>
+                
+                <h4 align="left">Notification and Updates sent by the Website</h4>
+                <p align="left">We send an email notification to individuals once they login to the Website as a member of the MXi platform.Further, we may send regular newsletters, updates, and other promotional information to you informing you of the updates on the MXi platform.
+                Out of courtesy towards your privacy, we give you the option to opt-out of any Services on the Website. If you choose not to opt-out of any particular Service, you agree to get information regarding such Services. In order to clarify, we only send you information if you have chosen to receive it. In case you wish to discontinue any Services, you can choose to unsubscribe such Services by choosing the unsubscribe option in the emails sent to you or tabs available on the Website. However, you shall not be able to opt-out of any Service notification that may be necessary in the process of the Website or that may be important to you as a member of the MXi platform.
+                </p>
+
+                <h4 align="left">Security Practices</h4>
+                <p align="left">The User Information shall be governed by and protected by us according to the security practices and procedures mandated under the Act and more particularly described under the Information Technology (Reasonable Security Practices & Procedures and Sensitive Personal Data or Information) Rules, 2011 and Information Technology (Intermediary Guidelines) Rules, 2011.</p>
+                
+                <h4 align="left" >Alteration of the Privacy Policy</h4>
+                <p align="left" >The Privacy Policy may be amended, modified, or refined from time to time at our sole discretion and the updated Privacy Policy shall be published on the Website and no separate communication shall be made in respect of the same. It shall be your responsibility to keep yourself updated with changes to the Privacy Policy by regularly checking the Website for updates. Usage of the Website’s Services pursuant to a change in its Privacy Policy shall be deemed to be acquiescence of the changed Privacy Policy on your behalf.</p>
+                
+                <h4 align="left">Disclaimer of liability for User Information Security</h4>
+                <p align="left">We take appropriate measures as envisaged under Clause 5 of the Privacy Policy for the protection of the User Information. All the employees, consultants, screening committee members, mentors, and officers shall always be kept updated on the security and privacy protection procedures or methods.</p>
+                <p align="left" >Not with standing the aforesaid, despite our efforts to maintain privacy and confidentiality of the User Information, we may not be able to protect or prevent the unauthorized access or use, software failure or fault, or other factors that may compromise the security of the User Information.</p>
+                <p align="left" >You agree and understand that the Internet is not a secure source and therefore, we cannot guarantee the protection of such User Information.</p>
+                
+                <h4 align="left">Grievance Redressal Mechanism</h4>
+                <p align="left">In order to address any of your grievances or discrepancies of the information displayed on the Website, the Website shall designate a grievance redressal officer</p>
+                <p align="left">(“Grievance Officer”). Arpit Chundawat shall be the Grievance Officer of the Website.</p>
+                <p align="left">The Grievance Officer shall redress all the grievances expeditiously but within 1(one) month from the date of receipt of the grievance as provided under the Act.</p>
+                </div>
                </div>
                </div>
 

@@ -16,7 +16,7 @@ import Accord from '../components/sections/Accord';
 
 
 
-
+//  <Hero className="illustration-section-01" />
 // <FeaturesSplit invertMobile topDivider imageFill className="illustration-section-02" />
 // <Testimonial topDivider />
 const Home = () => {

@@ -51,29 +51,30 @@ const Private_Deals_Team= ({
       <div className="container">&nbsp;
         <div
           className={innerClasses} style={{backgroundColor:"#F2F3F4"}}
-        >
-          <div className="cta-slogan">
-            <h1 className="m-0" >
-            <span style={{color:"#2ECC71"}}>Get in Touch</span> With Our<br/>Team Today</h1><br/>
-            <span>Invite Investors And Fundraising Digitally So That You Can Focus On Building Your Busniess </span>
+        ><div className='row'>
+          <div className="col-md-6">
+            <h2 className="m-0">
+            <span style={{color:"#2ECC71"}}>COMMUNITY:<br/></span>NETWORK EFFECT!</h2><br/>
+            <span style={{color:"grey"}}>Know more about the community network effect and achieve your goals by rewarding members of your community with stock.</span>
             &nbsp;
               <div className="reveal-from-bottom" data-reveal-delay="600" style={{paddingTop:30}} >
                 <ButtonGroup>
-                  <Button tag="a" color="primary" style={{backgroundColor:"#2ECC71",borderRadius:8,color:"white"}} wideMobile href="">
-                  Schedule Call
+                  <Button tag="a" color="primary" style={{backgroundColor:"#2ECC71",borderRadius:8,color:"white"}} wideMobile href="/Blog">
+                  Our Thesis 
 
                     </Button>
                 </ButtonGroup>
               </div>
           </div>
-          <div className="cta-action"> 
+          <div className="col-md-6"> 
           <Image
-                      src={require('./../../assets/images/Mixed.jpg')}
+                      src={require('./../../assets/images/Privatedeals_Footer.png')}
                       alt="Features tile icon 01"
-                      width={300}
-                      height={300}
+                      width={400}
+                      height={400}
                      />
           </div>
+        </div>
         </div>
       </div>
     </section>

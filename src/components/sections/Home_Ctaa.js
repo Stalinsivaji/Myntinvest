@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
 import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
+import Image from '../elements/Image';
 
 const propTypes = {
   ...SectionProps.types,
@@ -54,37 +55,36 @@ const Home_Ctaa = ({
       {...props}
       className={outerClasses}
     >
-      <div className="container">&nbsp;
+      <div className="container">
         <div
           className={innerClasses} style={{backgroundColor:"#F2F3F4"}}
         >
           <div className="cta-slogan">
             <span className="m-0" style={{color:"black"}}>
-            Trusted By Hundreds</span><br/>
-              <span style={{color:"black"}}>Of Companies</span>
+            <b>BACKED BY </b></span><br/>
+              <span style={{color:"black"}}> <b>THE INDUSTRY LEADERS</b></span>
               
           </div>
-          <div className={tilesClasses}>
+          <div className={tilesClasses} align="left">
           <div className="cta-action">
             
-            <div className="reveal-from-bottom" data-reveal-delay="600">
-            <ButtonGroup>
-                  <Button tag="a" color="secondary" style={{backgroundColor:"#E9E9FF",borderRadius:8,color:"grey"}} wideMobile href="">
-                    9UNICORNS
-                    </Button>
-                  <Button tag="a" color="primary" style={{backgroundColor:"grey",borderRadius:8,color:"white"}} wideMobile href="">
-                    Better
-                    </Button>
-                    <Button tag="a" color="secondary" style={{backgroundColor:"#E9E9FF",borderRadius:8,color:"grey"}} wideMobile href="">
-                    R
-                    </Button>
-                  <Button tag="a" color="secondary" style={{backgroundColor:"#E9E9FF",borderRadius:8,color:"grey"}} wideMobile href="">
-                    L I V W E L L
-                    </Button>
-                    <Button tag="a" color="primary" style={{backgroundColor:"grey",borderRadius:8,color:"white"}} wideMobile href="">
-                    Better
-                    </Button>
-                </ButtonGroup>
+            <div className="row" data-reveal-delay="600" >
+           <div className='col-md-6'>
+                  <a href="https://www.gattaca.vc/" >
+                  <Image                           
+                  src={require('./../../assets/images/Leader1.jpg')}
+                  alt="Features tile icon 05"
+                  width={200}
+                  height={200} /></a>
+                </div>
+                <div className='col-md-6'>
+                  <a href="https://www.meteorventure.com/">
+                  <Image           
+                  src={require('./../../assets/images/Leader2.jpg')}
+                  alt="Features tile icon 05"
+                  width={200}
+                  height={200} /></a>
+                    </div>
               </div>
             
           </div>

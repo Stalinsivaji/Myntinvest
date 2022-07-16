@@ -3,8 +3,8 @@ import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
 import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
-import Modal from '../elements/Modal';
 
+import Image from '../elements/Image';
 const propTypes = {
   ...SectionProps.types
 }
@@ -23,18 +23,7 @@ const Hero = ({
   invertColor,
   ...props
 }) => {
-
-  const [videoModalActive, setVideomodalactive] = useState(false);
-
-  const openModal = (e) => {
-    e.preventDefault();
-    setVideomodalactive(true);
-  }
-
-  const closeModal = (e) => {
-    e.preventDefault();
-    setVideomodalactive(false);
-  }   
+  
 
   const outerClasses = classNames(
     'hero section center-content',
@@ -56,45 +45,41 @@ const Hero = ({
       {...props}
       className={outerClasses}
     >
-      <div className="container-sm">
-        <div className={innerClasses}>
-          <div className="hero-content">
-            <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
-             <span style={{color:"orange"}}>Invest</span>  In The Best  <span className="text-color-primary">Startup</span><br/>Raised Right<br/>From Their <span style={{color:"#23b347"}}>Community</span>
-            </h1>
-            <div className="container-xs">
-              <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
-              We Are Bringing Community Stocks To You.Own A Part Of the Next Big Startup,Real Estate,Video Games,Crypto And Help Them On The Way To The Top
-                </p>&nbsp;
-              <div className="reveal-from-bottom" data-reveal-delay="600">
-                <ButtonGroup>
-                  <Button tag="a" color="primary" style={{borderRadius:8,color:"white"}} wideMobile href="">
-                    Get started
+      <div className="container">
+      <br/>
+      <br/>
+      <div className='row'>
+        <div className="col-md-6">
+          <div className="content"><br/>
+            <h2 className=" mb-16 reveal-from-bottom" data-reveal-delay="200"  align="left">
+             <span style={{color:"orange"}}><b>Invest</b></span> <b>In The Best</b>   <span className="text-color-primary"><b>Startup</b></span><b>Raised Right From Their </b><span style={{color:"#23b347"}}><b>Community</b></span>
+            </h2><br/>
+            <div className="container"  align="left">
+              <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400" style={{fontSize:15}} >
+              Where the best startup investment opportunities are showcased.Own a small stake in the next big startup and diversify your portfolio ten folds.</p>&nbsp;&nbsp;
+              <div className="reveal-from-bottom" data-reveal-delay="600" align="left"  >
+               
+                  <Button  tag="a" color="primary" style={{borderRadius:8,color:"white"}} wideMobile href="">
+                    INVEST NOW 
                     </Button>
-                  <Button tag="a" color="secondary" style={{backgroundColor:"white",borderRadius:8,color:"black"}} wideMobile href="">
-                    How it Works
-                    </Button>
-                </ButtonGroup>
-              </div>
+              
+              </div><br/>
+              <p align="left" style={{color:"grey",fontSize:14}}>Are you a founder?&nbsp;<span style={{color:"#23b347",fontSize:14}}>Raise Capital on Myntinvest</span></p>
             </div>
           </div>
-        
-          <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
-            <a
-              data-video=""
-              href="#0"
-              aria-controls="video-modal"
-              onClick={openModal}
-            >
-            </a>
-          </div>
-          <Modal
-            id="video-modal"
-            show={videoModalActive}
-            handleClose={closeModal}
-            video=""
-            videoTag="iframe" />
         </div>
+        
+        <div className="col-md-6" align="center">
+         
+        <Image
+            
+            src={require('./../../assets/images/Homepage.png')}
+            alt="Features tile icon 05"
+            width={800}
+            height={800} />
+
+        </div>
+      </div>
       </div>
     </section>
   );

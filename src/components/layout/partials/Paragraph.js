@@ -19,7 +19,7 @@ const Paragraph = ({
       className={classes}
     >
       <p className="">
-      We've Built your <br/>Crypto portfolio for you.
+      Startup Investing, <br/> Now Simplified!
       </p>
     </div>
   );

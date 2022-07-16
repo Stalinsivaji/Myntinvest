@@ -89,11 +89,11 @@ const Private_Deals_Tiles = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <h3 className="mt-0 mb-12">
-                  Data-driven insights
+                FOUNDERS
                   </h3>
-                <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
+                  <p><b>Get community power converted into capital. </b></p>
+                <p className="m-0" style={{color:"grey"}}>
+                Four simple steps: Schedule a call with us | Setup Campaign | Share campaign with your investors | Raise funds within days  </p>
               </div>
               <div className={
                 classNames(
@@ -102,7 +102,7 @@ const Private_Deals_Tiles = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../assets/images/invest (3).png')}
+                  src={require('./../../assets/images/Privatedeals1.png')}
                   alt="Features split 03"
                   width={700}
                   height={500} />
@@ -112,10 +112,11 @@ const Private_Deals_Tiles = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">  
                 <h2 className="mt-0 mb-12">
-                <span style={{color:"#2ECC71"}}>Schedule</span> A call
+                <span style={{color:"#2ECC71"}}>ANGEL </span> INVESTORS
                   </h2><br/>
-                <p className="m-0">
-                Invite Investors And Fundraising Digitally So That You Can Focus On Building Your Busniess </p>
+                  <p><b>Automate your deal flow process today. </b></p>
+                <p className="m-0" style={{color:"grey"}}>
+                Complete Transactions within no time - Seamless KYC, online transactions and Signing of documents.</p>
               </div>
               <div className={
                 classNames(
@@ -124,10 +125,34 @@ const Private_Deals_Tiles = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../assets/images/invest (1).png')}
+                  src={require('./../../assets/images/Privatedeals2.png')}
                   alt="Features split 01"
                   width={528}
                   height={396} />
+              </div>
+            </div>
+
+            
+            <div className="split-item">
+              <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
+                <h2 className="mt-0 mb-12">
+                Angel Networks & Syndicates
+                  </h2>
+                  <p><b>Automated process for easy deal flow for seamless closure of deals & tracking progress via intelligent reports.</b></p>
+                <p className="m-0" style={{color:"grey"}}>
+                MXi’s seamless autonomous structure is easy, efficient and cost effective. Track the progress of your portfolio companies through our effortless integrations. </p>
+              </div>
+              <div className={
+                classNames(
+                  'split-item-image center-content-mobile reveal-from-bottom',
+                  imageFill && 'split-item-image-fill'
+                )}
+                data-reveal-container=".split-item">
+                <Image
+                  src={require('./../../assets/images/Privatedeals3.png')}
+                  alt="Features split 03"
+                  width={700}
+                  height={500} />
               </div>
             </div>
 

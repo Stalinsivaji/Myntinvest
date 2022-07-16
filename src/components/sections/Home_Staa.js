@@ -59,10 +59,10 @@ const Home_Staa = ({
           </div>
           <div className="cta-action">
           <ButtonGroup>
-                  <Button tag="a" color="primary" style={{backgroundColor:"#F1C40F ", borderRadius:8,color:"white"}} wideMobile href="">
+                  <Button tag="a" color="primary" style={{backgroundColor:"#F1C40F ", borderRadius:8,color:"white"}} wideMobile href="/Investors">
                     Investors
                     </Button>
-                  <Button tag="a" color="" style={{backgroundColor:"#2ECC71 ",borderRadius:8,color:"white"}} wideMobile href="">
+                  <Button tag="a" color="" style={{backgroundColor:"#2ECC71 ",borderRadius:8,color:"white"}} wideMobile href="/Founders">
                     Founders
                     </Button>
                 </ButtonGroup>

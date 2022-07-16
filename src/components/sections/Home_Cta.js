@@ -57,9 +57,9 @@ const Home_Cta = ({
           className={innerClasses} style={{backgroundColor:"#f9faf9"}}
         >
           <div className="cta-slogan">
-            <h2 className="m-0" style={{color:"black"}}>
-             $700M+  <br/>
-             </h2><p>Invested Since 2022</p>
+            <h2 className="m-0" style={{color:"black"}} align="center" >
+             3061 <br/>
+             </h2><p align="center" style={{fontSize:10}}>India is the 3rd largest startup ecosystem in the world</p>
           </div> 
           <div className="cta-slogan">
             <h1 className="m-0" style={{color:"black"}}>
@@ -67,9 +67,9 @@ const Home_Cta = ({
              </h1>
           </div> 
           <div className="cta-action">
-          <h2 className="m-0" style={{color:"black"}}>
-             1.5Million+  <br/>
-             </h2><p align="center">Members</p>
+          <h2 className="m-0" style={{color:"black"}}align="center">
+             $995k  <br/>
+             </h2><p align="center" style={{fontSize:10}}>The YOY growth rate of Indian startup ecosystem is 15%</p>
           </div>
           <div className="cta-slogan">
             <h1 className="m-0" style={{color:"black"}}>
@@ -77,9 +77,19 @@ const Home_Cta = ({
              </h1>
           </div> 
           <div className="cta-action">
-          <h2 className="m-0" style={{color:"black"}}>
-             600K+ <br/>
-             </h2><p align="center">Deals Done</p>
+          <h2 className="m-0" style={{color:"black"}}align="center">
+             11 <br/>
+             </h2><p align="center" style={{fontSize:10}}>-	Funding secured by Indian startups in 2021 alone is $ 41 Billion. </p>
+          </div>
+          <div className="cta-slogan">
+            <h1 className="m-0" style={{color:"black"}}>
+             |
+             </h1>
+          </div> 
+          <div className="cta-action">
+          <h2 className="m-0" style={{color:"black"}}align="center" >
+             $11.5 Bn <br/>
+             </h2><p align="center" style={{fontSize:10}}>Venture capital funding across all stages doubled compared to last year</p>
           </div>
         </div>&nbsp;
              
@@ -88,13 +98,13 @@ const Home_Cta = ({
             
             <div className="reveal-from-bottom" data-reveal-delay="600">
             <ButtonGroup>
-                  <Button tag="a" color="primary" style={{backgroundColor:"#F1C404", borderRadius:8,color:"white"}} wideMobile href="">
+                  <Button tag="a" color="primary" style={{backgroundColor:"#F1C404", borderRadius:8,color:"white"}} wideMobile href="/Investors">
                     Startups
                     </Button>
                   <Button tag="a" color="secondary" style={{backgroundColor:"#AAB7B8",borderRadius:8,color:"white"}} wideMobile href="">
                     Crypto
                     </Button>
-                    <Button tag="a" color="primary" style={{backgroundColor:"#AAB7B8", borderRadius:8,color:"white"}} wideMobile href="">
+                    <Button tag="a" color="primary" style={{backgroundColor:"#AAB7B8", borderRadius:8,color:"white"}} wideMobile href="/Realestate">
                     Real Estate
                     </Button>
                 </ButtonGroup>

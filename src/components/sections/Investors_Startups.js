@@ -81,15 +81,12 @@ const Investors_Startups= ({
           <div className="cta-slogan">
             <h1 className="m-0" >
               Invest Now In <span style={{color:"#2ECC71"}}>Startups</span></h1><br/>
-              <span>Browse Current Investment Opportunities With Us<br/>All Companies Are <span style={{color:"#2ECC71"}}>Vetted & Pass Due Diligence</span> </span>
+              <span>Discover highly curated, vetted investment opportunities <br/>today and <span style={{color:"#2ECC71"}}>enable the future</span> </span>
              &nbsp;
               <div className="reveal-from-bottom" data-reveal-delay="600" style={{paddingTop:30}} >
                 <ButtonGroup>
-                  <Button tag="a" color="primary" style={{borderRadius:8,color:"white"}} wideMobile href="">
-                    Become an Investors
-                    </Button>
-                    <Button tag="a" style={{borderRadius:8,color:"Dark",backgroundColor:"white"}} wideMobile href="">
-                    How it Works 
+                  <Button tag="a" color="primary" style={{borderRadius:8,color:"white"}} wideMobile href="/Signup">
+                  SIGNUP NOW 
                     </Button>
                 </ButtonGroup><br/>
                 <p>Investments Are Risky And May Result in Total <br/>Loss Of Capital.<u>Learn More</u></p>
@@ -97,7 +94,7 @@ const Investors_Startups= ({
           </div>
           <div className="cta-action"> 
           <Image
-                      src={require('./../../assets/images/Mixed.jpg')}
+                      src={require('./../../assets/images/Investors.png')}
                       alt="Features tile icon 01"
                       width={300}
                       height={300}
