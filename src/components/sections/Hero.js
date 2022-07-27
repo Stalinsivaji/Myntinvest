@@ -59,12 +59,15 @@ const Hero = ({
               Where the best startup investment opportunities are showcased.Own a small stake in the next big startup and diversify your portfolio ten folds.</p>&nbsp;&nbsp;
               <div className="reveal-from-bottom" data-reveal-delay="600" align="left"  >
                
-                  <Button  tag="a" color="primary" style={{borderRadius:8,color:"white"}} wideMobile href="">
+                  <Button  tag="a" color="primary" style={{borderRadius:8,color:"white"}} wideMobile href="/Signup">
                     INVEST NOW 
                     </Button>
               
               </div><br/>
-              <p align="left" style={{color:"grey",fontSize:14}}>Are you a founder?&nbsp;<span style={{color:"#23b347",fontSize:14}}>Raise Capital on Myntinvest</span></p>
+              <p align="left" style={{color:"grey",fontSize:14}}>Are you a founder?&nbsp;
+              <Button  tag="a" color="primary" style={{color:"#23b347",fontSize:14,backgroundColor:"#f9faf9"}} wideMobile href="/Learn">
+              Raise Capital on Myntinvest
+                    </Button></p>
             </div>
           </div>
         </div>

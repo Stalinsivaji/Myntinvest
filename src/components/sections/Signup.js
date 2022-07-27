@@ -343,7 +343,7 @@ class Registration extends React.Component {
             <div className='row'>
                 <div className={tilesClasses}>
             <ButtonGroup >
-                  <Button  type="submit" value="Submit" color="primary" style={{borderRadius:8,color:"white",width:500}} wideMobile href="//Investor_Signup">
+                  <Button  type="submit" value="Submit" color="primary" style={{borderRadius:8,color:"white",width:500}} wideMobile href="/Login"  >
                     Sign Up
                     </Button>
                 </ButtonGroup></div>
@@ -358,7 +358,7 @@ class Registration extends React.Component {
            
               <div className={tilesClasses}>
                 <ButtonGroup>
-                  <Button tag="a" color="secondary" style={{backgroundColor:"#ECF0F1",borderRadius:8,color:"black",width:500}} wideMobile href="/Login">
+                  <Button tag="a" color="secondary" style={{backgroundColor:"#ECF0F1",borderRadius:8,color:"black",width:500}} wideMobile href="/Login" >
                     Sign up With Google
                     </Button>
                 </ButtonGroup>

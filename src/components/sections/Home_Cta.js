@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
 import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
-
+import Image from '../elements/Image';
 const propTypes = {
   ...SectionProps.types,
   split: PropTypes.bool
@@ -112,7 +112,8 @@ const Home_Cta = ({
             
           </div>
           </div>
-      </div>
+      </div>&nbsp;
+      
     </section>
   );
 }

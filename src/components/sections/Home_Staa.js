@@ -68,7 +68,7 @@ const Home_Staa = ({
                 </ButtonGroup>
           </div>
         </div>
-      </div>
+      </div>&nbsp;
     </section>
   );
 }

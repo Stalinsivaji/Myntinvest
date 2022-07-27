@@ -53,7 +53,7 @@ const Deals_Sta = ({
           className={innerClasses} style={{backgroundColor:"#f9faf9"}}
         >
           <div className="cta-slogan">
-          <ButtonGroup> <Button tag="a" color="Secondary" style={{backgroundColor:"#2ECC71 ", borderRadius:8,color:"white"}} wideMobile href="">
+          <ButtonGroup> <Button tag="a" color="Secondary" style={{backgroundColor:"#2ECC71 ", borderRadius:8,color:"white"}} wideMobile href="#0">
                     SOLD OUT
              </Button> </ButtonGroup> 
             <h2 className="m-0," style={{color:"#2ECC71 "}}>

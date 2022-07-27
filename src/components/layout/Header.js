@@ -169,6 +169,16 @@ const Header = ({
                         <Link to="/Signup" className="button button-primary button-wide-mobile button-sm" style={{borderRadius:15,color:"white"}} onClick={closeMenu}>Sign up</Link>
                       </li>
                     </ul>}
+
+                    <ul className={
+                    classNames(
+                      'list-reset text-xs',
+                      navPosition && `header-nav-${navPosition}`
+                    )}>
+                    <li>
+                      <Link to="/Admin_Login" onClick={closeMenu} >Admin </Link>
+                    </li>
+                  </ul>
                 </div>
               </nav>
             </>}

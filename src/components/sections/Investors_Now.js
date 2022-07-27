@@ -97,7 +97,7 @@ const Investors_Now = ({
                     </p><br/>
                     <span style={{color:"grey",paddingRight:0}}>Los Angeles,CA</span>
                 <ButtonGroup>
-                  <Button tag="a" color="secondary" style={{backgroundColor:"white",borderRadius:8,color:"orange",fontSize:13}} wideMobile href="">
+                  <Button tag="a" color="secondary" style={{backgroundColor:"white",borderRadius:8,color:"orange",fontSize:13}} wideMobile href="#0">
                     FINTECH & FINANCE
                     </Button>
                 </ButtonGroup>
@@ -125,10 +125,10 @@ const Investors_Now = ({
                     </p><br/>
                     <span style={{color:"grey",paddingRight:0}}>Santa Monica,CA</span>
                 <ButtonGroup>
-                <Button tag="a" color="secondary" style={{backgroundColor:"white",borderRadius:8,color:"orange",fontSize:13}} wideMobile href="">
+                <Button tag="a" color="secondary" style={{backgroundColor:"white",borderRadius:8,color:"orange",fontSize:13}} wideMobile href="#0">
                     B2C
                     </Button>
-                  <Button tag="a" color="secondary" style={{backgroundColor:"#AAB7B8",borderRadius:8,color:"white",fontSize:13}} wideMobile href="">
+                  <Button tag="a" color="secondary" style={{backgroundColor:"#AAB7B8",borderRadius:8,color:"white",fontSize:13}} wideMobile href="#0">
                     HEALTH & WELLNESS
                     </Button>
                 </ButtonGroup>
@@ -157,7 +157,7 @@ const Investors_Now = ({
                     
                     <span style={{color:"grey"}}>Santa Monica,CA</span>
                 <ButtonGroup>
-                  <Button tag="a" color="secondary" style={{backgroundColor:"#D5F5E3",borderRadius:8,color:"green",fontSize:13}} wideMobile href="">
+                  <Button tag="a" color="secondary" style={{backgroundColor:"#D5F5E3",borderRadius:8,color:"green",fontSize:13}} wideMobile href="#0">
                     GAMING
                     </Button>
                 </ButtonGroup>
@@ -185,7 +185,7 @@ const Investors_Now = ({
                     </p><br/>
                     <span style={{color:"grey",paddingRight:0}}>Los Angeles,CA</span>
                 <ButtonGroup>
-                  <Button tag="a" color="secondary" style={{backgroundColor:"white",borderRadius:8,color:"orange",fontSize:13}} wideMobile href="">
+                  <Button tag="a" color="secondary" style={{backgroundColor:"white",borderRadius:8,color:"orange",fontSize:13}} wideMobile href="#0">
                     FINTECH & FINANCE
                     </Button>
                 </ButtonGroup>
@@ -213,10 +213,10 @@ const Investors_Now = ({
                     </p><br/>
                     <span style={{color:"grey",paddingRight:0}}>Santa Monica,CA</span>
                 <ButtonGroup>
-                  <Button tag="a" color="secondary" style={{backgroundColor:"#FADBD8",borderRadius:8,color:"RED",fontSize:13}} wideMobile href="">
+                  <Button tag="a" color="secondary" style={{backgroundColor:"#FADBD8",borderRadius:8,color:"RED",fontSize:13}} wideMobile href="#0">
                     HEALTH & WELLNESS
                     </Button>
-                    <Button tag="a" color="secondary" style={{backgroundColor:"white",borderRadius:8,color:"orange",fontSize:13}} wideMobile href="">
+                    <Button tag="a" color="secondary" style={{backgroundColor:"white",borderRadius:8,color:"orange",fontSize:13}} wideMobile href="#0">
                     B2C
                     </Button>
                 </ButtonGroup>
@@ -239,7 +239,7 @@ const Investors_Now = ({
                     </span>
                   
                 <ButtonGroup>
-                  <Button tag="a" color="secondary" style={{backgroundColor:"#2ECC71 ",borderRadius:8,color:"white",fontSize:13}} wideMobile href="">
+                  <Button tag="a" color="secondary" style={{backgroundColor:"#2ECC71 ",borderRadius:8,color:"white",fontSize:13}} wideMobile href="#0">
                     MAX
                     </Button><span style={{color:"#2ECC71 "}}><strong>$25,000,000</strong> valuation cap</span>
                 </ButtonGroup> <hr/>
@@ -271,10 +271,10 @@ const Investors_Now = ({
                     </p><br/>
                     <span style={{color:"grey",paddingRight:0}} >Santa Monica,CA</span>
                 <ButtonGroup>
-                <Button tag="a" color="secondary" style={{backgroundColor:"white",borderRadius:8,color:"orange",fontSize:13}} wideMobile href="">
+                <Button tag="a" color="secondary" style={{backgroundColor:"white",borderRadius:8,color:"orange",fontSize:13}} wideMobile href="#0">
                     B2C
                     </Button>
-                  <Button tag="a" color="secondary" style={{backgroundColor:"#FADBD8",borderRadius:8,color:"RED",fontSize:13}} wideMobile href="">
+                  <Button tag="a" color="secondary" style={{backgroundColor:"#FADBD8",borderRadius:8,color:"RED",fontSize:13}} wideMobile href="#0">
                     HEALTH & WELLNESS
                     </Button>
                 </ButtonGroup>
@@ -302,7 +302,7 @@ const Investors_Now = ({
                     </p><br/>
                     <span style={{color:"grey",paddingRight:0}}>Los Angeles,CA</span>
                 <ButtonGroup>
-                  <Button tag="a" color="secondary" style={{backgroundColor:"#D5F5E3",borderRadius:8,color:"green",fontSize:13}} wideMobile href="">
+                  <Button tag="a" color="secondary" style={{backgroundColor:"#D5F5E3",borderRadius:8,color:"green",fontSize:13}} wideMobile href="#0">
                     WOMEN FOUNDERS
                     </Button>
                 </ButtonGroup>
@@ -317,7 +317,7 @@ const Investors_Now = ({
       <div className={tilesClasses}>
       <div className="reveal-from-bottom" data-reveal-delay="600" >
                 <ButtonGroup>
-                  <Button tag="a" color="primary" style={{borderRadius:8,color:"white"}} wideMobile href="">
+                  <Button tag="a" color="primary" style={{borderRadius:8,color:"white"}} wideMobile href="#0">
                     View All Companies (69)
                     </Button>
                 </ButtonGroup>

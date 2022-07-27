@@ -89,7 +89,7 @@ const Funded_Company= ({
                     </p><br/>
                     <span style={{color:"grey",paddingRight:0}}>Los Angeles,CA</span>
                 <ButtonGroup>
-                  <Button tag="a" color="secondary" style={{backgroundColor:"white",borderRadius:8,color:"orange"}} wideMobile href="">
+                  <Button tag="a" color="secondary" style={{backgroundColor:"white",borderRadius:8,color:"orange"}} wideMobile href="#0">
                     FINTECH & FINANCE
                     </Button>
                 </ButtonGroup>
@@ -117,10 +117,10 @@ const Funded_Company= ({
                     </p><br/>
                     <span style={{color:"grey",paddingRight:0}}>Santa Monica,CA</span>
                 <ButtonGroup>
-                  <Button tag="a" color="secondary" style={{backgroundColor:"#FADBD8",borderRadius:8,color:"RED",fontSize:13}} wideMobile href="">
+                  <Button tag="a" color="secondary" style={{backgroundColor:"#FADBD8",borderRadius:8,color:"RED",fontSize:13}} wideMobile href="#0">
                     HEALTH & WELLNESS
                     </Button>
-                    <Button tag="a" color="secondary" style={{backgroundColor:"white",borderRadius:8,color:"orange",fontSize:13}} wideMobile href="">
+                    <Button tag="a" color="secondary" style={{backgroundColor:"white",borderRadius:8,color:"orange",fontSize:13}} wideMobile href="#0">
                     B2C
                     </Button>
                 </ButtonGroup>
@@ -142,7 +142,7 @@ const Funded_Company= ({
                     </span>
                   
                 <ButtonGroup>
-                  <Button tag="a" color="secondary" style={{backgroundColor:"#23b347",borderRadius:8,color:"white",fontSize:13}} wideMobile href="">
+                  <Button tag="a" color="secondary" style={{backgroundColor:"#23b347",borderRadius:8,color:"white",fontSize:13}} wideMobile href="#0">
                     MAX
                     </Button><span style={{color:"#23b347"}}><strong>$25,000,000</strong> valuation cap</span>
                 </ButtonGroup> <hr/>
@@ -173,10 +173,10 @@ const Funded_Company= ({
                     </p><br/>
                     <span style={{color:"grey",paddingRight:0}} >Santa Monica,CA</span>
                 <ButtonGroup>
-                <Button tag="a" color="secondary" style={{backgroundColor:"white",borderRadius:8,color:"orange",fontSize:13}} wideMobile href="">
+                <Button tag="a" color="secondary" style={{backgroundColor:"white",borderRadius:8,color:"orange",fontSize:13}} wideMobile href="#0">
                     B2C
                     </Button>
-                  <Button tag="a" color="secondary" style={{backgroundColor:"#FADBD8",borderRadius:8,color:"RED",fontSize:13}} wideMobile href="">
+                  <Button tag="a" color="secondary" style={{backgroundColor:"#FADBD8",borderRadius:8,color:"RED",fontSize:13}} wideMobile href="#0">
                     HEALTH & WELLNESS
                     </Button>
                 </ButtonGroup>
@@ -204,7 +204,7 @@ const Funded_Company= ({
                     </p><br/>
                     <span style={{color:"grey",paddingRight:0}}>Los Angeles,CA</span>
                 <ButtonGroup>
-                  <Button tag="a" color="secondary" style={{backgroundColor:"#D5F5E3",borderRadius:8,color:"green",fontSize:13}} wideMobile href="">
+                  <Button tag="a" color="secondary" style={{backgroundColor:"#D5F5E3",borderRadius:8,color:"green",fontSize:13}} wideMobile href="#0">
                     WOMEN FOUNDERS
                     </Button>
                 </ButtonGroup>
@@ -217,7 +217,7 @@ const Funded_Company= ({
       <div className={tilesClasses}>
       <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
-                  <Button tag="a" color="primary" style={{borderRadius:8,color:"white"}} wideMobile href="">
+                  <Button tag="a" color="primary" style={{borderRadius:8,color:"white"}} wideMobile href="#0">
                     View All Companies (402)
                     </Button>
                 </ButtonGroup>

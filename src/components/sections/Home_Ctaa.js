@@ -2,8 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
-import ButtonGroup from '../elements/ButtonGroup';
-import Button from '../elements/Button';
 import Image from '../elements/Image';
 
 const propTypes = {
@@ -53,9 +51,10 @@ const Home_Ctaa = ({
   return (
     <section
       {...props}
+
       className={outerClasses}
     >
-      <div className="container">
+      <div className="container" style={{marginTop:-150}}>
         <div
           className={innerClasses} style={{backgroundColor:"#F2F3F4"}}
         >
@@ -69,25 +68,26 @@ const Home_Ctaa = ({
           <div className="cta-action">
             
             <div className="row" data-reveal-delay="600" >
-           <div className='col-md-6'>
+           <div className='col-md-5'>
                   <a href="https://www.gattaca.vc/" >
                   <Image                           
                   src={require('./../../assets/images/Leader1.jpg')}
                   alt="Features tile icon 05"
+                  style={{borderRadius:8}}
                   width={200}
                   height={200} /></a>
-                </div>
-                <div className='col-md-6'>
+                </div>&nbsp;
+                <div className='col-md-5'>
                   <a href="https://www.meteorventure.com/">
                   <Image           
                   src={require('./../../assets/images/Leader2.jpg')}
                   alt="Features tile icon 05"
+                  style={{borderRadius:8}}
                   width={200}
                   height={200} /></a>
                     </div>
-              </div>
-            
-          </div>
+              </div>           
+            </div>
           </div>
         </div>
       </div>

@@ -31,7 +31,7 @@ const FooterNav = ({
         <div style={{paddingLeft:15,paddingTop:20}} align="left"><li>
         <p to="#0" style={{paddingLeft:10}}><b>STARTUPS </b></p>
           <Link to="/Login">Login</Link>&nbsp;
-          <Link to="#0">Raise</Link>&nbsp;
+          <Link to="/Raise">Raise</Link>&nbsp;
           <Link to="/FAQ">FAQs</Link>&nbsp;
         </li></div>&nbsp;
 

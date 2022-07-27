@@ -88,10 +88,10 @@ const Deals_Realm = ({
           <div className={tilesClasses} >
          
                 <ButtonGroup>
-                  <Button tag="a" color="secondary" style={{backgroundColor:"#FDEDEC ",borderRadius:8,color:"red"}} wideMobile href="">
+                  <Button tag="a" color="secondary" style={{backgroundColor:"#FDEDEC ",borderRadius:8,color:"red"}} wideMobile href="#0">
                     HEALTH & WELLNESS
                     </Button>
-                    <Button tag="a" color="secondary" style={{backgroundColor:"#FDF2E9 ",borderRadius:8,color:"orange"}} wideMobile href="">
+                    <Button tag="a" color="secondary" style={{backgroundColor:"#FDF2E9 ",borderRadius:8,color:"orange"}} wideMobile href="#0">
                     B2C
                     </Button>
                 </ButtonGroup>

@@ -217,7 +217,7 @@ render() {
             </div>
             <div className={tilesClasses} >
             <ButtonGroup >
-                  <Button type="submit" value="Submit"  color="primary" style={{borderRadius:8,color:"white",width:500}} wideMobile href="/StartUp_Dashboard">
+                  <Button  type="submit" value="Submit"  color="primary" style={{borderRadius:8,color:"white",width:500}} wideMobile href="/StartUp_Dashboard">
                     Login
                     </Button>
                 </ButtonGroup></div>
@@ -232,7 +232,7 @@ render() {
 
             <div className={tilesClasses} >
                 <ButtonGroup>
-                  <Button  tag="a" color="primary" style={{backgroundColor:"#ECF0F1",borderRadius:8,color:"black",width:500}} wideMobile href="/Startup_Dashboard">
+                  <Button tag="a" color="primary" style={{backgroundColor:"#ECF0F1",borderRadius:8,color:"black",width:500}} wideMobile href="/Startup_Dashboard">
                     Sign in With Google
                     </Button>
 

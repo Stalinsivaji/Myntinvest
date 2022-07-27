@@ -63,8 +63,16 @@ import Campaign_Banner from './components/sections/Campaign_Banner';
 import Campaign_FAQ from './components/sections/Campaign_FAQ';
 import Campaign_Press from './components/sections/Campaign_Press';
 
-import Risks from './components/sections/Risks'
-import Terms_Condition from './components/sections/Terms_Condition'
+import Risks from './components/sections/Risks';
+import Raise from './components/sections/Raise'
+import Terms_Condition from './components/sections/Terms_Condition';
+
+import Admin_Login from './components/sections/Admin_Login';
+import Admin_Dashboard from './components/sections/Admin_Dashboard';
+import Admin_Startup from './components/sections/Admin_Startup';
+import Admin_Investor from './components/sections/Admin_Investor';
+import Admin_Accounts from './components/sections/Admin_Accounts';
+
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
 
@@ -145,7 +153,13 @@ const App = () => {
           <AppRoute exact path="/Privacy_Policy" component={Privacy_Policy} layout={LayoutDefault} />
           <AppRoute exact path="/Blog" component={Blog} layout={LayoutDefault} />
           <AppRoute exact path="/FAQ" component={FAQ} layout={LayoutDefault} />
-       
+          <AppRoute exact path="/Raise" component={Raise} layout={LayoutDefault} />
+
+          <AppRoute exact path="/Admin_Login" component={Admin_Login} layout={LayoutDefault} />
+          <AppRoute exact path="/Admin_Dashboard" component={Admin_Dashboard} layout={LayoutDefault} />
+          <AppRoute exact path="/Admin_Startup" component={Admin_Startup} layout={LayoutDefault} />
+          <AppRoute exact path="/Admin_Investor" component={Admin_Investor} layout={LayoutDefault} />
+          <AppRoute exact path="/Admin_Accounts" component={Admin_Accounts} layout={LayoutDefault} />
 
         </Switch>
       )} />

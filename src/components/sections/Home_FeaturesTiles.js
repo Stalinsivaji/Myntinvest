@@ -60,7 +60,7 @@ const Home_FeaturesTiles = ({
         <h1 align="center">Join Thousands Of <span style={{color:"#2ECC71"}}>Investors</span></h1>
          <SectionHeader data={sectionHeader} className="center-content" />
          <div className="reveal-from-bottom" data-reveal-delay="600"  align="center">
-                  <Button tag="a" color="primary" style={{borderRadius:15,color:"white",}} wideMobile href="">
+                  <Button tag="a" color="primary" style={{borderRadius:15,color:"white",}} wideMobile href="/Investors">
                     Become an Investors
                     </Button>
               </div>&nbsp;

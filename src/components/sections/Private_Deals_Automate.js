@@ -61,7 +61,7 @@ const Private_Deals_Automate= ({
              &nbsp;
               <div className="reveal-from-bottom" data-reveal-delay="600" style={{paddingTop:30}} >
                 <ButtonGroup>
-                  <Button tag="a" color="primary" style={{borderRadius:8,color:"white"}} wideMobile href="">
+                  <Button tag="a" color="primary" style={{borderRadius:8,color:"white"}} wideMobile href="/Raise">
                     Apply to Raise
                     </Button>
                 </ButtonGroup>

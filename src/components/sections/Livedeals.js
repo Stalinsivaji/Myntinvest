@@ -68,7 +68,7 @@ const Livedeals = ({
                   </p>
                 </div> &nbsp;
                 <div className={tilesClasses}>
-                    <div className="col-md-4">
+                    <div className="col-md-4" style={{paddingTop:20}}>
                      <Input id="newsletter" type="email" style={{backgroundColor:"white",textColor:"white"}} label="Subscribe" labelHidden hasIcon="right" placeholder="Enter The Keyword Here">
                          <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
                            <path d="M9 5H1c-.6 0-1 .4-1 1s.4 1 1 1h8v5l7-6-7-6v5z" fill="#376DF9" />
@@ -76,9 +76,10 @@ const Livedeals = ({
                         </Input>
                   </div>
                   
-                  <div className="col-md-2">
+                  <div className="col-md-4" style={{paddingTop:20}} >
+                  
                   <label>
-                    <select style={{width: 180,height: 40,fontSize:20,color:"grey",backgroundColor:"white"}}>
+                    <select style={{width: 310,height: 40,fontSize:20,color:"grey",backgroundColor:"white"}}>
                         <option value="grapefruit"> Filters</option>
                         <option value="lime">Most Transaction</option>
                         <option value="coconut">Closing Soon</option>
@@ -86,9 +87,9 @@ const Livedeals = ({
                     </select>
                     </label>
                   </div>
-                  <div className='col-md-1'></div>
-               
-                <div className="col-md-4">
+                  
+                  
+                <div className="col-md-4" style={{paddingTop:20}}>
                 <label >Sort By :&nbsp;
                     <select  style={{backgroundColor:"white",width: 250,height: 40,fontSize:20,color:"grey"}}><p>22</p>
                         <option value="Most Funded"> Most Funded</option>
@@ -99,6 +100,7 @@ const Livedeals = ({
                     </label>
                     </div>
                  </div>&nbsp;
+
 
                 
 
@@ -124,7 +126,7 @@ const Livedeals = ({
                     </p><br/>
                     <span style={{color:"grey",paddingRight:0}}>Los Angeles,CA</span>
                 <ButtonGroup>
-                  <Button tag="a" color="secondary" style={{backgroundColor:"white",borderRadius:8,color:"orange",fontSize:13}} wideMobile href="">
+                  <Button tag="a" color="secondary" style={{backgroundColor:"white",borderRadius:8,color:"orange",fontSize:13}} wideMobile href="#0">
                     FINTECH & FINANCE
                     </Button>
                 </ButtonGroup>
@@ -152,10 +154,10 @@ const Livedeals = ({
                     </p><br/>
                     <span style={{color:"grey",paddingRight:0}}>Santa Monica,CA</span>
                 <ButtonGroup>
-                  <Button tag="a" color="secondary" style={{backgroundColor:"#AAB7B8",borderRadius:8,color:"white",fontSize:13}} wideMobile href="">
+                  <Button tag="a" color="secondary" style={{backgroundColor:"#AAB7B8",borderRadius:8,color:"white",fontSize:13}} wideMobile href="#0">
                     HEALTH & WELLNESS
                     </Button>
-                    <Button tag="a" color="secondary" style={{backgroundColor:"white",borderRadius:8,color:"orange",fontSize:13}} wideMobile href="">
+                    <Button tag="a" color="secondary" style={{backgroundColor:"white",borderRadius:8,color:"orange",fontSize:13}} wideMobile href="#0">
                     B2C
                     </Button>
                 </ButtonGroup>
@@ -184,7 +186,7 @@ const Livedeals = ({
                     
                     <span style={{color:"grey"}}>Santa Monica,CA</span>
                 <ButtonGroup>
-                  <Button tag="a" color="secondary" style={{backgroundColor:"#D5F5E3",borderRadius:8,color:"green",fontSize:13}} wideMobile href="">
+                  <Button tag="a" color="secondary" style={{backgroundColor:"#D5F5E3",borderRadius:8,color:"green",fontSize:13}} wideMobile href="#0">
                     GAMING
                     </Button>
                 </ButtonGroup>
@@ -212,7 +214,7 @@ const Livedeals = ({
                     </p><br/>
                     <span style={{color:"grey",paddingRight:0}}>Los Angeles,CA</span>
                 <ButtonGroup>
-                  <Button tag="a" color="secondary" style={{backgroundColor:"white",borderRadius:8,color:"orange",fontSize:13}} wideMobile href="">
+                  <Button tag="a" color="secondary" style={{backgroundColor:"white",borderRadius:8,color:"orange",fontSize:13}} wideMobile href="#0">
                     FINTECH & FINANCE
                     </Button>
                 </ButtonGroup>
@@ -240,10 +242,10 @@ const Livedeals = ({
                     </p><br/>
                     <span style={{color:"grey",paddingRight:0}}>Santa Monica,CA</span>
                 <ButtonGroup>
-                <Button tag="a" color="secondary" style={{backgroundColor:"white",borderRadius:8,color:"orange",fontSize:13}} wideMobile href="">
+                <Button tag="a" color="secondary" style={{backgroundColor:"white",borderRadius:8,color:"orange",fontSize:13}} wideMobile href="#0">
                     B2C
                     </Button>
-                  <Button tag="a" color="secondary" style={{backgroundColor:"#FADBD8",borderRadius:8,color:"RED",fontSize:13}} wideMobile href="">
+                  <Button tag="a" color="secondary" style={{backgroundColor:"#FADBD8",borderRadius:8,color:"RED",fontSize:13}} wideMobile href="#0">
                     HEALTH & WELLNESS
                     </Button>
                 </ButtonGroup>
@@ -266,7 +268,7 @@ const Livedeals = ({
                     </span>
                   
                 <ButtonGroup>
-                  <Button tag="a" color="secondary" style={{backgroundColor:"#2ECC71 ",borderRadius:8,color:"white",fontSize:13}} wideMobile href="">
+                  <Button tag="a" color="secondary" style={{backgroundColor:"#2ECC71 ",borderRadius:8,color:"white",fontSize:13}} wideMobile href="#0">
                     MAX
                     </Button><span style={{color:"#2ECC71 "}}><strong>$25,000,000</strong> valuation cap</span>
                 </ButtonGroup> <hr/>
@@ -298,10 +300,10 @@ const Livedeals = ({
                     </p><br/>
                     <span style={{color:"grey",paddingRight:0}} >Santa Monica,CA</span>
                 <ButtonGroup>
-                <Button tag="a" color="secondary" style={{backgroundColor:"white",borderRadius:8,color:"orange",fontSize:13}} wideMobile href="">
+                <Button tag="a" color="secondary" style={{backgroundColor:"white",borderRadius:8,color:"orange",fontSize:13}} wideMobile href="#0">
                     B2C
                     </Button>
-                  <Button tag="a" color="secondary" style={{backgroundColor:"#FADBD8",borderRadius:8,color:"RED",fontSize:13}} wideMobile href="">
+                  <Button tag="a" color="secondary" style={{backgroundColor:"#FADBD8",borderRadius:8,color:"RED",fontSize:13}} wideMobile href="#0">
                     HEALTH & WELLNESS
                     </Button>
                 </ButtonGroup>
@@ -329,7 +331,7 @@ const Livedeals = ({
                     </p><br/>
                     <span style={{color:"grey",paddingRight:0}}>Los Angeles,CA</span>
                 <ButtonGroup>
-                  <Button tag="a" color="secondary" style={{backgroundColor:"#D5F5E3",borderRadius:8,color:"green",fontSize:13}} wideMobile href="">
+                  <Button tag="a" color="secondary" style={{backgroundColor:"#D5F5E3",borderRadius:8,color:"green",fontSize:13}} wideMobile href="#0">
                     WOMEN FOUNDERS
                     </Button>
                 </ButtonGroup>
@@ -344,7 +346,7 @@ const Livedeals = ({
       <div className={tilesClasses}>
       <div className="reveal-from-bottom" data-reveal-delay="600" >
                 <ButtonGroup>
-                  <Button tag="a" color="primary" style={{borderRadius:8,color:"white"}} wideMobile href="">
+                  <Button tag="a" color="primary" style={{borderRadius:8,color:"white"}} wideMobile href="#0">
                     View All Companies (69)
                     </Button>
                 </ButtonGroup>
